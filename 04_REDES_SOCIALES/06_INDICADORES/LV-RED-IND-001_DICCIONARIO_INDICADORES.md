@@ -38,3 +38,73 @@ Definir los principales indicadores utilizados para evaluar el desempeño de Red
 | IND-018 | Conversión a oportunidad | Oportunidades / leads | Comercial | Mensual | Conversión |
 | IND-019 | Conversión a venta | Ventas / oportunidades | Comercial | Mensual | Conversión |
 | IND-020 | Tiempo de respuesta | Tiempo entre consulta y primera respuesta | Operación | Mensual | Servicio |
+
+# 3. REGLAS DE INTERPRETACIÓN
+
+Los indicadores deberán interpretarse dentro de su contexto.
+
+Un incremento de alcance no implica necesariamente incremento de demanda.
+
+Un incremento de leads no implica necesariamente incremento de oportunidades.
+
+Un incremento de oportunidades no implica necesariamente incremento de ventas.
+
+La cadena completa deberá analizarse cuando exista información disponible.
+
+---
+
+# 4. INDICADORES POR FUNCIÓN
+
+### Posicionamiento
+
+- Alcance.
+- Impresiones.
+- Menciones.
+- Visitas.
+- Interacciones cualificadas.
+
+### Autoridad
+
+- Retención.
+- Guardados.
+- Compartidos.
+- Comentarios cualificados.
+- Consultas técnicas.
+
+### Demanda
+
+- Clics.
+- Mensajes.
+- Consultas.
+- Solicitudes.
+
+### Leads
+
+- Leads.
+- Leads calificados.
+- Leads transferidos.
+
+### Negocio
+
+- Oportunidades.
+- Cotizaciones.
+- Ventas.
+- Valor potencial.
+
+---
+
+# 5. PRINCIPIO
+
+No se deberán crear metas numéricas permanentes hasta contar con suficiente línea base histórica o una decisión estratégica explícita.
+
+Cuando no exista línea base:
+
+**POR DEFINIR**
+
+---
+
+# 6. HISTORIAL DE CAMBIOS
+
+| Versión | Fecha | Cambio | Responsable |
+|---|---|---|---|
+| 1.0 | 2026-09-04 | Creación del diccionario de indicadores | Dirección General |
