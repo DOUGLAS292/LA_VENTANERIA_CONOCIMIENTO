@@ -13,7 +13,7 @@ from cotizador_agente.viento import presion_diseno, region_de_ciudad
 SERIES = [
     "alumina_serie_33", "alumina_serie_50", "alumina_serie_80",
     "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100", "alumina_vc8025", "alumina_pc7038",
-    "alumina_s3831",
+    "alumina_s3831", "alumina_vc744",
 ]
 
 
@@ -152,3 +152,9 @@ def test_s3831_vertical_de_fijo_en_bogota():
 def test_s3831_ultima_columna_solo_divisiones_internas_no_se_usa():
     t = Sistema("alumina_s3831").datos["vertical"]["orden"][1]["tabla"]
     assert t["filas"]["1.80"][t["columnas_m"].index(1.6)] is None
+
+
+def test_vc744_ventana_baja_en_cali():
+    # Ventana de 1.20 m de alto con naves de 0.80 m: resiste 308 kg/m2
+    r = Sistema("alumina_vc744").seleccionar_variante("enganches", 0.80, 1.20, 60)
+    assert r["resiste_kgm2"] == 308
