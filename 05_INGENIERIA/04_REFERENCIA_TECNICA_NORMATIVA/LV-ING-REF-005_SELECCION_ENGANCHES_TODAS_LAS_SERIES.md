@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-005  
-**Versión:** 1.2  
+**Versión:** 1.3  
 **Fecha:** 2026-10-10  
 **Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -82,7 +82,7 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 1 | Contrastar la transcripción contra el PDF en las primeras obras cotizadas (las fichas fuente ya están validadas) | Ingeniería |
 | 2 | Serie 33: identificar el perfil del cierre central OXXO (página 1-6) | Ingeniería |
 | 3 | Koncept 50: tabla de ventana sobre cuerpo fijo (página 1-6). No se sabe qué medida va en filas y cuál en columnas; el agente no la usa | Ingeniería |
-| 4 | Serie 35 corrediza: en Drive solo está la hoja de producto (VC S35), no la ficha completa con la tabla de restricciones | Douglas |
+| 4 | Serie 35 corrediza: fuera del portafolio de La Ventanería por decisión de Dirección General (2026-10-10); no se carga | — |
 | 4b | Koncept 55 (plegable): la ficha no trae tabla de presión. El agente la escala a Ingeniería en zonas de viento exigente | Ingeniería |
 | 4c | Koncept 70: confirmar la compatibilidad entre el enganche escogido y la opción de cierre medio OXXO (naves lisas o reforzadas) | Ingeniería |
 | 5 | Koncept 100: tablas de puerta batiente y de cuerpo fijo (texto mezclado) | Agente |
@@ -100,3 +100,4 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |
 | 1.1 | 2026-10-10 | Koncept 40 (uniones), Koncept 90 y Koncept 100 cargadas desde el texto de las fichas en Drive |
 | 1.2 | 2026-10-10 | Koncept 70: 3 enganches y 2 cierres medios, transcritos de las capturas de la ficha enviadas por Dirección General |
+| 1.3 | 2026-10-10 | Serie 35 corrediza retirada del alcance: La Ventanería no la maneja |
