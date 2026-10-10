@@ -55,3 +55,19 @@ def test_validacion_tabla_alumina_vc744_a_3_m():
     # Tabla de restricciones Alúmina VC744 (zona 4, 3 m): Bogotá 40, Cali 40, Barranquilla 62 kg/m2.
     assert presion_diseno(3, 3, 1, exposicion="B", zona=4).presion_kgm2 == pytest.approx(40.8, abs=0.1)
     assert presion_diseno(5, 3, 1, exposicion="B", zona=4).presion_kgm2 == pytest.approx(62.2, abs=0.1)
+
+
+def test_region_por_departamento():
+    r = region_de_ciudad("Jamundí", "Valle del Cauca")
+    assert (r["region"], r["criterio"]) == (3, "departamento")
+    assert region_de_ciudad("Soledad", "Atlántico")["region"] == 5
+    # La ciudad conocida manda sobre el departamento
+    assert region_de_ciudad("Bogotá", "Cundinamarca")["criterio"] == "ciudad"
+    assert region_de_ciudad("Pueblo", "Departamento inexistente") is None
+
+
+def test_todos_los_departamentos_tienen_region():
+    from cotizador_agente.viento import DATOS
+    deps = {k: v for k, v in DATOS["departamentos"].items() if not k.startswith("_")}
+    assert len(deps) == 33  # 32 departamentos + Bogotá D.C.
+    assert all(v in (1, 2, 3, 4, 5) for v in deps.values())

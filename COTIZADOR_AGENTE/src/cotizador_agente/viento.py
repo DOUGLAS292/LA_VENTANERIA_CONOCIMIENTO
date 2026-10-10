@@ -29,12 +29,25 @@ def _normalizar(texto: str) -> str:
     return " ".join(sin_tildes.lower().replace(",", " ").split())
 
 
-def region_de_ciudad(ciudad: str) -> dict | None:
-    """Región eólica de una ciudad (lectura preliminar del mapa, ver JSON)."""
+def region_de_ciudad(ciudad: str, departamento: str | None = None) -> dict | None:
+    """Región eólica de un municipio.
+
+    Primero busca la ciudad en la tabla de ciudades leídas del mapa. Si no está y se
+    da el departamento, usa la región MÁXIMA del departamento (conservador).
+    """
     datos = DATOS["ciudades"].get(_normalizar(ciudad))
+    criterio = "ciudad"
+    if datos is None and departamento:
+        region = DATOS["departamentos"].get(_normalizar(departamento))
+        if region is not None:
+            datos = {"region": region, "lectura": "máximo del departamento (conservador)"}
+            criterio = "departamento"
     if datos is None:
         return None
-    return {"ciudad": ciudad, **datos, "V_ms": DATOS["regiones"][str(datos["region"])]["V_ms"]}
+    return {
+        "ciudad": ciudad, "departamento": departamento, "criterio": criterio, **datos,
+        "V_ms": DATOS["regiones"][str(datos["region"])]["V_ms"],
+    }
 
 
 def _indice_superior(valor: float, pasos: list[float]) -> int:

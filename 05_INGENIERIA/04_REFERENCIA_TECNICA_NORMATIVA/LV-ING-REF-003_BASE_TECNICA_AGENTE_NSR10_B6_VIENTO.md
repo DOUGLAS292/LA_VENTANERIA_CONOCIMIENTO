@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-003  
-**Versión:** 0.2  
+**Versión:** 0.3  
 **Fecha:** 2026-10-10  
 **Estado:** BORRADOR — POR VALIDAR  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -43,6 +43,21 @@ Zonas no estudiadas (Amazonía y sur de la Orinoquía): la norma ordena usar 28 
 | 1 | Quibdó |
 
 \* Ciudad sobre o junto a una frontera entre regiones: se asignó la **región mayor**. **Ingeniería debe confirmar cada ciudad** con el mapa oficial a mayor escala antes del uso comercial.
+
+Capitales en zona no estudiada (Leticia, Mitú, Puerto Carreño, Inírida, San José del Guaviare, Mocoa): **28 m/s**, equivalente a la región 3, según la nota de la figura.
+
+**Cobertura nacional: resto de municipios.** La Ventanería trabaja en todo el país. Para cualquier municipio que no esté en la tabla anterior, el agente usa la **región máxima que el mapa muestra dentro del departamento**:
+
+| Región máxima | Departamentos |
+|---|---|
+| 5 | Atlántico, Bolívar, Magdalena, San Andrés y Providencia |
+| 4 | Antioquia, Caquetá, Casanare, Cesar, Córdoba, Cundinamarca, Huila, La Guajira, Meta, Sucre, Tolima |
+| 3 | Amazonas, Arauca, Boyacá, Caldas, Cauca, Guainía, Guaviare, Nariño, Norte de Santander, Putumayo, Quindío, Risaralda, Santander, Valle del Cauca, Vaupés, Vichada, Bogotá D.C. |
+| 2 | Chocó |
+
+Este criterio puede sobredimensionar municipios de baja exposición dentro de un departamento con zonas más ventosas (por ejemplo, el interior de Bolívar). El agente lo informa en la cotización, e Ingeniería puede afinar municipio por municipio para ser más competitivos.
+
+Nota: se intentó digitalizar el mapa automáticamente (por coordenadas), pero las líneas de frontera del PDF tienen cortes que mezclan regiones. Ese método se descartó hasta contar con el mapa en formato vectorial o una tabla oficial por municipio.
 
 ---
 
@@ -142,4 +157,5 @@ Fuente: `Buga-Tabla de restricciones -744-R00.pdf` (Grupo Alúmina, "presiones d
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación a partir del Título B de la NSR-10 cargado en Drive |
+| 0.3 | 2026-10-10 | Cobertura nacional: región máxima por departamento y capitales en zona no estudiada |
 | 0.2 | 2026-10-10 | Exposición C por defecto, mínimo 0.40 kN/m² en Método 2 y validación contra la tabla Alúmina VC744 |
