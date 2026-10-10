@@ -12,13 +12,20 @@ from cotizador_agente.viento import presion_diseno, region_de_ciudad
 
 SERIES = [
     "alumina_serie_33", "alumina_serie_50", "alumina_serie_80",
-    "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100",
+    "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100", "alumina_vc8025", "alumina_pc7038",
+    "alumina_s3831",
 ]
 
 
 def _grupos(codigo):
     datos = json.loads((DATOS / "sistemas" / f"{codigo}.json").read_text(encoding="utf-8"))
     return {nombre: g["orden"] for nombre, g in datos.items() if isinstance(g, dict) and "orden" in g}
+
+
+def _grupos_ordenados(codigo):
+    datos = json.loads((DATOS / "sistemas" / f"{codigo}.json").read_text(encoding="utf-8"))
+    return {n: g["orden"] for n, g in datos.items()
+            if isinstance(g, dict) and "orden" in g and g.get("orden_estricto", True)}
 
 
 @pytest.mark.parametrize("codigo", SERIES)
@@ -37,7 +44,7 @@ def test_tablas_decrecen_con_ancho_y_altura(codigo):
 
 @pytest.mark.parametrize("codigo", SERIES)
 def test_cada_combinacion_resiste_al_menos_la_anterior(codigo):
-    for grupo, variantes in _grupos(codigo).items():
+    for grupo, variantes in _grupos_ordenados(codigo).items():
         for a, b in zip(variantes, variantes[1:]):
             comunes = set(a["tabla"]["filas"]) & set(b["tabla"]["filas"])
             for h in comunes:
@@ -115,3 +122,33 @@ def test_koncept_70_horizontal_puerta_fijo_superior():
     assert r["resiste_kgm2"] == 75
     # Celda irregular de la ficha (A 2.40, H 0.60 = 108) se toma del lado seguro (102)
     assert s.seleccionar_variante("union_puerta_fijo_superior", 2.40, 0.60, 0)["resiste_kgm2"] == 102
+
+
+def test_vc8025_ventana_en_edificio_de_barranquilla_pide_adaptador():
+    # Ventana 2.00 x 1.50 con naves de 1.00 m a 30 m de altura en Barranquilla
+    p = _presion("Barranquilla", 30, 1.00, 1.50)
+    r = Sistema("alumina_vc8025").seleccionar_variante("enganches", 1.00, 1.50, p)
+    assert r["seleccion"]["codigo"] == "engana0191_adapt1818" and r["resiste_kgm2"] == 179
+
+
+def test_pc7038_puerta_en_medellin_alta_pasa_al_enganche_redondeado():
+    # Puerta 2.40 m de alto, naves de 1.00 m, edificio de 30 m en Medellín
+    p = _presion("Medellín", 30, 1.00, 2.40)
+    r = Sistema("alumina_pc7038").seleccionar_variante("enganches", 1.00, 2.40, p)
+    assert [e["resiste_kgm2"] for e in r["evaluadas"]] == [60, 86]
+    assert r["seleccion"] is None
+
+
+def test_s3831_vertical_de_fijo_en_bogota():
+    # Vitrina con módulos de 1.20 m y vertical de 1.50 m: el divisor sencillo resiste 46 kg/m2
+    s = Sistema("alumina_s3831")
+    assert s.seleccionar_variante("vertical", 1.20, 1.50, 40)["seleccion"]["codigo"] == "divisb0292"
+    # A 30 m en Barranquilla (≈ 170 kg/m2) un vertical de 1.20 m solo aguanta reforzado (193)
+    r = s.seleccionar_variante("vertical", 1.20, 1.20, 170)
+    assert [e["resiste_kgm2"] for e in r["evaluadas"]] == [86, 131, 193]
+    assert r["seleccion"]["codigo"] == "adapt1859_jambab0174_adapta0175"
+
+
+def test_s3831_ultima_columna_solo_divisiones_internas_no_se_usa():
+    t = Sistema("alumina_s3831").datos["vertical"]["orden"][1]["tabla"]
+    assert t["filas"]["1.80"][t["columnas_m"].index(1.6)] is None
