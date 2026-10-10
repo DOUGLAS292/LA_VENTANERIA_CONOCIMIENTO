@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-006  
-**Versión:** 1.1  
+**Versión:** 1.2  
 **Fecha:** 2026-10-10  
 **Estado:** APROBADO — Dirección General, 2026-10-10  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -54,7 +54,28 @@ Vidrio del fijo inferior en vivienda:
 
 ---
 
-# 5. PREGUNTAS DEL AGENTE AL CLIENTE
+# 5. PERFILES DE LOS FIJOS: SISTEMA S3831 DE ALÚMINA
+
+Para los fijos superiores e inferiores, y para vitrinas, el agente verifica los perfiles con las tablas TR-S3831.
+
+| Elemento | Opciones, de la más liviana a la más pesada | Cómo se lee la tabla |
+|---|---|---|
+| Vertical (paral) | DIVISB0292 → JAMBAB0174 + ADAPTA0175 → reforzado con ADAPT1859 | Ancho del módulo y altura del vertical |
+| Horizontal (travesaño) | DIVISB0292 → JAMBAB0174 + ADAPTA0175 → reforzado con ADAPT1859 | Longitud del horizontal y altura del módulo |
+
+**Ejemplo.** Una vitrina con módulos de 1.20 m de ancho y verticales de 1.20 m de alto, en un edificio de 30 m en Barranquilla (presión de unos 170 kg/m²):
+
+- El divisor sencillo resiste 86 kg/m² y no alcanza.
+- El paral JAMBAB0174 + ADAPTA0175 resiste 131 kg/m² y tampoco alcanza.
+- El paral reforzado con ADAPT1859 resiste 193 kg/m² y sí alcanza.
+
+**Observaciones de la ficha:**
+
+1. En los verticales TR-02 y TR-03, la última columna, desde módulos de 1.60 m, dice "solo divisiones internas". El agente no la usa en fachada.
+2. En la TR-02 hay 6 valores, en módulos de 2.20 a 2.40 m, que suben respecto a anchos menores. El agente toma el valor menor vecino.
+3. Las tablas de horizontales se cruzan entre sí, porque cada perfil trabaja con un criterio de deflexión distinto. El agente revisa cada perfil en su propia tabla y no asume un orden.
+
+# 6. PREGUNTAS DEL AGENTE AL CLIENTE
 
 1. Ancho y alto del vano libre, sin contar el muro.
 2. Altura del muro o antepecho desde el piso terminado.
@@ -65,19 +86,20 @@ Vidrio del fijo inferior en vivienda:
 
 ---
 
-# 6. PENDIENTES
+# 7. PENDIENTES
 
 | # | Pendiente | Responsable |
 |---|---|---|
-| 1 | Verificar el travesaño (divisor u horizontal de unión) con la tabla de cada serie. Cargadas: Koncept 40, Koncept 50, Serie 35 y Koncept 70 (unión puerta con fijo superior). Faltan Koncept 100 (fijos) y Serie 50 (horizontales) | Agente |
+| 1 | Verificar el travesaño (divisor u horizontal de unión) con la tabla de cada serie. Cargadas: Koncept 40, Koncept 50, Serie 35, Koncept 70 (unión puerta con fijo superior) y S3831 de Alúmina (verticales y horizontales de fijo). Faltan Koncept 100 (fijos) y Serie 50 (horizontales) | Agente |
 | 1b | Koncept 70, unión puerta con fijo superior: la ficha trae 9 celdas donde un horizontal más largo resiste más que uno más corto (largos de 2.20, 2.40 y 2.70 m con alturas de 0.60 a 1.00 m). El agente toma ahí el valor menor vecino. Confirmar | Ingeniería |
 | 2 | Zonas exactas de riesgo de impacto de la Figura K.4.3-0 | Ingeniería |
 
 ---
 
-# 7. HISTORIAL
+# 8. HISTORIAL
 
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 1.0 | 2026-10-10 | Creación con los criterios de Dirección General: travesaño a 1.10 m y vidrio recocido de 5 mm cuando la norma lo permite |
 | 1.1 | 2026-10-10 | Koncept 70: tabla del horizontal de unión entre puerta y fijo superior |
+| 1.2 | 2026-10-10 | Sistema de cuerpo fijo S3831 de Alúmina: 3 verticales y 3 horizontales |

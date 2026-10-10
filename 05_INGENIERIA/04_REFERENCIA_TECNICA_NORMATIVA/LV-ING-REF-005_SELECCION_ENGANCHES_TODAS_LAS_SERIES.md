@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-005  
-**Versión:** 1.3  
+**Versión:** 1.4  
 **Fecha:** 2026-10-10  
 **Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -30,8 +30,14 @@ El método es el mismo de la Serie 50 (LV-ING-REF-004): las combinaciones van de
 | Serie 80 (Alúmina) | `alumina_serie_80.json` | 2282+2282 → 2282+2249 → 2249+2249 → 2282+2250 → 2249+2250 → 2250+2250 | ADAPT2266 → ADAPT2265, con TRASL2247 |
 | Koncept 50 | `koncept_50.json` | Un solo enganche: ADAPT1927 | ADAPT2018; además divisor fijo DIVIS1702 |
 | Koncept 70 | `koncept_70.json` | Lisos (NAVE1754 + NAVE1754) → liso + reforzado (NAVE1754 + NAVE1904) → reforzados (NAVE1904 + NAVE1904), todos con ADAPT1755 | Naves reforzadas + ADAPT1657 → naves lisas + ADAPT2135 |
+| VC8025 (Alúmina, Maestro) | `alumina_vc8025.json` | ENGANA0191 → ENGAN0631 → ENGANA0191 + ADAPT1818 → ENGAN1745 | TRASL0190 + ADAPT0158 → TRASL0633 + ADAPR0827 |
+| PC7038 (Alúmina, Maestro) | `alumina_pc7038.json` | ENGAN0705 → ENGAN1697 | TRASL1698 + ADAPT0840 → TRASL0704 + ADAPT0840 |
 | Koncept 90 (puerta) | `koncept_90.json` | Sencillo (ENGANK9006) → semirreforzado (+1 ADAPTK9007) → reforzado (+2 ADAPTK9007) | ADAPTK9008 |
 | Koncept 100 (puerta) | `koncept_100.json` | Sencillo (ENGAN2086) → sencillo + reforzado (ADAPT2191) → reforzados | ADAPT2172 |
+
+**Línea Maestro de Alúmina (TR-8025 y TR-7038).** Cada enganche corresponde a una nave de distinta forma: recta, redondeada o semicircular. El agente los ordena por resistencia comprobada. Si el cliente escogió una estética, se queda dentro de esa familia. Cada plano trae además la tabla de presiones y de áreas máximas de vidrio por ciudad de Alúmina, que quedó como referencia.
+
+**Cuerpo fijo S3831** (`alumina_s3831.json`): verticales y horizontales de vitrina y fachada fija. Ver LV-ING-REF-006.
 
 **Koncept 40** (`koncept_40.json`) es batiente y proyectante, no tiene enganches. Se cargaron sus 8 tablas de uniones para que el agente verifique la unión según el viento: divisores horizontales y verticales, mullion horizontal y vertical, unión central XX de puerta y divisor de fijo OO.
 
@@ -101,3 +107,4 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 1.1 | 2026-10-10 | Koncept 40 (uniones), Koncept 90 y Koncept 100 cargadas desde el texto de las fichas en Drive |
 | 1.2 | 2026-10-10 | Koncept 70: 3 enganches y 2 cierres medios, transcritos de las capturas de la ficha enviadas por Dirección General |
 | 1.3 | 2026-10-10 | Serie 35 corrediza retirada del alcance: La Ventanería no la maneja |
+| 1.4 | 2026-10-10 | Línea Maestro de Alúmina: VC8025 y PC7038 (tablas TR) |
