@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-003  
-**Versión:** 0.1  
+**Versión:** 0.2  
 **Fecha:** 2026-10-10  
 **Estado:** BORRADOR — POR VALIDAR  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -81,6 +81,9 @@ En zona de transición se usa la exposición más desfavorable.
 - Área efectiva entre dos valores de la tabla: se usa el **área menor** (nota 4 de la figura B.6.4-3).
 - Altura entre dos valores: se usa la **altura mayor**.
 - Sin ubicación de la ventana en la fachada: se usa la **zona 5 (esquina)**.
+- Exposición por defecto **C**: la norma la aplica siempre que no se demuestre B ni D (B.6.5.6.3).
+- Presión mínima de **0.40 kN/m²** en ambos métodos (B.6.1.3.2).
+- En edificios de más de 18 m, la presión **nunca es menor que la del Método 1 a 18 m**. Criterio propio de La Ventanería: evita que la presión baje al cambiar de método. Pendiente de aprobación.
 - **I = 1.00** mientras no se confirme el grupo de uso. La tabla B.6.5-1 asigna 0.87 al Grupo I (ocupación normal); el agente no aplica esa reducción hasta que Ingeniería lo apruebe.
 
 ---
@@ -100,7 +103,29 @@ Ejemplos con una ventana de 1.5 m² en zona de esquina:
 
 ---
 
-# 5. PENDIENTES
+# 5. VALIDACIÓN CONTRA LA TABLA DE RESTRICCIONES DE ALÚMINA (VC744)
+
+Fuente: `Buga-Tabla de restricciones -744-R00.pdf` (Grupo Alúmina, "presiones de viento según NSR-10", zona 4), en Drive › Fichas Técnicas.
+
+| Ciudad | Altura | Alúmina VC744 (kg/m²) | Agente, exposición B (kg/m²) | Agente, exposición C por defecto (kg/m²) |
+|---|---|---|---|---|
+| Bogotá | 3 m | 40 | 41 | 44 |
+| Cali | 3 m | 40 | 41 | 44 |
+| Medellín | 3 m | 51 | 53 | 64 |
+| Barranquilla | 3 m | 62 | 62 | 75 |
+| Medellín | 40 m | 96 | — | 86 |
+| Barranquilla | 40 m | 116 | — | 101 |
+
+**Conclusiones:**
+
+1. A baja altura y con exposición B, el agente **reproduce la tabla de Alúmina** (40 / 40 / 62 kg/m²). Esto confirma la lectura de las regiones 3 y 5 y de las tablas pnet10.
+2. En altura, Alúmina da valores mayores en Medellín y Barranquilla. Probablemente usa exposición D en la costa o hipótesis más severas de coeficientes. **Regla del agente: cuando exista tabla del fabricante para la ciudad, usa el mayor valor entre la NSR-10 calculada y la tabla del fabricante.**
+3. En Bogotá, Alúmina mantiene 40 kg/m² hasta 30 m, mientras que Cali sube. Indica que **Bogotá podría estar en la región 2**; el agente la mantiene en la región 3 (conservador) hasta que Ingeniería decida.
+4. Alúmina indica incrementar un **35% en zona de esquina** (zona 5). El agente usa directamente las tablas de zona 5 de la norma.
+
+---
+
+# 6. PENDIENTES
 
 | # | Pendiente | Responsable |
 |---|---|---|
@@ -112,8 +137,9 @@ Ejemplos con una ventana de 1.5 m² en zona de esquina:
 
 ---
 
-# 6. HISTORIAL
+# 7. HISTORIAL
 
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación a partir del Título B de la NSR-10 cargado en Drive |
+| 0.2 | 2026-10-10 | Exposición C por defecto, mínimo 0.40 kN/m² en Método 2 y validación contra la tabla Alúmina VC744 |

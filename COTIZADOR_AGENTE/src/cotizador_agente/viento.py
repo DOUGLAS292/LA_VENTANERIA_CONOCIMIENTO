@@ -2,10 +2,13 @@
 
 - h <= 18 m: Método 1 simplificado, componentes y revestimientos (B.6.4.2.2).
 - h > 18 m: Método 2 analítico, componentes y revestimientos (B.6.5.12.4.2).
+- En ambos casos, presión neta mínima de 0.40 kN/m2 (B.6.1.3.2).
 
 Criterio conservador: área efectiva entre dos valores tabulados -> se usa el área
 menor (Figura B.6.4-3, nota 4); altura entre dos valores -> la altura mayor; en el
-Método 2 se usa qh (altura total del edificio) para todo el muro.
+Método 2 se usa qh (altura total del edificio) para todo el muro, y nunca se acepta
+una presión menor que la del Método 1 a 18 m (la presión no baja al subir de altura).
+Exposición por defecto C: la norma la aplica siempre que no se demuestre B ni D.
 """
 
 import json
@@ -15,6 +18,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .criterio_tecnico import KG_M2_A_KN_M2
+
+MINIMO_COMPONENTES = 0.40  # kN/m2, B.6.1.3.2
 
 DATOS = json.loads((Path(__file__).parent / "datos" / "nsr10_b6_viento.json").read_text(encoding="utf-8"))
 
@@ -75,7 +80,7 @@ def presion_diseno(
     region: int,
     altura_edificio_m: float,
     area_efectiva_m2: float,
-    exposicion: str = "B",
+    exposicion: str = "C",
     zona: int = 5,
     grupo_uso: str | None = None,
     Kzt: float = 1.0,
@@ -121,10 +126,13 @@ def presion_diseno(
     neg = g[f"negativo_{zona}"]
     gcp_neg = neg[0] + t * (neg[1] - neg[0])
     gcpi = m2["GCpi_cerrado"]
-    p = max(qh * (gcp_pos + gcpi), qh * (abs(gcp_neg) + gcpi))
+    p = max(qh * (gcp_pos + gcpi), qh * (abs(gcp_neg) + gcpi), MINIMO_COMPONENTES)
+    piso_metodo_1 = presion_diseno(region, 18.0, area_efectiva_m2, exposicion, zona, grupo_uso, Kzt)
+    p = max(p, piso_metodo_1.presion_knm2)
     detalle = (
         f"Método 2 (B.6.5.12.4.2): qh = 0.613·Kz·Kzt·Kd·V²·I = {qh:.3f} kN/m² "
         f"(Kz {Kz:.2f}, exposición {exposicion}); GCp +{gcp_pos:.2f}/{gcp_neg:.2f}, "
-        f"GCpi ±{gcpi} (zona {zona}, área {area_efectiva_m2} m²)."
+        f"GCpi ±{gcpi} (zona {zona}, área {area_efectiva_m2} m²); no menor que el Método 1 a 18 m "
+        f"({piso_metodo_1.presion_knm2} kN/m²) ni que {MINIMO_COMPONENTES} kN/m² (B.6.1.3.2)."
     )
     return PresionViento(round(p, 3), region, V, "metodo_2", detalle)
