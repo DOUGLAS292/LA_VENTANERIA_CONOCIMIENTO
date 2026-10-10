@@ -10,7 +10,10 @@ import pytest
 from cotizador_agente.criterio_tecnico import DATOS, Sistema
 from cotizador_agente.viento import presion_diseno, region_de_ciudad
 
-SERIES = ["alumina_serie_33", "alumina_serie_50", "alumina_serie_80", "koncept_50"]
+SERIES = [
+    "alumina_serie_33", "alumina_serie_50", "alumina_serie_80",
+    "koncept_40", "koncept_50", "koncept_90", "koncept_100",
+]
 
 
 def _grupos(codigo):
@@ -72,3 +75,21 @@ def test_serie_80_puerta_de_bogota_casa():
 def test_koncept_50_sin_enganche_que_resista_escala():
     r = Sistema("koncept_50").seleccionar_variante("enganches", 1.00, 1.50, 60)
     assert r["seleccion"] is None
+
+
+def _presion(ciudad, altura_m, ancho_nave_m, alto_m):
+    region = region_de_ciudad(ciudad)["region"]
+    return presion_diseno(region, altura_m, area_efectiva_m2=ancho_nave_m * alto_m).presion_kgm2
+
+
+def test_koncept_90_puerta_en_barranquilla_alta_pide_semirreforzado():
+    p = _presion("Barranquilla", 30, 1.20, 2.40)
+    r = Sistema("koncept_90").seleccionar_variante("enganches", 1.20, 2.40, p)
+    assert r["seleccion"]["codigo"] == "semirreforzado" and r["resiste_kgm2"] == 166
+
+
+def test_naves_grandes_en_la_costa_koncept_90_no_alcanza_y_koncept_100_si():
+    p = _presion("Barranquilla", 30, 1.60, 2.80)
+    assert Sistema("koncept_90").seleccionar_variante("enganches", 1.60, 2.80, p)["seleccion"] is None
+    r = Sistema("koncept_100").seleccionar_variante("enganches", 1.60, 2.80, p)
+    assert r["seleccion"]["codigo"] == "reforzado" and r["resiste_kgm2"] == 172
