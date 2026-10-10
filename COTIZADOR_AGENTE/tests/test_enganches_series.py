@@ -12,7 +12,7 @@ from cotizador_agente.viento import presion_diseno, region_de_ciudad
 
 SERIES = [
     "alumina_serie_33", "alumina_serie_50", "alumina_serie_80",
-    "koncept_40", "koncept_50", "koncept_90", "koncept_100",
+    "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100",
 ]
 
 
@@ -93,3 +93,16 @@ def test_naves_grandes_en_la_costa_koncept_90_no_alcanza_y_koncept_100_si():
     assert Sistema("koncept_90").seleccionar_variante("enganches", 1.60, 2.80, p)["seleccion"] is None
     r = Sistema("koncept_100").seleccionar_variante("enganches", 1.60, 2.80, p)
     assert r["seleccion"]["codigo"] == "reforzado" and r["resiste_kgm2"] == 172
+
+
+def test_koncept_70_tabla_transpuesta_se_lee_bien():
+    # Ficha: nave de 1.00 m y ventana de 1.40 m de alto -> perfiles lisos 119 kg/m2
+    r = Sistema("koncept_70").seleccionar_variante("enganches", 1.00, 1.40, 100)
+    assert r["seleccion"]["codigo"] == "lisos" and r["resiste_kgm2"] == 119
+
+
+def test_koncept_70_puerta_en_edificio_de_medellin_no_alcanza():
+    p = _presion("Medellín", 30, 1.00, 2.40)
+    r = Sistema("koncept_70").seleccionar_variante("enganches", 1.00, 2.40, p)
+    assert r["seleccion"] is None
+    assert [e["resiste_kgm2"] for e in r["evaluadas"]] == [None, 71, 121]
