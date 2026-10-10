@@ -1,0 +1,121 @@
+{
+  "_fuente": "NSR-10 Título K, Capítulo K.4 (PDF '11titulo-k-nsr-100.pdf', Google Drive de La Ventanería, id 17cg9bHRX0jmtRpkVPtG5Az8i9ZhYVkI3)",
+  "_estado": "Extraído automáticamente del texto del PDF el 2026-10-09. PENDIENTE verificación visual contra el PDF por Ingeniería antes de uso en producción.",
+  "_unidades": "Presión en kN/m2. Áreas en m2. Espesores en mm.",
+
+  "areas_maximas_por_viento": {
+    "_descripcion": "Tablas K.4.2-2 a K.4.2-5: área máxima de una lámina vertical, relación largo/ancho <= 2, soportada en los cuatro lados, presión de viento por un solo lado (K.4.2.6).",
+    "_regiones_por_presion": "Cada renglón trae marcas (•) de las regiones eólicas (Fig. B.6.4-1) donde puede presentarse esa presión. La asignación exacta de marcas a regiones debe verificarse visualmente en el PDF; el agente usa la presión de diseño calculada, no la región.",
+    "recocido": {
+      "tabla": "K.4.2-2",
+      "espesores_mm": [3, 4, 5, 6, 8, 10],
+      "filas": [
+        {"presion": 0.50, "areas": [4.40, 6.60, 9.00, 12.18, 19.76, null]},
+        {"presion": 0.75, "areas": [2.85, 4.27, 5.76, 7.72, 11.52, 14.58]},
+        {"presion": 1.00, "areas": [2.00, 3.03, 3.92, 4.99, 7.22, 9.59]},
+        {"presion": 1.25, "areas": [1.55, 2.18, 2.76, 3.59, 5.31, 6.85]},
+        {"presion": 1.50, "areas": [1.18, 1.62, 2.06, 2.76, 4.06, 5.45]},
+        {"presion": 2.00, "areas": [0.73, 1.08, 1.38, 1.84, 2.88, 3.92]},
+        {"presion": 3.00, "areas": [0.43, 0.63, 0.86, 1.16, 1.84, 2.65]},
+        {"presion": 4.00, "areas": [0.30, 0.47, 0.62, 0.87, 1.42, 1.97]},
+        {"presion": 5.00, "areas": [0.23, 0.38, 0.50, 0.70, 1.09, 1.50]},
+        {"presion": 7.00, "areas": [0.17, 0.26, 0.35, 0.50, 0.81, 1.10]}
+      ]
+    },
+    "termoendurecido": {
+      "tabla": "K.4.2-3",
+      "espesores_mm": [3, 4, 5, 6, 8, 10],
+      "filas": [
+        {"presion": 1.00, "areas": [4.40, 6.60, 9.00, 12.18, 19.76, null]},
+        {"presion": 1.50, "areas": [2.85, 4.27, 5.76, 7.72, 11.52, 14.58]},
+        {"presion": 2.00, "areas": [2.00, 3.03, 3.92, 4.99, 7.22, 9.59]},
+        {"presion": 3.00, "areas": [1.18, 1.62, 2.06, 2.76, 4.06, 5.45]},
+        {"presion": 4.00, "areas": [0.73, 1.08, 1.38, 1.84, 2.88, 3.92]},
+        {"presion": 6.00, "areas": [0.43, 0.63, 0.86, 1.16, 1.84, 2.65]}
+      ]
+    },
+    "templado": {
+      "tabla": "K.4.2-4",
+      "espesores_mm": [3, 4, 5, 6, 8, 10],
+      "filas": [
+        {"presion": 2.00, "areas": [4.40, 6.60, 9.00, 12.18, 19.76, null]},
+        {"presion": 3.00, "areas": [2.85, 4.27, 5.76, 7.72, 11.52, 14.58]},
+        {"presion": 4.00, "areas": [2.00, 3.03, 3.92, 4.99, 7.22, 9.59]},
+        {"presion": 5.00, "areas": [1.55, 2.18, 2.76, 3.59, 5.31, 6.85]},
+        {"presion": 6.00, "areas": [1.18, 1.62, 2.06, 2.76, 4.06, 5.45]}
+      ]
+    },
+    "laminado_pvb": {
+      "tabla": "K.4.2-5",
+      "_nota": "Espesor nominal total del laminado recocido con PVB.",
+      "espesores_mm": [5, 6, 8, 10, 12, 16],
+      "filas": [
+        {"presion": 0.50, "areas": [8.64, 11.56, null, null, null, null]},
+        {"presion": 0.75, "areas": [5.45, 7.57, 12.33, null, null, null]},
+        {"presion": 1.00, "areas": [3.84, 5.31, 8.08, 10.26, null, null]},
+        {"presion": 1.25, "areas": [2.42, 3.92, 6.02, 7.76, 9.50, null]},
+        {"presion": 1.50, "areas": [2.31, 3.13, 4.65, 6.06, 7.61, 13.36]},
+        {"presion": 2.00, "areas": [1.57, 2.08, 3.25, 4.21, 5.38, 8.90]},
+        {"presion": 3.00, "areas": [0.91, 1.28, 2.00, 2.65, 3.38, 5.71]},
+        {"presion": 4.00, "areas": [0.63, 0.90, 1.30, 1.84, 2.41, 4.15]},
+        {"presion": 5.00, "areas": [0.52, 0.64, 0.90, 1.41, 1.88, 3.23]},
+        {"presion": 7.00, "areas": [0.32, 0.48, 0.71, 0.96, 1.27, 2.16]}
+      ]
+    }
+  },
+
+  "vidrio_seguridad_enmarcado": {
+    "tabla": "K.4.3-1",
+    "_descripcion": "Área máxima de vidrio de seguridad en vidrieras totalmente enmarcadas.",
+    "templado": {"3": 1.0, "4": 2.0, "5": 3.0, "6": 4.0, "8": 6.0, "10": 6.0, "12": 10.0},
+    "laminado": {"5": 2.0, "6": 3.0, "8": 5.0, "10": 7.0, "12": 9.0},
+    "_verificar": "El valor de templado 10 mm (6.0 m2) es igual al de 8 mm en la extracción; confirmar en el PDF."
+  },
+
+  "recocido_por_riesgo_impacto": {
+    "tabla": "K.4.3-2",
+    "_descripcion": "Área máxima de vidrio recocido por nivel de riesgo de impacto humano. Columna 1 alto, 2 mediano, 3 bajo.",
+    "espesores_mm": [3, 4, 5, 6, 8, 10, 12, 15, 19, 25],
+    "alto":    [0.25, 0.2, 0.5, 0.9, 1.8, 2.7, 4.5, 6.3, 8.5, 12.0],
+    "mediano": [0.1, 0.3, 1.2, 2.1, 3.2, 4.4, 6.3, 8.2, 10.3, 13.5],
+    "bajo":    [0.3, 1.1, 2.2, 3.3, 4.5, 6.0, 8.0, 10.0, 12.0, 15.0],
+    "_verificar": "Los valores de 3 mm (0.25 / 0.1 / 0.3) no son monótonos; confirmar en el PDF."
+  },
+
+  "recocido_enmarcado": {
+    "tabla": "K.4.3-3",
+    "_descripcion": "Área máxima de vidrio recocido totalmente enmarcado, basada en carga frontal ULS de 1.3 kPa. Si la presión de viento de diseño supera 1.3 kPa se selecciona por viento.",
+    "areas": {"3": 0.5, "4": 2.0, "5": 3.3, "6": 4.6, "8": 7.0, "10": 9.5, "12": 12.0, "15": 16.0, "19": 16.0, "25": 16.0}
+  },
+
+  "zonas_riesgo_impacto": {
+    "numeral": "K.4.3.9 y Figura K.4.3-0",
+    "altura_maxima_riesgo_mm": 2000,
+    "_nota": "La figura delimita alto, mediano y bajo riesgo con cotas de 300, 500, 1200 y 2000 mm. La geometría exacta de cada zona debe leerse en la figura del PDF."
+  },
+
+  "reglas_seguridad": [
+    {"id": "K.4.2.6.1", "regla": "Prohibido el vidrio de 2 mm."},
+    {"id": "K.4.3.9.2.1a", "regla": "Puertas batientes, giratorias y plegables en dos partes: vidrio recocido solo hasta 0.5 m2 (columna 1, tabla K.4.3-2). Mayor área exige vidrio de seguridad (tabla K.4.3-1)."},
+    {"id": "K.4.3.9.2.1b", "regla": "Puertas corredizas: recocido mínimo 5 mm (columna 2) solo si tienen travesaño protector entre 700 y 1000 mm del piso; en otro caso vidrio de seguridad."},
+    {"id": "K.4.3.9.2.1c", "regla": "Puertas con vidrio a tope: templado de seguridad mínimo 10 mm."},
+    {"id": "K.4.3.9.3.3.2", "regla": "Paneles laterales sin enmarcar: templado de seguridad mínimo 10 mm."},
+    {"id": "K.4.3.9.5.1", "regla": "Vidrio recocido a menos de 500 mm del piso: mínimo 5 mm."},
+    {"id": "K.4.3.9.6.1", "regla": "Baños: vidrio de seguridad en puertas y divisiones de baño, y en toda vidriera a menos de 2000 mm del piso en baños con jacuzzi o spa."},
+    {"id": "K.4.3.9.6.2", "regla": "Baños, paneles o puertas con uno o dos bordes opuestos sin enmarcar: templado mínimo 5 mm."},
+    {"id": "K.4.3.9.6.3", "regla": "Baños, paneles o puertas con dos o más bordes adyacentes a tope: templado mínimo 6 mm."},
+    {"id": "K.4.3.9.6.4", "regla": "Puertas de ducha sin marco con pivotes o bisagras: templado mínimo 6 mm."},
+    {"id": "K.4.3.9.1.9", "regla": "Escuelas y guarderías: vidrio de seguridad en todo panel hasta 800 mm sobre el piso."},
+    {"id": "K.4.3.9.9.1", "regla": "Barandas enmarcadas: vidrio de seguridad mínimo 6 mm (recocido 4 mm solo hasta 0.3 m2)."},
+    {"id": "K.4.3.9.10.1", "regla": "Escaleras: vidrio de seguridad dentro de 2000 mm horizontales del peldaño inferior."},
+    {"id": "K.4.2.5.6.2", "regla": "Pisos de vidrio: laminado de dos o más capas; el monolítico (incluso templado) no se considera seguro."},
+    {"id": "K.4.2.5.1", "regla": "Vidrio vertical (inclinación <= 15°): carga de viento sobre el vidrio <= carga admisible ASTM E1300-09a."},
+    {"id": "K.4.2.5.2", "regla": "Vidrio inclinado (> 15°, claraboyas, techos): combinaciones de carga K.4.2-3 a K.4.2-5; requiere diseño de Ingeniería."},
+    {"id": "K.4.2.7.1", "regla": "Deflexión de perfiles que soportan vidrio: L/175 para luces hasta 4 m; L/240 + 6.35 mm entre 4 y 12 m."}
+  ],
+
+  "vidrio_doble": {
+    "numeral": "K.4.3.9.1.6.1",
+    "regla": "Área máxima de unidad de vidrio doble = 1.5 veces el área permitida para la lámina más delgada."
+  }
+}

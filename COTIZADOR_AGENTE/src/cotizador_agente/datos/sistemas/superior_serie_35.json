@@ -1,0 +1,187 @@
+{
+  "codigo": "superior_serie_35",
+  "nombre": "Sistema batiente Línea Superior Serie 35",
+  "_fuente": "Ficha técnica 'ficha-tec-serie-35---PROYECTANTE.pdf', revisión 01 - 20180410 (Google Drive, carpeta Fichas Técnicas, id 1m3jb9z111q6IsfZ1QKFQDmPzQpyhqAjQ)",
+  "_estado": "Extraído automáticamente del texto del PDF el 2026-10-09. Las tablas de presión se reconstruyeron desde texto desordenado: PENDIENTE verificación visual contra el PDF por Ingeniería.",
+  "_convenciones": "A = ancho total exterior del marco (mm). H = alto total exterior del marco (mm). En XO, B = ancho del módulo proyectante y C = ancho del módulo fijo (A = B + C). Presiones en kg/m2.",
+
+  "caracteristicas": {
+    "ancho_marco_mm": 35,
+    "corte_perfiles": "45 grados en marco y naves",
+    "vidrios_admisibles_mm": [4, 5, 6, 8, 9, 10],
+    "tipos_vidrio": ["monolitico", "laminado"],
+    "cierre": "monopunto",
+    "sello": "doble punto con empaques perimetrales EPDM",
+    "nsr10": "El fabricante declara el sistema calculado para NSR-10 según sus tablas de restricciones."
+  },
+
+  "empaque_u_por_espesor": {"4": "17196", "5": "17196", "6": "17196", "8": "17197", "9": "17198", "10": "17198"},
+
+  "brazos_proyectante": {
+    "_nota": "Límites de la ficha (capítulo 3). Apertura horizontal = bisagra arriba (proyectante típica).",
+    "apertura_horizontal": [
+      {"codigo": "17491", "descripcion": "Brazo proyectante 8\" (par)",  "peso_max_kg": 12, "ancho_max_mm": 1200, "alto_max_mm": 400},
+      {"codigo": "18096", "descripcion": "Brazo proyectante 10\" (par)", "peso_max_kg": 14, "ancho_max_mm": 1200, "alto_max_mm": 450},
+      {"codigo": "17086", "descripcion": "Brazo proyectante 12\" (par)", "peso_max_kg": 16, "ancho_max_mm": 1200, "alto_max_mm": 550},
+      {"codigo": "17116", "descripcion": "Brazo proyectante 16\" (par)", "peso_max_kg": 18, "ancho_max_mm": 1200, "alto_max_mm": 750}
+    ]
+  },
+
+  "configuraciones": {
+    "proyectante_X": {
+      "nombre": "Ventana proyectante X",
+      "perfiles": [
+        {"ref": "11111034", "descripcion": "Marco tubular horizontal", "cant": 2, "formula": "A"},
+        {"ref": "11111034", "descripcion": "Marco tubular vertical", "cant": 2, "formula": "H"},
+        {"ref": "11122016", "descripcion": "Nave horizontal", "cant": 2, "formula": "A - 20"},
+        {"ref": "11122016", "descripcion": "Nave vertical", "cant": 2, "formula": "H - 20"}
+      ],
+      "vidrios": [
+        {"seccion": "nave", "ancho": "A - 112", "alto": "H - 112", "cant": 1}
+      ],
+      "nave": {"ancho": "A - 20", "alto": "H - 20"},
+      "accesorios": [
+        {"ref": "09447", "descripcion": "Escuadra fundida de botones", "cant": "8"},
+        {"ref": "09333", "descripcion": "Escuadra de alineación 4,8x20mm", "cant": "4"},
+        {"ref": "17123/17125", "descripcion": "Manija proyectante recibidor integrado (der/izq)", "cant": "1"},
+        {"ref": "BRAZO", "descripcion": "Brazo proyectante (par), según tabla de brazos", "cant": "1"},
+        {"ref": "044207", "descripcion": "Tornillo #8 x 1/2\" PP inox", "cant": "6"},
+        {"ref": "04551", "descripcion": "Remache pop 6-4", "cant": "2"},
+        {"ref": "03387", "descripcion": "Tornillo #8 x 1/2\" AV inox", "cant": "2"},
+        {"ref": "17191", "descripcion": "Empaque coextruido tubular (mm)", "cant": "4*A + 4*H"},
+        {"ref": "EMPAQUE_U", "descripcion": "Empaque U para vidrio (mm), según espesor", "cant": "2*A + 2*H"}
+      ],
+      "tabla_presion": null,
+      "_nota_tabla": "La ficha no trae tabla de presión para la proyectante sola; trae la combinación proyectante + fijo (XO). Mientras Ingeniería no confirme otra cosa, se verifica con la tabla XO usando el ancho de nave."
+    },
+
+    "fijo_O": {
+      "nombre": "Cuerpo fijo O",
+      "perfiles": [
+        {"ref": "11113036", "descripcion": "Marco fijo tubular horizontal", "cant": 2, "formula": "A"},
+        {"ref": "11113036", "descripcion": "Marco fijo tubular vertical", "cant": 2, "formula": "H"},
+        {"ref": "11141016", "descripcion": "Pisavidrio horizontal", "cant": 2, "formula": "A - 42"},
+        {"ref": "11141016", "descripcion": "Pisavidrio vertical", "cant": 2, "formula": "H - 72"}
+      ],
+      "vidrios": [
+        {"seccion": "fijo", "ancho": "A - 52", "alto": "H - 52", "cant": 1}
+      ],
+      "accesorios": [
+        {"ref": "09447", "descripcion": "Escuadra fundida de botones", "cant": "4"},
+        {"ref": "213001", "descripcion": "Drenaje deflector negro", "cant": "2"},
+        {"ref": "09346", "descripcion": "Calzo plástico 1mm", "cant": "3"},
+        {"ref": "09347", "descripcion": "Calzo plástico 2mm", "cant": "3"},
+        {"ref": "09348", "descripcion": "Calzo plástico 6mm", "cant": "2"},
+        {"ref": "CUNA_FIJO", "descripcion": "Empaque cuña fijo (mm)", "cant": "2*A + 2*H"},
+        {"ref": "CUNA_MOVIL", "descripcion": "Empaque cuña móvil (mm)", "cant": "2*A + 2*H"}
+      ],
+      "tabla_presion": null
+    },
+
+    "fijo_OO": {
+      "nombre": "Cuerpo fijo OO con divisor vertical",
+      "perfiles": [
+        {"ref": "11113036", "descripcion": "Marco fijo tubular horizontal", "cant": 2, "formula": "A"},
+        {"ref": "11113036", "descripcion": "Marco fijo tubular vertical", "cant": 2, "formula": "H"},
+        {"ref": "11133080", "descripcion": "Divisor ancho", "cant": 1, "formula": "H - 32"},
+        {"ref": "11141016", "descripcion": "Pisavidrio horizontal", "cant": 4, "formula": "A/2 - 46"},
+        {"ref": "11141016", "descripcion": "Pisavidrio vertical", "cant": 4, "formula": "H - 72"}
+      ],
+      "vidrios": [
+        {"seccion": "fijo", "ancho": "A/2 - 56", "alto": "H - 52", "cant": 2}
+      ],
+      "accesorios": [
+        {"ref": "09447", "descripcion": "Escuadra fundida de botones", "cant": "4"},
+        {"ref": "213001", "descripcion": "Drenaje deflector negro", "cant": "4"},
+        {"ref": "232003", "descripcion": "Soporte divisor grande serie 35", "cant": "2"},
+        {"ref": "09346", "descripcion": "Calzo plástico 1mm", "cant": "6"},
+        {"ref": "09347", "descripcion": "Calzo plástico 2mm", "cant": "6"},
+        {"ref": "09348", "descripcion": "Calzo plástico 6mm", "cant": "4"},
+        {"ref": "CUNA_FIJO", "descripcion": "Empaque cuña fijo (mm)", "cant": "2*A + 4*H"},
+        {"ref": "CUNA_MOVIL", "descripcion": "Empaque cuña móvil (mm)", "cant": "2*A + 4*H"}
+      ],
+      "tabla_presion": {
+        "descripcion": "Cuerpo fijo con divisor vertical: presión resistente kg/m2",
+        "eje_columnas": "A ancho del módulo (m)",
+        "eje_filas": "H altura del cuerpo fijo (m)",
+        "columnas_m": [0.80, 0.90, 1.00, 1.10, 1.20, 1.30, 1.40, 1.50, 1.60, 1.70, 1.80, 1.90, 2.00],
+        "filas": {
+          "0.80": [672, 672, 672, 672, 672, 672, 672, 672, 672, 672, 672, 672, 672],
+          "0.90": [427, 419, 419, 419, 419, 419, 419, 419, 419, 419, 419, 419, 419],
+          "1.00": [290, 279, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275],
+          "1.10": [207, 196, 190, 188, 188, 188, 188, 188, 188, 188, 188, 188, 188],
+          "1.20": [154, 144, 138, 134, 133, 133, 133, 133, 133, 133, 133, 133, 133],
+          "1.30": [117, 109, 103, 99, 97, 96, 96, 96, 96, 96, 96, 96, 96],
+          "1.40": [92, 85, 80, 76, 74, 72, 72, 72, 72, 72, 72, 72, 72],
+          "1.50": [74, 67, 63, 60, 57, 56, 55, 54, 54, 54, 54, 54, 54],
+          "1.60": [60, 55, 51, 48, 46, 44, 43, 42, 42, 42, 42, 42, 42],
+          "1.70": [49, 45, 41, 39, null, null, null, null, null, null, null, null, null],
+          "1.80": [41, null, null, null, null, null, null, null, null, null, null, null, null]
+        }
+      }
+    },
+
+    "proyectante_XO": {
+      "nombre": "Proyectante + cuerpo fijo, unión por mullion (XO / OX)",
+      "perfiles": [
+        {"ref": "11111034", "descripcion": "Marco tubular horizontal", "cant": 2, "formula": "B"},
+        {"ref": "11111034", "descripcion": "Marco tubular vertical", "cant": 2, "formula": "H"},
+        {"ref": "11122016", "descripcion": "Nave horizontal", "cant": 2, "formula": "B - 20"},
+        {"ref": "11122016", "descripcion": "Nave vertical", "cant": 2, "formula": "H - 20"},
+        {"ref": "11113036", "descripcion": "Marco fijo tubular horizontal", "cant": 2, "formula": "C"},
+        {"ref": "11113036", "descripcion": "Marco fijo tubular vertical", "cant": 2, "formula": "H"},
+        {"ref": "11141016", "descripcion": "Pisavidrio horizontal", "cant": 2, "formula": "C - 42"},
+        {"ref": "11141016", "descripcion": "Pisavidrio vertical", "cant": 2, "formula": "H - 72"},
+        {"ref": "00181033", "descripcion": "Mullion", "cant": 1, "formula": "H"}
+      ],
+      "vidrios": [
+        {"seccion": "nave", "ancho": "B - 112", "alto": "H - 112", "cant": 1},
+        {"seccion": "fijo", "ancho": "C - 52", "alto": "H - 52", "cant": 1}
+      ],
+      "nave": {"ancho": "B - 20", "alto": "H - 20"},
+      "accesorios": [
+        {"ref": "09447", "descripcion": "Escuadra fundida de botones", "cant": "12"},
+        {"ref": "09333", "descripcion": "Escuadra de alineación 4,8x20mm", "cant": "4"},
+        {"ref": "17123/17125", "descripcion": "Manija proyectante recibidor integrado (der/izq)", "cant": "1"},
+        {"ref": "BRAZO", "descripcion": "Brazo proyectante (par), según tabla de brazos", "cant": "1"},
+        {"ref": "100327", "descripcion": "Tornillo #8 x 1\" autoperforante AV inox", "cant": "H/100"},
+        {"ref": "044207", "descripcion": "Tornillo #8 x 1/2\" PP inox", "cant": "6"},
+        {"ref": "04551", "descripcion": "Remache pop 6-4", "cant": "2"},
+        {"ref": "03387", "descripcion": "Tornillo #8 x 1/2\" AV inox", "cant": "2"},
+        {"ref": "09346", "descripcion": "Calzo plástico 1mm", "cant": "3"},
+        {"ref": "09347", "descripcion": "Calzo plástico 2mm", "cant": "3"},
+        {"ref": "09348", "descripcion": "Calzo plástico 6mm", "cant": "2"},
+        {"ref": "17191", "descripcion": "Empaque coextruido tubular (mm)", "cant": "4*B + 4*H"},
+        {"ref": "EMPAQUE_U", "descripcion": "Empaque U para vidrio (mm), según espesor", "cant": "2*B + 2*H"},
+        {"ref": "CUNA_FIJO", "descripcion": "Empaque cuña fijo (mm)", "cant": "2*C + 2*H"},
+        {"ref": "CUNA_MOVIL", "descripcion": "Empaque cuña móvil (mm)", "cant": "2*C + 2*H"}
+      ],
+      "tabla_presion": {
+        "descripcion": "Proyectante + cuerpo fijo unión por mullion: presión resistente kg/m2",
+        "eje_columnas": "Ancho de nave (m), corresponde a B",
+        "eje_filas": "H altura de la ventana (m)",
+        "columnas_m": [0.80, 0.90, 1.00, 1.10, 1.20, 1.30, 1.40, 1.50, 1.60, 1.70, 1.80, 1.90, 2.00],
+        "filas": {
+          "1.00": [560, 540, 532, 532, 532, 532, 532, 532, 532, 532, 532, 532, 532],
+          "1.10": [401, 379, 368, 364, 364, 364, 364, 364, 364, 364, 364, 364, 364],
+          "1.20": [298, 279, 266, 260, 257, 257, 257, 257, 257, 257, 257, 257, 257],
+          "1.30": [227, 211, 200, 192, 188, 186, 186, 186, 186, 186, 186, 186, 186],
+          "1.40": [178, 164, 154, 147, 143, 140, 139, 139, 139, 139, 139, 139, 139],
+          "1.50": [142, 130, 122, 116, 111, 108, 106, 105, 105, 105, 105, 105, 105],
+          "1.60": [116, 106, 98, 92, 88, 85, 83, 82, 81, 81, 81, 81, 81],
+          "1.70": [95, 87, 80, 75, 72, 69, 66, 65, 64, 64, 64, 64, 64],
+          "1.80": [79, 72, 67, 62, 59, 56, 54, 53, 52, 51, 51, 51, 51],
+          "1.90": [67, 61, 56, 52, 49, 47, 45, 43, 42, 42, 41, 41, 41],
+          "2.00": [57, 52, 47, 44, 41, 39, null, null, null, null, null, null, null]
+        }
+      }
+    }
+  },
+
+  "pendientes": [
+    "Peso del aluminio por metro (kg/m) de cada perfil: no viene en la ficha; se necesita para costeo y peso de la nave.",
+    "Tablas de presión de puerta batiente XX y O/X: el texto extraído está desordenado; se cargan tras verificación visual.",
+    "Confirmar si la tabla XO aplica a la proyectante sola (X).",
+    "Confirmar el significado de las celdas vacías de las tablas (configuración no admisible o presión menor a la publicada)."
+  ]
+}

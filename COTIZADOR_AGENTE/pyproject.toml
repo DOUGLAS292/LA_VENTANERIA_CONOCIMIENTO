@@ -1,0 +1,22 @@
+[project]
+name = "cotizador-agente"
+version = "0.1.0"
+description = "Agente cotizador de sistemas vidriados de La Ventanería"
+requires-python = ">=3.10"
+dependencies = ["anthropic>=1.0", "pydantic>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cotizador_agente = ["datos/*.json", "datos/sistemas/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
