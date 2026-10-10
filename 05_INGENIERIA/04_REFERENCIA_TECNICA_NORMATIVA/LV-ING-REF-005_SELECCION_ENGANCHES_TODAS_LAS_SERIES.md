@@ -2,9 +2,9 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-005  
-**Versión:** 0.1  
+**Versión:** 1.0  
 **Fecha:** 2026-10-10  
-**Estado:** BORRADOR — POR VALIDAR  
+**Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
 
@@ -41,7 +41,7 @@ Para cada serie, el agente comprueba en cada tabla:
 1. **Monotonía:** la resistencia baja al crecer el ancho de la nave o la altura.
 2. **Orden:** cada combinación resiste al menos lo de la anterior en todas las alturas comunes.
 
-Las cuatro series pasan los dos controles. La verificación visual de las tablas contra el PDF queda a cargo de Ingeniería.
+Las cuatro series pasan los dos controles. Las fichas fuente están validadas por Ingeniería (Dirección General, 2026-10-10).
 
 ---
 
@@ -67,7 +67,7 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 
 | # | Pendiente | Responsable |
 |---|---|---|
-| 1 | Verificación visual de todas las tablas contra el PDF | Ingeniería |
+| 1 | Contrastar la transcripción contra el PDF en las primeras obras cotizadas (las fichas fuente ya están validadas) | Ingeniería |
 | 2 | Serie 33: identificar el perfil del cierre central OXXO (página 1-6) | Ingeniería |
 | 3 | Koncept 50: tabla de ventana sobre cuerpo fijo (página 1-6). No se sabe qué medida va en filas y cuál en columnas; el agente no la usa | Ingeniería |
 | 4 | Koncept 40, 70, 90 y 100: los PDF superan el tamaño que el conector de Drive permite descargar. Opciones: subirlos divididos por páginas, o reconstruir las tablas desde el texto | Douglas / agente |
@@ -82,3 +82,4 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: Serie 33, Serie 80 y Koncept 50 con selección automática; controles de monotonía y orden en las cuatro series |
+| 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |

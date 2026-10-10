@@ -2,9 +2,9 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-001  
-**Versión:** 0.2  
+**Versión:** 1.0  
 **Fecha:** 2026-10-10  
-**Estado:** BORRADOR — POR VALIDAR  
+**Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
 
@@ -118,3 +118,4 @@ Ejemplo de la tabla K.4.2-2 (recocido, áreas máximas en m²):
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: extracción del capítulo K.4 para el agente cotizador |
 | 0.2 | 2026-10-10 | Título B cargado; cálculo de viento documentado en LV-ING-REF-003 |
+| 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |

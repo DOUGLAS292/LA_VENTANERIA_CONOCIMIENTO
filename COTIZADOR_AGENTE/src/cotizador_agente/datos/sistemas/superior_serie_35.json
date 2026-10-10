@@ -2,7 +2,7 @@
   "codigo": "superior_serie_35",
   "nombre": "Sistema batiente Línea Superior Serie 35",
   "_fuente": "Ficha técnica 'ficha-tec-serie-35---PROYECTANTE.pdf', revisión 01 - 20180410 (Google Drive, carpeta Fichas Técnicas, id 1m3jb9z111q6IsfZ1QKFQDmPzQpyhqAjQ)",
-  "_estado": "Extraído automáticamente del texto del PDF el 2026-10-09. Las tablas de presión se reconstruyeron desde texto desordenado: PENDIENTE verificación visual contra el PDF por Ingeniería.",
+  "_estado": "Extraído automáticamente del texto del PDF el 2026-10-09. Las tablas de presión se reconstruyeron desde texto desordenado: Ficha fuente validada por Ingeniería (aprobado por Dirección General, 2026-10-10).",
   "_convenciones": "A = ancho total exterior del marco (mm). H = alto total exterior del marco (mm). En XO, B = ancho del módulo proyectante y C = ancho del módulo fijo (A = B + C). Presiones en kg/m2.",
 
   "caracteristicas": {

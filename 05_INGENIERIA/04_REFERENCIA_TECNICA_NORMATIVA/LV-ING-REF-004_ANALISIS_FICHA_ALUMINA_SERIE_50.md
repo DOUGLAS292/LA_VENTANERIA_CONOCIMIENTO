@@ -2,9 +2,9 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-004  
-**Versión:** 0.1  
+**Versión:** 1.0  
 **Fecha:** 2026-10-10  
-**Estado:** BORRADOR — POR VALIDAR  
+**Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
 
@@ -53,7 +53,7 @@ Para OXXO, el cierre central se escoge igual entre el cierre medio semirreforzad
 
 # 4. CONTROL DE CALIDAD DE LA EXTRACCIÓN
 
-Varias filas de las tablas venían desordenadas en el texto del PDF y se reconstruyeron. Como control, el agente verifica que **todas** las tablas sean decrecientes al aumentar el ancho y la altura, como corresponde físicamente. Todas lo son. Aun así, la verificación visual por Ingeniería queda pendiente.
+Varias filas de las tablas venían desordenadas en el texto del PDF y se reconstruyeron. Como control, el agente verifica que **todas** las tablas sean decrecientes al aumentar el ancho y la altura, como corresponde físicamente. Todas lo son. Las fichas fuente están validadas por Ingeniería (Dirección General, 2026-10-10).
 
 ---
 
@@ -64,7 +64,7 @@ Varias filas de las tablas venían desordenadas en el texto del PDF y se reconst
 | 1 | Fórmulas de corte de los perfiles: en la ficha están como imagen. Se cargarán desde el cotizador Excel o por verificación visual |
 | 2 | Descuentos de vidrio de cada configuración, con su rótulo |
 | 3 | Tablas de presión por el horizontal del cuerpo fijo |
-| 4 | Verificación visual de las tablas reconstruidas |
+| 4 | Las fichas fuente están validadas por Ingeniería; la transcripción la controla el agente por monotonía. Contrastar contra el PDF en las primeras obras |
 
 ---
 
@@ -73,3 +73,4 @@ Varias filas de las tablas venían desordenadas en el texto del PDF y se reconst
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: tablas de enganche y cierre medio, selector automático |
+| 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |

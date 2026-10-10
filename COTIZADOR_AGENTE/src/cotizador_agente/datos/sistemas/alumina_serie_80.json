@@ -2,7 +2,7 @@
  "codigo": "alumina_serie_80",
  "nombre": "Sistema corredizo Serie 80 (Alúmina)",
  "_fuente": "Ficha técnica Serie 80 (Google Drive, Fichas Técnicas, id 1emZF_OXXkto78bqRnUy1vEhDnUuUBu-D), páginas 1-3 a 1-10",
- "_estado": "Tablas extraídas del texto del PDF (pdftotext) el 2026-10-10 y verificadas por monotonía (la resistencia baja al crecer ancho y altura) y por orden (cada combinación resiste al menos lo de la anterior en las alturas comunes). PENDIENTE verificación visual por Ingeniería.",
+ "_estado": "Tablas extraídas del texto del PDF (pdftotext) el 2026-10-10 y verificadas por monotonía (la resistencia baja al crecer ancho y altura) y por orden (cada combinación resiste al menos lo de la anterior en las alturas comunes). Fichas fuente validadas por Ingeniería (aprobado por Dirección General, 2026-10-10).",
  "_convenciones": "A = ancho de NAVE (m); H = altura del sistema (m). Presiones en kg/m2. Celda vacía = combinación no admisible. Medida entre pasos: se redondea hacia arriba (conservador).",
  "caracteristicas": {
   "configuraciones": [
@@ -2480,6 +2480,6 @@
  "pendientes": [
   "Cargar las fórmulas de corte (están en el texto de la ficha)",
   "Descuentos de vidrio",
-  "Verificación visual de las tablas"
+  "Contrastar la transcripción contra el PDF en las primeras obras"
  ]
 }

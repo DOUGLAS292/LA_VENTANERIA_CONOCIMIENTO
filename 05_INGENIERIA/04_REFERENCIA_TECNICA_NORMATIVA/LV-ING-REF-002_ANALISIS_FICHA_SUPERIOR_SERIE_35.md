@@ -2,9 +2,9 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-002  
-**Versión:** 0.2  
+**Versión:** 1.0  
 **Fecha:** 2026-10-10  
-**Estado:** BORRADOR — POR VALIDAR  
+**Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
 
@@ -106,3 +106,4 @@ Ventana XO de 1600 × 1200 mm (nave 800 + fijo 800), vidrio crudo de 5 mm y pres
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: análisis de la ficha y carga de datos para el agente |
 | 0.2 | 2026-10-10 | Pesos de perfiles cargados; peso de nave con vidrio y aluminio |
+| 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |

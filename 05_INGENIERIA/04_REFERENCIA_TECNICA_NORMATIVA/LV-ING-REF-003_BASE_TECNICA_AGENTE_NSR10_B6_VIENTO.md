@@ -2,9 +2,9 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-003  
-**Versión:** 0.3  
+**Versión:** 1.0  
 **Fecha:** 2026-10-10  
-**Estado:** BORRADOR — POR VALIDAR  
+**Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
 
@@ -159,3 +159,4 @@ Fuente: `Buga-Tabla de restricciones -744-R00.pdf` (Grupo Alúmina, "presiones d
 | 0.1 | 2026-10-10 | Creación a partir del Título B de la NSR-10 cargado en Drive |
 | 0.3 | 2026-10-10 | Cobertura nacional: región máxima por departamento y capitales en zona no estudiada |
 | 0.2 | 2026-10-10 | Exposición C por defecto, mínimo 0.40 kN/m² en Método 2 y validación contra la tabla Alúmina VC744 |
+| 1.0 | 2026-10-10 | Aprobado por Dirección General: fichas y normas fuente validadas por Ingeniería |

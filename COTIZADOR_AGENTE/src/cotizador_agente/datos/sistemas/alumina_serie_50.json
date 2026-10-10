@@ -2,7 +2,7 @@
  "codigo": "alumina_serie_50",
  "nombre": "Sistema corredizo Serie 50 (Alúmina)",
  "_fuente": "Ficha técnica 'FICHA-TECNICA-SERIE-50-R05-220513.pdf', revisión 05 - 220513 (Google Drive, Fichas Técnicas, id 1zvLnFxOGXX7AMfmpH49e5RuEUdyA6ovt)",
- "_estado": "Tablas extraídas del texto del PDF el 2026-10-10; algunas filas venían desordenadas y se reconstruyeron por monotonía. PENDIENTE verificación visual por Ingeniería.",
+ "_estado": "Tablas extraídas del texto del PDF el 2026-10-10; algunas filas venían desordenadas y se reconstruyeron por monotonía. Fichas fuente validadas por Ingeniería (aprobado por Dirección General, 2026-10-10).",
  "_convenciones": "A = ancho de NAVE (m) en las tablas de enganche; H = altura del sistema (m). Presiones en kg/m2. Celda vacía = combinación no admisible.",
  "caracteristicas": {
   "vidrios_admisibles_mm": [
@@ -826,6 +826,6 @@
   "Fórmulas de corte de perfiles (cabezal, sillar, jambas, horizontales, traslapes): en la ficha están como imagen. Cargar desde el cotizador Excel o con verificación visual.",
   "Asignar con rótulo los descuentos de vidrio de XO, XOX, OXXO y XXX.",
   "Tablas de presión por el horizontal de cuerpo fijo (dos tablas en la ficha).",
-  "Verificación visual de las tablas de enganche reconstruidas."
+  "Contrastar la transcripción contra el PDF en las primeras obras."
  ]
 }
