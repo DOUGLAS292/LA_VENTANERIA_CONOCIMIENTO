@@ -92,14 +92,14 @@ En zona de transición se usa la exposición más desfavorable.
 
 El cotizador Excel actual usa **región 3 y presión requerida de 40 kg/m²**. Para una casa baja en región 3, exposición B, ventana de 1 m² en zona interior, el agente obtiene: pnet10 = 0.36 kN/m², que sube al mínimo de 0.40 kN/m² ≈ **40.8 kg/m²**. **Coincide con el Excel.**
 
-Ejemplos con una ventana de 1.5 m² en zona de esquina:
+Ejemplos con una ventana de 1.5 m² en zona de esquina y exposición C (valores por defecto del agente):
 
 | Ciudad | Altura del edificio | Región | Presión de diseño |
 |---|---|---|---|
-| Cali | 6 m | 3 | ≈ 46 kg/m² |
-| Bogotá | 12 m | 3 | ≈ 50 kg/m² |
-| Barranquilla | 30 m | 5 | ≈ 134 kg/m² |
-| Medellín | 60 m | 4 | ≈ 137 kg/m² |
+| Cali | 6 m | 3 | ≈ 59 kg/m² |
+| Bogotá | 12 m | 3 | ≈ 68 kg/m² |
+| Barranquilla | 30 m | 5 | ≈ 171 kg/m² |
+| Medellín | 60 m | 4 | ≈ 167 kg/m² |
 
 ---
 
