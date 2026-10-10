@@ -1,0 +1,620 @@
+{
+  "_fuente": "NSR-10 Título B, Capítulo B.6 (PDF '2titulo-b-nsr-100 (1).pdf', Google Drive de La Ventanería, id 1P7u7vculC8Ps1GcHE9sia68oNj6KeNnI)",
+  "_estado": "Tablas extraídas del texto del PDF y figuras leídas visualmente el 2026-10-10. PENDIENTE verificación por Ingeniería.",
+  "_unidades": "Velocidades en m/s, alturas en m, áreas en m2, presiones en kN/m2.",
+  "regiones": {
+    "_fuente": "Figura B.6.4-1, Zonas de amenaza eólica - velocidad del viento básico (ráfaga de 3 s a 10 m, exposición C)",
+    "1": {
+      "V_ms": 17,
+      "V_kmh": 60
+    },
+    "2": {
+      "V_ms": 22,
+      "V_kmh": 80
+    },
+    "3": {
+      "V_ms": 28,
+      "V_kmh": 100
+    },
+    "4": {
+      "V_ms": 33,
+      "V_kmh": 120
+    },
+    "5": {
+      "V_ms": 36,
+      "V_kmh": 130
+    },
+    "_zonas_no_estudiadas": "Nota de la figura: zonas no estudiadas (Amazonía y Orinoquía sur) se calculan con 28 m/s (100 km/h)."
+  },
+  "ciudades": {
+    "_estado": "LECTURA VISUAL PRELIMINAR del mapa a escala nacional. Las ciudades sobre o cerca de una frontera de región se asignan a la región MAYOR (criterio conservador). Ingeniería debe confirmar cada ciudad antes de uso comercial.",
+    "_lectura": "clara = la ciudad está dentro de la región; frontera = está sobre o junto a la línea y se tomó la región mayor.",
+    "barranquilla": {
+      "region": 5,
+      "lectura": "clara"
+    },
+    "cartagena": {
+      "region": 5,
+      "lectura": "frontera"
+    },
+    "santa marta": {
+      "region": 5,
+      "lectura": "frontera"
+    },
+    "san andres": {
+      "region": 5,
+      "lectura": "clara"
+    },
+    "riohacha": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "valledupar": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "sincelejo": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "monteria": {
+      "region": 3,
+      "lectura": "clara"
+    },
+    "cucuta": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "bucaramanga": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "medellin": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "quibdo": {
+      "region": 1,
+      "lectura": "clara"
+    },
+    "manizales": {
+      "region": 2,
+      "lectura": "frontera"
+    },
+    "pereira": {
+      "region": 2,
+      "lectura": "frontera"
+    },
+    "armenia": {
+      "region": 2,
+      "lectura": "frontera"
+    },
+    "ibague": {
+      "region": 3,
+      "lectura": "clara"
+    },
+    "bogota": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "tunja": {
+      "region": 2,
+      "lectura": "frontera"
+    },
+    "villavicencio": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "yopal": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "cali": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "neiva": {
+      "region": 4,
+      "lectura": "frontera"
+    },
+    "popayan": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "pasto": {
+      "region": 3,
+      "lectura": "clara"
+    },
+    "florencia": {
+      "region": 3,
+      "lectura": "frontera"
+    },
+    "arauca": {
+      "region": 3,
+      "lectura": "clara"
+    },
+    "leticia": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "mitu": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "puerto carreno": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "inirida": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "puerto inirida": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "san jose del guaviare": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    },
+    "mocoa": {
+      "region": 3,
+      "lectura": "zona no estudiada (nota de la figura: 28 m/s)"
+    }
+  },
+  "importancia_I": {
+    "_fuente": "Tabla B.6.5-1, regiones no propensas a huracanes. Grupo de uso según A.2.5.",
+    "I": 0.87,
+    "II": 1.0,
+    "III": 1.15,
+    "IV": 1.15
+  },
+  "metodo_1_componentes": {
+    "_fuente": "B.6.4.2.2 y Figura B.6.4-3: pnet = lambda * Kzt * I * pnet10. Aplica a edificios cerrados, regulares, con h <= 18 m.",
+    "presion_minima": 0.4,
+    "_zonas_muro": "Zona 4 = interior del muro; Zona 5 = franjas de esquina de ancho a (10% de la menor dimensión horizontal o 0.4h, la menor; no menos de 4% ni de 0.9 m).",
+    "areas_m2": [
+      1,
+      2,
+      5,
+      10,
+      50
+    ],
+    "pnet10": {
+      "_formato": "Para cada zona y velocidad: lista por área de pares [positiva, negativa].",
+      "4": {
+        "17": [
+          [
+            0.12,
+            -0.13
+          ],
+          [
+            0.11,
+            -0.12
+          ],
+          [
+            0.11,
+            -0.12
+          ],
+          [
+            0.1,
+            -0.11
+          ],
+          [
+            0.09,
+            -0.1
+          ]
+        ],
+        "22": [
+          [
+            0.21,
+            -0.23
+          ],
+          [
+            0.2,
+            -0.22
+          ],
+          [
+            0.19,
+            -0.21
+          ],
+          [
+            0.18,
+            -0.2
+          ],
+          [
+            0.16,
+            -0.18
+          ]
+        ],
+        "28": [
+          [
+            0.33,
+            -0.36
+          ],
+          [
+            0.32,
+            -0.35
+          ],
+          [
+            0.3,
+            -0.32
+          ],
+          [
+            0.28,
+            -0.31
+          ],
+          [
+            0.25,
+            -0.28
+          ]
+        ],
+        "33": [
+          [
+            0.48,
+            -0.52
+          ],
+          [
+            0.46,
+            -0.5
+          ],
+          [
+            0.43,
+            -0.47
+          ],
+          [
+            0.41,
+            -0.45
+          ],
+          [
+            0.36,
+            -0.4
+          ]
+        ],
+        "36": [
+          [
+            0.56,
+            -0.61
+          ],
+          [
+            0.54,
+            -0.58
+          ],
+          [
+            0.5,
+            -0.55
+          ],
+          [
+            0.48,
+            -0.53
+          ],
+          [
+            0.42,
+            -0.47
+          ]
+        ]
+      },
+      "5": {
+        "17": [
+          [
+            0.12,
+            -0.16
+          ],
+          [
+            0.11,
+            -0.15
+          ],
+          [
+            0.11,
+            -0.14
+          ],
+          [
+            0.1,
+            -0.12
+          ],
+          [
+            0.09,
+            -0.1
+          ]
+        ],
+        "22": [
+          [
+            0.21,
+            -0.28
+          ],
+          [
+            0.2,
+            -0.27
+          ],
+          [
+            0.19,
+            -0.24
+          ],
+          [
+            0.18,
+            -0.22
+          ],
+          [
+            0.16,
+            -0.18
+          ]
+        ],
+        "28": [
+          [
+            0.33,
+            -0.45
+          ],
+          [
+            0.32,
+            -0.41
+          ],
+          [
+            0.3,
+            -0.38
+          ],
+          [
+            0.28,
+            -0.35
+          ],
+          [
+            0.25,
+            -0.28
+          ]
+        ],
+        "33": [
+          [
+            0.48,
+            -0.64
+          ],
+          [
+            0.46,
+            -0.6
+          ],
+          [
+            0.43,
+            -0.54
+          ],
+          [
+            0.41,
+            -0.5
+          ],
+          [
+            0.36,
+            -0.4
+          ]
+        ],
+        "36": [
+          [
+            0.56,
+            -0.75
+          ],
+          [
+            0.54,
+            -0.7
+          ],
+          [
+            0.5,
+            -0.64
+          ],
+          [
+            0.48,
+            -0.58
+          ],
+          [
+            0.42,
+            -0.47
+          ]
+        ]
+      }
+    },
+    "lambda": {
+      "_fuente": "Figura B.6.4-2 (continuación), factor de ajuste por altura y exposición",
+      "alturas_m": [
+        4.5,
+        6.0,
+        7.5,
+        9.0,
+        10.5,
+        12.0,
+        13.5,
+        15.0,
+        16.5,
+        18.0
+      ],
+      "B": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.05,
+        1.09,
+        1.12,
+        1.16,
+        1.19,
+        1.22
+      ],
+      "C": [
+        1.21,
+        1.29,
+        1.35,
+        1.4,
+        1.45,
+        1.49,
+        1.53,
+        1.56,
+        1.59,
+        1.62
+      ],
+      "D": [
+        1.47,
+        1.55,
+        1.61,
+        1.66,
+        1.7,
+        1.74,
+        1.78,
+        1.81,
+        1.84,
+        1.87
+      ]
+    }
+  },
+  "metodo_2_componentes_h_mayor_18": {
+    "_fuente": "B.6.5.10 (qz = 0.613 Kz Kzt Kd V^2 I, en N/m2) y B.6.5.12.4.2 (p = q GCp - qi GCpi). GCp de la Figura B.6.5-14, GCpi de la Figura B.6.5-2.",
+    "Kd": 0.85,
+    "GCpi_cerrado": 0.18,
+    "Kz_caso1": {
+      "_fuente": "Tabla B.6.5-3, caso 1 (componentes y recubrimientos). En exposición B, z no menor de 9.0 m. Se permite interpolación lineal.",
+      "_verificar": "El valor de exposición C a 36.5 m (1.36) es igual al de 42.5 m en el PDF; confirmar.",
+      "alturas_m": [
+        4.5,
+        6.0,
+        7.5,
+        9.0,
+        12.0,
+        15.0,
+        18.0,
+        20.0,
+        24.5,
+        27.5,
+        30.5,
+        36.5,
+        42.5,
+        49.0,
+        55.0,
+        60.0,
+        76.0,
+        90.0,
+        107.0,
+        122.0,
+        137.0,
+        152.0
+      ],
+      "B": [
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.76,
+        0.81,
+        0.85,
+        0.89,
+        0.93,
+        0.96,
+        0.99,
+        1.04,
+        1.09,
+        1.13,
+        1.17,
+        1.2,
+        1.28,
+        1.35,
+        1.41,
+        1.47,
+        1.52,
+        1.56
+      ],
+      "C": [
+        0.85,
+        0.9,
+        0.94,
+        0.98,
+        1.04,
+        1.09,
+        1.13,
+        1.17,
+        1.21,
+        1.24,
+        1.26,
+        1.36,
+        1.36,
+        1.39,
+        1.43,
+        1.46,
+        1.53,
+        1.59,
+        1.64,
+        1.69,
+        1.73,
+        1.77
+      ],
+      "D": [
+        1.03,
+        1.08,
+        1.12,
+        1.16,
+        1.22,
+        1.27,
+        1.31,
+        1.34,
+        1.38,
+        1.4,
+        1.43,
+        1.52,
+        1.52,
+        1.55,
+        1.58,
+        1.61,
+        1.68,
+        1.73,
+        1.78,
+        1.82,
+        1.86,
+        1.89
+      ]
+    },
+    "GCp_muros": {
+      "_fuente": "Figura B.6.5-14, LECTURA VISUAL del gráfico: valor constante hasta 2 m2, variación logarítmica hasta 50 m2, constante después.",
+      "area_min_m2": 2,
+      "area_max_m2": 50,
+      "positivo_4_5": [
+        0.9,
+        0.6
+      ],
+      "negativo_4": [
+        -0.9,
+        -0.7
+      ],
+      "negativo_5": [
+        -1.8,
+        -1.0
+      ]
+    }
+  },
+  "departamentos": {
+    "_estado": "Región MÁXIMA que el mapa (figura B.6.4-1) muestra dentro de cada departamento, por lectura visual. Se usa para cualquier municipio que no esté en la tabla de ciudades: criterio conservador. Ingeniería puede refinar municipio por municipio.",
+    "amazonas": 3,
+    "antioquia": 4,
+    "arauca": 3,
+    "atlantico": 5,
+    "bolivar": 5,
+    "boyaca": 3,
+    "caldas": 3,
+    "caqueta": 4,
+    "casanare": 4,
+    "cauca": 3,
+    "cesar": 4,
+    "choco": 2,
+    "cordoba": 4,
+    "cundinamarca": 4,
+    "guainia": 3,
+    "guaviare": 3,
+    "huila": 4,
+    "la guajira": 4,
+    "magdalena": 5,
+    "meta": 4,
+    "narino": 3,
+    "norte de santander": 3,
+    "putumayo": 3,
+    "quindio": 3,
+    "risaralda": 3,
+    "san andres y providencia": 5,
+    "santander": 3,
+    "sucre": 4,
+    "tolima": 4,
+    "valle del cauca": 3,
+    "vaupes": 3,
+    "vichada": 3,
+    "bogota d.c.": 3
+  }
+}
