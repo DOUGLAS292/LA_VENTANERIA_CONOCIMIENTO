@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-002  
-**Versión:** 0.1  
+**Versión:** 0.2  
 **Fecha:** 2026-10-10  
 **Estado:** BORRADOR — POR VALIDAR  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -70,7 +70,7 @@ También están cargados el **fijo OO con divisor** y la **proyectante + fijo XO
 | 12" (17086) | 16 kg | 1200 mm | 550 mm |
 | 16" (17116) | 18 kg | 1200 mm | 750 mm |
 
-**Consecuencia:** con apertura horizontal, una nave proyectante de Serie 35 **no puede pasar de 1200 × 750 mm ni de 18 kg**. Con vidrio de 5 mm (12.5 kg/m²), una nave de 1200 × 750 mm ya pesa unos 11 kg solo en vidrio, más el aluminio.
+**Consecuencia:** con apertura horizontal, una nave proyectante de Serie 35 **no puede pasar de 1200 × 750 mm ni de 18 kg**. Ejemplo calculado por el agente para una ventana de 1200 × 750 mm (nave de 1180 × 730): con vidrio de 8 mm pesa 16.4 kg (13.9 de vidrio y 2.5 de aluminio), así que el brazo de 16" sirve; con vidrio de 10 mm pesa 19.9 kg y **ningún brazo sirve**.
 
 ---
 
@@ -79,7 +79,7 @@ También están cargados el **fijo OO con divisor** y la **proyectante + fijo XO
 1. **La tabla XO llega hasta 2.0 m de altura, pero los brazos limitan la nave a 750 mm.** Probablemente la tabla aplica también al montaje **vertical** (proyectante sobre fijo, O/X), donde la altura H es la del conjunto y no la de la nave. Hay que confirmar cómo leer la tabla antes de que el agente la use para XO lado a lado.
 2. **La proyectante sola (X) no tiene tabla de presión propia.** Se propone verificarla con la tabla XO, usando el ancho de nave. Se requiere confirmación.
 3. **Celdas vacías en las tablas** (por ejemplo, fijo OO con H = 1.80 m y A > 0.80 m): el agente las trata como **no admisibles**. Debe confirmarse si significan eso o si la presión resistente es menor que la publicada.
-4. **No trae el peso por metro de los perfiles.** Sin ese dato el agente calcula el peso de la nave solo con el vidrio, y lo deja advertido.
+4. ~~No trae el peso por metro de los perfiles.~~ **Resuelto:** los pesos salen del Excel `pesos perfiles cotizador.xlsx`: marco nave 11111034 = 0.373 kg/m, marco fijo 11113036 = 0.391, nave ventana 11122016 = 0.661, nave puerta 11123083 = 0.821, zócalo 11125063 = 0.690, divisor 11133080 = 0.702, pisavidrio 11141016 = 0.176, adaptador XX 11181048 = 0.607, mullion 00181033 = 0.170. El agente ya suma vidrio y aluminio para escoger el brazo.
 5. **Tablas de puertas XX y O/X:** el texto extraído del PDF quedó desordenado. Se cargan cuando se verifiquen visualmente.
 6. **Fecha de la ficha: 2018.** Confirmar con el proveedor que es la revisión vigente.
 
@@ -105,3 +105,4 @@ Ventana XO de 1600 × 1200 mm (nave 800 + fijo 800), vidrio crudo de 5 mm y pres
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: análisis de la ficha y carga de datos para el agente |
+| 0.2 | 2026-10-10 | Pesos de perfiles cargados; peso de nave con vidrio y aluminio |

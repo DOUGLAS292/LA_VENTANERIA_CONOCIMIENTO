@@ -178,8 +178,8 @@
     }
   },
 
+  "_pesos": "Pesos kg/m de los perfiles en datos/pesos_perfiles.json (Excel 'pesos perfiles cotizador.xlsx').",
   "pendientes": [
-    "Peso del aluminio por metro (kg/m) de cada perfil: no viene en la ficha; se necesita para costeo y peso de la nave.",
     "Tablas de presión de puerta batiente XX y O/X: el texto extraído está desordenado; se cargan tras verificación visual.",
     "Confirmar si la tabla XO aplica a la proyectante sola (X).",
     "Confirmar el significado de las celdas vacías de las tablas (configuración no admisible o presión menor a la publicada)."

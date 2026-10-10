@@ -22,6 +22,8 @@ DATOS = Path(__file__).parent / "datos"
 KG_M2_A_KN_M2 = 9.80665 / 1000
 PESO_VIDRIO_KG_M2_POR_MM = 2.5  # densidad 2500 kg/m3 (Tabla K.4.2-0)
 
+PESOS_PERFILES = json.loads((DATOS / "pesos_perfiles.json").read_text(encoding="utf-8"))["perfiles"]
+
 
 def kgm2_a_knm2(presion_kgm2: float) -> float:
     return presion_kgm2 * KG_M2_A_KN_M2
@@ -243,10 +245,14 @@ class Sistema:
     def despiece(self, config: str, espesor_vidrio_mm: int, **medidas_mm: float) -> dict:
         """Cortes de perfiles, vidrios y accesorios para una unidad."""
         datos = self.configuracion(config)
-        perfiles = [
-            {**p, "medida_mm": round(evaluar(p["formula"], **medidas_mm), 1)}
-            for p in datos["perfiles"]
-        ]
+        perfiles = []
+        for p in datos["perfiles"]:
+            medida = evaluar(p["formula"], **medidas_mm)
+            kg_m = PESOS_PERFILES.get(p["ref"], {}).get("kg_m")
+            perfiles.append({
+                **p, "medida_mm": round(medida, 1), "kg_m": kg_m,
+                "peso_kg": None if kg_m is None else round(medida / 1000 * p["cant"] * kg_m, 2),
+            })
         vidrios = []
         for v in datos["vidrios"]:
             ancho = evaluar(v["ancho"], **medidas_mm)
@@ -265,11 +271,21 @@ class Sistema:
                 cant = None
             ref = empaque_u if a["ref"] == "EMPAQUE_U" else a["ref"]
             accesorios.append({**a, "ref": ref, "cant": cant if cant is None else math.ceil(cant)})
-        resultado = {"perfiles": perfiles, "vidrios": vidrios, "accesorios": accesorios}
+        sin_peso = sorted({p["ref"] for p in perfiles if p["kg_m"] is None})
+        resultado = {
+            "perfiles": perfiles, "vidrios": vidrios, "accesorios": accesorios,
+            "peso_aluminio_kg": round(sum(p["peso_kg"] or 0 for p in perfiles), 2),
+            "perfiles_sin_peso": sin_peso,
+        }
         if "nave" in datos:
             ancho_nave = evaluar(datos["nave"]["ancho"], **medidas_mm)
             alto_nave = evaluar(datos["nave"]["alto"], **medidas_mm)
-            peso_nave = sum(v["peso_kg"] for v in vidrios if v["seccion"] == "nave")
+            peso_vidrio = sum(v["peso_kg"] for v in vidrios if v["seccion"] == "nave")
+            peso_aluminio = sum(p["peso_kg"] or 0 for p in perfiles if p["descripcion"].startswith("Nave"))
+            peso_nave = round(peso_vidrio + peso_aluminio, 1)
             resultado["brazo"] = self.seleccionar_brazo(ancho_nave, alto_nave, peso_nave)
-            resultado["nave_mm"] = {"ancho": ancho_nave, "alto": alto_nave, "peso_vidrio_kg": peso_nave}
+            resultado["nave_mm"] = {
+                "ancho": ancho_nave, "alto": alto_nave, "peso_vidrio_kg": peso_vidrio,
+                "peso_aluminio_kg": round(peso_aluminio, 2), "peso_total_kg": peso_nave,
+            }
         return resultado

@@ -77,3 +77,26 @@ def test_despiece_proyectante(s35):
 
 def test_kgm2_a_knm2():
     assert kgm2_a_knm2(100) == pytest.approx(0.981, abs=1e-3)
+
+
+def test_pesos_serie_35(s35):
+    d = s35.despiece("proyectante_X", 5, A=1000, H=600)
+    assert d["perfiles_sin_peso"] == []
+    # Marco 11111034: 2 x 1.0 m + 2 x 0.6 m a 0.373 kg/m; nave 11122016: 2 x 0.98 + 2 x 0.58 a 0.661 kg/m
+    assert d["peso_aluminio_kg"] == pytest.approx(3.2 * 0.373 + 3.12 * 0.661, abs=0.02)
+    nave = d["nave_mm"]
+    assert nave["peso_aluminio_kg"] == pytest.approx(3.12 * 0.661, abs=0.01)
+    assert nave["peso_total_kg"] == pytest.approx(nave["peso_vidrio_kg"] + nave["peso_aluminio_kg"], abs=0.1)
+
+
+def test_brazo_rechaza_nave_pesada(s35):
+    # Nave 1180 x 730, vidrio 1088 x 638 de 10 mm: ~17.4 kg + ~2.5 kg de aluminio > 18 kg
+    d = s35.despiece("proyectante_X", 10, A=1200, H=750)
+    assert d["nave_mm"]["peso_total_kg"] > 18
+    assert d["brazo"] is None
+
+
+def test_brazo_acepta_nave_limite_con_8mm(s35):
+    d = s35.despiece("proyectante_X", 8, A=1200, H=750)
+    assert d["nave_mm"]["peso_total_kg"] == pytest.approx(16.4, abs=0.1)
+    assert d["brazo"]["codigo"] == "17116"

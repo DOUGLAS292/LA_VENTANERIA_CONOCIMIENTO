@@ -1,0 +1,3033 @@
+{
+ "_fuente": "'pesos perfiles cotizador.xlsx' (Google Drive, Fichas Técnicas, id 1QsI2AM994x3Lz70qTrDKxhnr7nC-0209). Solo pesos y perímetros; los precios del archivo NO se copian al repositorio.",
+ "_fecha": "2026-10-10",
+ "_duplicados": [
+  "ALN-1818",
+  "ALN-1819",
+  "ALN-183",
+  "PISAV1881",
+  "PISAV1882",
+  "PISAV2273",
+  "TAPA2081"
+ ],
+ "perfiles": {
+  "A-001": {
+   "descripcion": "Angulo 1/2\"",
+   "kg_m": 0.096,
+   "perimetro_mm": 49.94,
+   "sistema": null
+  },
+  "A-006": {
+   "descripcion": "Angulo 3/4\"x1/8\"",
+   "kg_m": 0.301,
+   "perimetro_mm": 76.2,
+   "sistema": null
+  },
+  "A-009": {
+   "descripcion": "Angulo 1\"",
+   "kg_m": 0.213,
+   "perimetro_mm": 102.2,
+   "sistema": null
+  },
+  "A-011": {
+   "descripcion": "Angulo 1\"x1/8\"",
+   "kg_m": 0.389,
+   "perimetro_mm": 101.6,
+   "sistema": null
+  },
+  "A-015": {
+   "descripcion": "Angulo 1-1/4\"x1/8\"",
+   "kg_m": 0.519,
+   "perimetro_mm": 127.0,
+   "sistema": null
+  },
+  "A-018": {
+   "descripcion": "Angulo 1-1/2\"x1/16\"",
+   "kg_m": 0.321,
+   "perimetro_mm": 152.4,
+   "sistema": null
+  },
+  "A-019": {
+   "descripcion": "Angulo 1-1/2\"x1/8\"",
+   "kg_m": 0.629,
+   "perimetro_mm": 152.4,
+   "sistema": null
+  },
+  "A-020": {
+   "descripcion": "Angulo 1-1/2\"x3/16\"",
+   "kg_m": 0.923,
+   "perimetro_mm": 152.4,
+   "sistema": null
+  },
+  "A-027": {
+   "descripcion": "Angulo 2\"x1/8\"",
+   "kg_m": 0.848,
+   "perimetro_mm": 203.2,
+   "sistema": null
+  },
+  "A-028": {
+   "descripcion": "Angulo 2\"x3/16\"",
+   "kg_m": 1.251,
+   "perimetro_mm": 203.2,
+   "sistema": null
+  },
+  "A-035": {
+   "descripcion": "Angulo 2-1/2\"x1/8\"",
+   "kg_m": 1.064,
+   "perimetro_mm": 254.0,
+   "sistema": null
+  },
+  "A-036": {
+   "descripcion": "Angulo 2-1/2\"x3/16\"",
+   "kg_m": 1.579,
+   "perimetro_mm": 254.0,
+   "sistema": null
+  },
+  "A-061": {
+   "descripcion": "Angulo 1/2\"",
+   "kg_m": 0.091,
+   "perimetro_mm": 50.0,
+   "sistema": null
+  },
+  "A-088": {
+   "descripcion": "Angulo 3\"x2\"x1/8\"",
+   "kg_m": 1.065,
+   "perimetro_mm": 253.14,
+   "sistema": null
+  },
+  "A-094": {
+   "descripcion": "Angulo 4\"x2\"x1/8\"",
+   "kg_m": 1.285,
+   "perimetro_mm": 303.94,
+   "sistema": null
+  },
+  "A-096": {
+   "descripcion": "Angulo 3\"x1\"x1/8\"",
+   "kg_m": 0.846,
+   "perimetro_mm": 202.34,
+   "sistema": null
+  },
+  "F-006": {
+   "descripcion": "Enchape",
+   "kg_m": 0.381,
+   "perimetro_mm": 213.0,
+   "sistema": null
+  },
+  "P-003": {
+   "descripcion": "Platina de 1/2\"x1/8\"",
+   "kg_m": 0.11,
+   "perimetro_mm": 31.8,
+   "sistema": null
+  },
+  "P-031": {
+   "descripcion": "Platina de 1-1/2\"x3/16\"",
+   "kg_m": 0.491,
+   "perimetro_mm": 85.72,
+   "sistema": null
+  },
+  "P-060": {
+   "descripcion": "Platina de 4\"x1/4\"",
+   "kg_m": 1.75,
+   "perimetro_mm": 215.9,
+   "sistema": null
+  },
+  "T-021": {
+   "descripcion": "Tubular 2\"",
+   "kg_m": 0.955,
+   "perimetro_mm": 202.51,
+   "sistema": null
+  },
+  "T-051": {
+   "descripcion": "Tubo Redondo Estriado Ø 31,8mm",
+   "kg_m": 0.3556,
+   "perimetro_mm": 111.44,
+   "sistema": null
+  },
+  "T-076": {
+   "descripcion": "Tubular 1\"",
+   "kg_m": 0.34,
+   "perimetro_mm": 101.6,
+   "sistema": null
+  },
+  "T-085": {
+   "descripcion": "Tubular 1-3/4\"",
+   "kg_m": 0.835,
+   "perimetro_mm": 178.0,
+   "sistema": null
+  },
+  "T-087": {
+   "descripcion": "Tubular 1-1/2\"",
+   "kg_m": 0.501,
+   "perimetro_mm": 152.4,
+   "sistema": null
+  },
+  "T-090": {
+   "descripcion": "Tubular 1/2\"",
+   "kg_m": 0.13,
+   "perimetro_mm": 52.0,
+   "sistema": null
+  },
+  "T-094": {
+   "descripcion": "Tubular 3x1\"",
+   "kg_m": 0.749,
+   "perimetro_mm": 202.51,
+   "sistema": null
+  },
+  "T-095": {
+   "descripcion": "Tubular 1\"x3\" Con Aleta",
+   "kg_m": 0.798,
+   "perimetro_mm": 228.6,
+   "sistema": null
+  },
+  "T-097": {
+   "descripcion": "Tubular 1-1/2\"x3/4\"",
+   "kg_m": 0.44,
+   "perimetro_mm": 114.2,
+   "sistema": null
+  },
+  "T-101": {
+   "descripcion": "Tubular 1-3/4\"x4\"",
+   "kg_m": 1.315,
+   "perimetro_mm": 292.0,
+   "sistema": null
+  },
+  "T-103": {
+   "descripcion": "Tubular 1-1/2\"x3\"",
+   "kg_m": 0.963,
+   "perimetro_mm": 228.6,
+   "sistema": null
+  },
+  "T-117": {
+   "descripcion": "Tubular 25x50",
+   "kg_m": 0.472,
+   "perimetro_mm": 150.0,
+   "sistema": null
+  },
+  "T-166": {
+   "descripcion": "Panel",
+   "kg_m": 0.75,
+   "perimetro_mm": 234.15,
+   "sistema": null
+  },
+  "T-182": {
+   "descripcion": "Tubular 1-3/4\"x4\"",
+   "kg_m": 1.238,
+   "perimetro_mm": 292.0,
+   "sistema": null
+  },
+  "T-188": {
+   "descripcion": "Bisagra Ø17.2mm Tubular",
+   "kg_m": 1.0567,
+   "perimetro_mm": 128.31,
+   "sistema": null
+  },
+  "CODAL0217": {
+   "descripcion": "Tubular 73x22x1mm",
+   "kg_m": 0.5037,
+   "perimetro_mm": 189.31,
+   "sistema": null
+  },
+  "T-232": {
+   "descripcion": "Esquina Circular 38mm",
+   "kg_m": 0.392,
+   "perimetro_mm": 135.43,
+   "sistema": null
+  },
+  "T-237": {
+   "descripcion": "Tubo Ovoidal 80mm",
+   "kg_m": 0.61,
+   "perimetro_mm": 172.19,
+   "sistema": null
+  },
+  "T-244": {
+   "descripcion": "Tubular 1-1/2\"x3\"x1,4mm",
+   "kg_m": 0.846,
+   "perimetro_mm": 228.26,
+   "sistema": null
+  },
+  "T-253": {
+   "descripcion": "Tubo Rectangular 66x20x1,4",
+   "kg_m": 0.631,
+   "perimetro_mm": 171.14,
+   "sistema": null
+  },
+  "T-261": {
+   "descripcion": "Tubular 1\"x3\"x2,36mm",
+   "kg_m": 1.2398,
+   "perimetro_mm": 202.51,
+   "sistema": null
+  },
+  "T-262": {
+   "descripcion": "Tubular 2\"x6\"",
+   "kg_m": 2.9498,
+   "perimetro_mm": 354.74,
+   "sistema": null
+  },
+  "T-280": {
+   "descripcion": "Tubular de 1/4 CAÑA 25x25",
+   "kg_m": 0.318,
+   "perimetro_mm": 88.64,
+   "sistema": null
+  },
+  "T-284": {
+   "descripcion": "Tubular 2\"x5\"",
+   "kg_m": 3.3923,
+   "perimetro_mm": 405.71,
+   "sistema": null
+  },
+  "TC-004": {
+   "descripcion": "Tubo circular de 3/8\"Ø",
+   "kg_m": 0.073,
+   "perimetro_mm": 29.92,
+   "sistema": null
+  },
+  "TC-013": {
+   "descripcion": "Tubo circular de 3/4\"Øx1.24mm ESPESOR",
+   "kg_m": 0.188,
+   "perimetro_mm": 59.85,
+   "sistema": null
+  },
+  "TC-021": {
+   "descripcion": "Tubo circular de 1\"Øx1.32mm ESPESOR",
+   "kg_m": 0.27,
+   "perimetro_mm": 79.8,
+   "sistema": null
+  },
+  "TC-031": {
+   "descripcion": "Tubo circular de 1-1/2\"Ø x 1.5mm ESP.",
+   "kg_m": 0.467,
+   "perimetro_mm": 119.7,
+   "sistema": null
+  },
+  "TC-032": {
+   "descripcion": "Tubo circular de 1-1/2\"Ø x 2.77mm ESP.",
+   "kg_m": 0.833,
+   "perimetro_mm": 119.7,
+   "sistema": null
+  },
+  "TC-036": {
+   "descripcion": "Tubo circular de 2\"Ø",
+   "kg_m": 1.56,
+   "perimetro_mm": 159.6,
+   "sistema": null
+  },
+  "TC-041": {
+   "descripcion": "Tubo circular de 74mmØ",
+   "kg_m": 1.664,
+   "perimetro_mm": 232.48,
+   "sistema": null
+  },
+  "TC-043": {
+   "descripcion": "Tubo circular de 74mmØ",
+   "kg_m": 1.522,
+   "perimetro_mm": 232.48,
+   "sistema": null
+  },
+  "TC-075": {
+   "descripcion": "Tubo circular de 95,5mmØ",
+   "kg_m": 2.741,
+   "perimetro_mm": 300.02,
+   "sistema": null
+  },
+  "TC-096": {
+   "descripcion": "Tubo circular de 75mmØ",
+   "kg_m": 1.242,
+   "perimetro_mm": 235.62,
+   "sistema": null
+  },
+  "R-005": {
+   "descripcion": "Barra Redonda Ø3/8\"",
+   "kg_m": 0.193,
+   "perimetro_mm": 29.8,
+   "sistema": null
+  },
+  "U-044": {
+   "descripcion": "Canal 4\" x 1-3/4\"",
+   "kg_m": 1.127,
+   "perimetro_mm": 420.0,
+   "sistema": null
+  },
+  "U-055": {
+   "descripcion": "Canal 3\" x 1\"",
+   "kg_m": 0.55,
+   "perimetro_mm": 256.4,
+   "sistema": null
+  },
+  "U-062": {
+   "descripcion": "Canal 3\" x 1-1/2\"",
+   "kg_m": 0.832,
+   "perimetro_mm": 345.0,
+   "sistema": null
+  },
+  "U-067": {
+   "descripcion": "Canal 50 x 25",
+   "kg_m": 0.369,
+   "perimetro_mm": 212.2,
+   "sistema": null
+  },
+  "U-074": {
+   "descripcion": "Canal 13 x 13",
+   "kg_m": 0.125,
+   "perimetro_mm": 73.6,
+   "sistema": null
+  },
+  "UA-068": {
+   "descripcion": "Canal 9,5x 12,5",
+   "kg_m": 0.096,
+   "perimetro_mm": 66.2,
+   "sistema": null
+  },
+  "U-071": {
+   "descripcion": "Canal 1-1/2\"x 3/4\"",
+   "kg_m": 0.272,
+   "perimetro_mm": 169.8,
+   "sistema": null
+  },
+  "ALN-183": {
+   "descripcion": "Vertical Liso",
+   "kg_m": 0.828,
+   "perimetro_mm": 357.23,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-A-173": {
+   "descripcion": "Horizontales",
+   "kg_m": 0.315,
+   "perimetro_mm": 197.86,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-A-174": {
+   "descripcion": "Jambas",
+   "kg_m": 0.391,
+   "perimetro_mm": 233.15,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-175": {
+   "descripcion": "Adaptador",
+   "kg_m": 0.276,
+   "perimetro_mm": 160.93,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-176": {
+   "descripcion": "Perimetral nave",
+   "kg_m": 0.539,
+   "perimetro_mm": 224.88,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-177": {
+   "descripcion": "Pisavidrio Biselado Bolsillo 10,1",
+   "kg_m": 0.189,
+   "perimetro_mm": 114.88,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-292": {
+   "descripcion": "Divisor Vertical o Horizontal",
+   "kg_m": 0.641,
+   "perimetro_mm": 228.26,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-414": {
+   "descripcion": "Pisavidrio cuadrado Bolsillo 15,1",
+   "kg_m": 0.221,
+   "perimetro_mm": 138.19,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-416": {
+   "descripcion": "Marco tubular Nave silicona E.",
+   "kg_m": 0.5,
+   "perimetro_mm": 180.13,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-435": {
+   "descripcion": "Pisavidrio Biselado Bolsillo 15,3",
+   "kg_m": 0.194,
+   "perimetro_mm": 118.04,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-635": {
+   "descripcion": "Pisavidrio Redondeado",
+   "kg_m": 0.198,
+   "perimetro_mm": 122.49,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALEE-673": {
+   "descripcion": "Horizontal Inferior Botaaguas",
+   "kg_m": 0.4782,
+   "perimetro_mm": 248.03,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALEE-674": {
+   "descripcion": "Complemento volteardor",
+   "kg_m": 0.3566,
+   "perimetro_mm": 194.64,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "S-354": {
+   "descripcion": "Union Nave",
+   "kg_m": 2.182,
+   "perimetro_mm": 304.31,
+   "sistema": "SISTEMA PROYECTANTE SERIE 3831"
+  },
+  "ALN-221": {
+   "descripcion": "Horizontal naves",
+   "kg_m": 1.276,
+   "perimetro_mm": 263.7,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-222": {
+   "descripcion": "Pisavidrio Chaflan",
+   "kg_m": 0.153,
+   "perimetro_mm": 87.09,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-407": {
+   "descripcion": "Jamba Larga Puerta",
+   "kg_m": 1.258,
+   "perimetro_mm": 322.15,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-408": {
+   "descripcion": "Horizontal Superior",
+   "kg_m": 0.68,
+   "perimetro_mm": 190.0,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-409": {
+   "descripcion": "Jamba Pivote",
+   "kg_m": 0.736,
+   "perimetro_mm": 198.57,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-410": {
+   "descripcion": "Horizontal Inferior",
+   "kg_m": 0.879,
+   "perimetro_mm": 266.62,
+   "sistema": "PUERTA BATIENTE SERIE 6038"
+  },
+  "ALN-A-144": {
+   "descripcion": "Cabezal Marco 5020",
+   "kg_m": 0.342,
+   "perimetro_mm": 227.2,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-B-193": {
+   "descripcion": "Jamba Marco 5020",
+   "kg_m": 0.322,
+   "perimetro_mm": 218.32,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-A-194": {
+   "descripcion": "Sillar Marco 5020",
+   "kg_m": 0.363,
+   "perimetro_mm": 244.39,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-258": {
+   "descripcion": "Traslape 5020",
+   "kg_m": 0.407,
+   "perimetro_mm": 167.8,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-349": {
+   "descripcion": "Horizontal Sup, Nave y C. Fijo 5020",
+   "kg_m": 0.392,
+   "perimetro_mm": 215.9,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-A-326": {
+   "descripcion": "Horizontal Inferior Nave y C. Fijo 5020",
+   "kg_m": 0.424,
+   "perimetro_mm": 255.27,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-318": {
+   "descripcion": "Adaptador OXXO 5020",
+   "kg_m": 0.178,
+   "perimetro_mm": 112.8,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-B-147": {
+   "descripcion": "Enganche Liviano 5020",
+   "kg_m": 0.286,
+   "perimetro_mm": 198.01,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-938": {
+   "descripcion": "Enganche 5020",
+   "kg_m": 0.355,
+   "perimetro_mm": 164.7,
+   "sistema": "VENTANA CORREDIZA SERIE 5020"
+  },
+  "ALN-A-392": {
+   "descripcion": "Cabezal Marco 744",
+   "kg_m": 0.366,
+   "perimetro_mm": 253.28,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-A-387": {
+   "descripcion": "Sillar Marco 744",
+   "kg_m": 0.408,
+   "perimetro_mm": 246.71,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-B-393": {
+   "descripcion": "Jamba Marco 744",
+   "kg_m": 0.364,
+   "perimetro_mm": 255.85,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-A-389": {
+   "descripcion": "Horizontal Superior 744",
+   "kg_m": 0.284,
+   "perimetro_mm": 200.52,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-B-390": {
+   "descripcion": "Horizontal Inferior 744",
+   "kg_m": 0.368,
+   "perimetro_mm": 279.46,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-A-391": {
+   "descripcion": "Enganche 744",
+   "kg_m": 0.429,
+   "perimetro_mm": 189.13,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-A-388": {
+   "descripcion": "Traslape 744",
+   "kg_m": 0.407,
+   "perimetro_mm": 178.16,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-403": {
+   "descripcion": "Adaptador OXXO Serie 744",
+   "kg_m": 0.195,
+   "perimetro_mm": 122.11,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "ALN-1818": {
+   "descripcion": "Refuerzo atornillado",
+   "kg_m": 0.3106,
+   "perimetro_mm": 171.99,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1819": {
+   "descripcion": "Tapa Refuerzo",
+   "kg_m": 0.0886,
+   "perimetro_mm": 62.54,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1821": {
+   "descripcion": "Enganche Reforzado 744",
+   "kg_m": 0.597,
+   "perimetro_mm": 221.31,
+   "sistema": "PUERTA CORREDIZA SERIE 744"
+  },
+  "CABEZP0392": {
+   "descripcion": "Cabezal Marco 744 Plus",
+   "kg_m": 0.3644,
+   "perimetro_mm": 258.79,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "SILLP0387": {
+   "descripcion": "Sillar Marco 744 Plus",
+   "kg_m": 0.446,
+   "perimetro_mm": 268.48,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "TRASL0388": {
+   "descripcion": "Traslape 744",
+   "kg_m": 0.407,
+   "perimetro_mm": 178.16,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "JAMBAP0393": {
+   "descripcion": "Jamba Marco 744 Plus",
+   "kg_m": 0.3515,
+   "perimetro_mm": 247.07,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "ENGANP0391": {
+   "descripcion": "Enganche 744 Plus",
+   "kg_m": 0.414,
+   "perimetro_mm": 189.52,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "ENGANP1767": {
+   "descripcion": "Enganche 744 Plus",
+   "kg_m": 0.429,
+   "perimetro_mm": 184.77,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "TRASLP1766": {
+   "descripcion": "Traslape 744 Plus",
+   "kg_m": 0.402,
+   "perimetro_mm": 169.86,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "HORIZP0389": {
+   "descripcion": "Horizontal Superior 744 Plus",
+   "kg_m": 0.33,
+   "perimetro_mm": 242.29,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "HORIAP0390": {
+   "descripcion": "Horizontal Inferior 744 Plus",
+   "kg_m": 0.4011,
+   "perimetro_mm": 296.39,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "ENGAN1821": {
+   "descripcion": "Enganche Reforzado 744 Plus",
+   "kg_m": 0.5722,
+   "perimetro_mm": 220.67,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "ADAPTP1849": {
+   "descripcion": "Extension Sillar 744 Plus",
+   "kg_m": 0.097,
+   "perimetro_mm": 74.11,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "SILLP1856": {
+   "descripcion": "Sillar Marco 3 Rieles 744",
+   "kg_m": 0.6757,
+   "perimetro_mm": 401.96,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "CABEZP1857": {
+   "descripcion": "Cabezal Marco 3 Rieles 744.",
+   "kg_m": 0.5442,
+   "perimetro_mm": 350.3,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "JAMBAP1858": {
+   "descripcion": "Jamba Marco 3 Rieles 744.",
+   "kg_m": 0.4743,
+   "perimetro_mm": 327.48,
+   "sistema": "PUERTA CORREDIZA SERIE 744 PLUS"
+  },
+  "ALN-150": {
+   "descripcion": "Sillar Marco 8025",
+   "kg_m": 0.62,
+   "perimetro_mm": 301.0,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-151": {
+   "descripcion": "Cabezal Marco 8025",
+   "kg_m": 0.608,
+   "perimetro_mm": 323.75,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-841": {
+   "descripcion": "Jamba Marco 8025",
+   "kg_m": 0.598,
+   "perimetro_mm": 322.23,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-156": {
+   "descripcion": "Horizontal Superior 8025",
+   "kg_m": 0.493,
+   "perimetro_mm": 278.98,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-157": {
+   "descripcion": "Horizontal Inferior 8025",
+   "kg_m": 0.674,
+   "perimetro_mm": 358.75,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-190": {
+   "descripcion": "Traslape 8025",
+   "kg_m": 0.595,
+   "perimetro_mm": 228.5,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-191": {
+   "descripcion": "Enganche 8025",
+   "kg_m": 0.584,
+   "perimetro_mm": 241.6,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-158": {
+   "descripcion": "Adaptador OXXO 8025",
+   "kg_m": 0.212,
+   "perimetro_mm": 143.45,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-706": {
+   "descripcion": "Sillar Marco 3 RIELES 8025",
+   "kg_m": 0.876,
+   "perimetro_mm": 438.7,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-707": {
+   "descripcion": "Cabezal Marco 3 RIELES 8025",
+   "kg_m": 0.953,
+   "perimetro_mm": 404.48,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-708": {
+   "descripcion": "Jamba Marco 3 RIELES 8025",
+   "kg_m": 0.814,
+   "perimetro_mm": 429.22,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1745": {
+   "descripcion": "Enganche Reforzado",
+   "kg_m": 0.857,
+   "perimetro_mm": 255.19,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ENGAN0631": {
+   "descripcion": "Enganche 8025 Linea 90",
+   "kg_m": 0.7061,
+   "perimetro_mm": 247.39,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "TRASL0633": {
+   "descripcion": "Traslape 8025 Linea 91",
+   "kg_m": 0.624,
+   "perimetro_mm": 212.64,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-077": {
+   "descripcion": "Tee Estructural para VIGA 200",
+   "kg_m": 2.476,
+   "perimetro_mm": 464.8,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-249": {
+   "descripcion": "Perfil Anjeo 42.7mm",
+   "kg_m": 0.4277,
+   "perimetro_mm": 162.82,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-313": {
+   "descripcion": "Jamba Rejillas",
+   "kg_m": 0.3349,
+   "perimetro_mm": 174.06,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-315": {
+   "descripcion": "Aleta 50 mm",
+   "kg_m": 0.272,
+   "perimetro_mm": 155.6,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-361": {
+   "descripcion": "Barrote rectangular",
+   "kg_m": 0.489,
+   "perimetro_mm": 114.2,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-362": {
+   "descripcion": "Barrote Ovoidal 38mm",
+   "kg_m": 0.395,
+   "perimetro_mm": 93.82,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-364": {
+   "descripcion": "Perfil Anjeo 19.5mm",
+   "kg_m": 0.147,
+   "perimetro_mm": 67.5,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-366": {
+   "descripcion": "Adaptador para Naves Batientes",
+   "kg_m": 0.2029,
+   "perimetro_mm": 136.9,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-413": {
+   "descripcion": "Alfajia 160 mm",
+   "kg_m": 0.759,
+   "perimetro_mm": 376.1,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-511": {
+   "descripcion": "Reticula",
+   "kg_m": 0.119,
+   "perimetro_mm": 88.3,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-547": {
+   "descripcion": "Aleta 95 mm",
+   "kg_m": 0.372,
+   "perimetro_mm": 234.31,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-736": {
+   "descripcion": "Pasamanos de 63,5mmØ",
+   "kg_m": 2.17,
+   "perimetro_mm": 262.54,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-876": {
+   "descripcion": "Horizontal de Pasamanos 46mm",
+   "kg_m": 0.548,
+   "perimetro_mm": 205.39,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-937": {
+   "descripcion": "Barrote Tubular 22X22mm",
+   "kg_m": 0.427,
+   "perimetro_mm": 87.66,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1042": {
+   "descripcion": "Clip Hembra Panel especial",
+   "kg_m": 0.274,
+   "perimetro_mm": 130.46,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1044": {
+   "descripcion": "Clip Macho Panel especial",
+   "kg_m": 0.31,
+   "perimetro_mm": 144.24,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1101": {
+   "descripcion": "Marco puerta 56x38",
+   "kg_m": 0.65,
+   "perimetro_mm": 229.33,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1102": {
+   "descripcion": "Marco puerta 105x38",
+   "kg_m": 0.995,
+   "perimetro_mm": 327.33,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1122": {
+   "descripcion": "Alfajia 80",
+   "kg_m": 0.299,
+   "perimetro_mm": 185.2,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1123": {
+   "descripcion": "Alfajia 114",
+   "kg_m": 0.424,
+   "perimetro_mm": 263.0,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1535": {
+   "descripcion": "Horizontal de Pasamanos",
+   "kg_m": 0.409,
+   "perimetro_mm": 187.7,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1536": {
+   "descripcion": "Tapa Horiz. Para Pasamanos",
+   "kg_m": 0.261,
+   "perimetro_mm": 130.29,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1735": {
+   "descripcion": "Aleta 28mm",
+   "kg_m": 0.141,
+   "perimetro_mm": 96.5,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1464": {
+   "descripcion": "Perfil Tipico Piso",
+   "kg_m": 1.0329,
+   "perimetro_mm": 460.9,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1644": {
+   "descripcion": "Qiebrasol",
+   "kg_m": 1.906,
+   "perimetro_mm": 407.67,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-A-1644": {
+   "descripcion": "Quiebrasol liviano",
+   "kg_m": 1.563,
+   "perimetro_mm": 407.67,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1645": {
+   "descripcion": "Soporte quiebrasol",
+   "kg_m": 0.581,
+   "perimetro_mm": 218.11,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1733": {
+   "descripcion": "Horiz.interm. 76,2x38",
+   "kg_m": 0.742,
+   "perimetro_mm": 309.23,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1737": {
+   "descripcion": "Quiebrasol 166mm",
+   "kg_m": 1.592,
+   "perimetro_mm": 350.68,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1764": {
+   "descripcion": "Riel Puerta corrediza Colg.",
+   "kg_m": 0.704,
+   "perimetro_mm": 260.36,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1765": {
+   "descripcion": "Cenefa riel",
+   "kg_m": 0.246,
+   "perimetro_mm": 155.32,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-2024": {
+   "descripcion": "Extension Cortasol",
+   "kg_m": 2.2702,
+   "perimetro_mm": 561.58,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-2206": {
+   "descripcion": "Pasamanos de 63,5mmØ",
+   "kg_m": 1.496,
+   "perimetro_mm": 257.84,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "BAH-008": {
+   "descripcion": "Aleta Tubular Rejillas",
+   "kg_m": 0.556,
+   "perimetro_mm": 234.82,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "BAR1953": {
+   "descripcion": "Zocalo Pasamanos Tipo \"F\"",
+   "kg_m": 4.515,
+   "perimetro_mm": 613.57,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-343": {
+   "descripcion": "Marco Alamo",
+   "kg_m": 0.186,
+   "perimetro_mm": 127.92,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-344": {
+   "descripcion": "Pisavidrio Alamo",
+   "kg_m": 0.102,
+   "perimetro_mm": 71.3,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-351": {
+   "descripcion": "Zocalo fijo 100 mm",
+   "kg_m": 2.156,
+   "perimetro_mm": 451.26,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-369": {
+   "descripcion": "Zocalo puerta 90 mm",
+   "kg_m": 1.859,
+   "perimetro_mm": 437.93,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-463": {
+   "descripcion": "Perfil Tipo \"F\" Para 10mm",
+   "kg_m": 0.543,
+   "perimetro_mm": 168.85,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-479": {
+   "descripcion": "Riel pesado para empotrar",
+   "kg_m": 0.624,
+   "perimetro_mm": 211.2,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "S-517": {
+   "descripcion": "Chapeta Principal",
+   "kg_m": 3.986,
+   "perimetro_mm": 256.0,
+   "sistema": "PUERTA CORREDIZA SERIE 8025"
+  },
+  "ALN-1242": {
+   "descripcion": "Jambas Guias PERSIANA-50",
+   "kg_m": 1.339,
+   "perimetro_mm": 393.05,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALN-1246": {
+   "descripcion": "Lama Final",
+   "kg_m": 0.459,
+   "perimetro_mm": 170.86,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALN-1247": {
+   "descripcion": "Lama Tipica",
+   "kg_m": 0.514,
+   "perimetro_mm": 204.15,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALN-1267": {
+   "descripcion": "Jambas Guias PERSIANA-45",
+   "kg_m": 0.487,
+   "perimetro_mm": 232.02,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALN-1253": {
+   "descripcion": "Lama Tipica",
+   "kg_m": 0.313,
+   "perimetro_mm": 147.23,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALN-1254": {
+   "descripcion": "Lama Final",
+   "kg_m": 0.302,
+   "perimetro_mm": 132.82,
+   "sistema": "PERSIANAS ENRROLL."
+  },
+  "ALA-095": {
+   "descripcion": "Anclaje Tipico Fachada",
+   "kg_m": 3.108,
+   "perimetro_mm": 614.9,
+   "sistema": "FACHADA"
+  },
+  "ALN-636": {
+   "descripcion": "Vertical Tip. Serie 45 Liviana",
+   "kg_m": 1.287,
+   "perimetro_mm": 258.2,
+   "sistema": "FACHADA"
+  },
+  "ALN-688": {
+   "descripcion": "Vertical Tip. Serie 45 Pesada",
+   "kg_m": 1.819,
+   "perimetro_mm": 339.6,
+   "sistema": "FACHADA"
+  },
+  "ALN-826": {
+   "descripcion": "Marco Perimetral Silicona estruc.",
+   "kg_m": 0.167,
+   "perimetro_mm": 101.12,
+   "sistema": "FACHADA"
+  },
+  "ALN-828": {
+   "descripcion": "Remate cabezal",
+   "kg_m": 0.388,
+   "perimetro_mm": 195.3,
+   "sistema": "FACHADA"
+  },
+  "ALN-939": {
+   "descripcion": "Soporte Remate Sillar",
+   "kg_m": 0.096,
+   "perimetro_mm": 61.99,
+   "sistema": "FACHADA"
+  },
+  "ALN-940": {
+   "descripcion": "Remate sillar",
+   "kg_m": 0.255,
+   "perimetro_mm": 158.67,
+   "sistema": "FACHADA"
+  },
+  "ALN-989": {
+   "descripcion": "Tapa de 19,6",
+   "kg_m": 0.352,
+   "perimetro_mm": 164.7,
+   "sistema": "FACHADA"
+  },
+  "ALN-1025": {
+   "descripcion": "Clip Vertical Modulos Silicona E.",
+   "kg_m": 0.243,
+   "perimetro_mm": 89.23,
+   "sistema": "FACHADA"
+  },
+  "ALN-1056": {
+   "descripcion": "Clip Horiz. Modulos Silicona E.",
+   "kg_m": 0.522,
+   "perimetro_mm": 143.06,
+   "sistema": "FACHADA"
+  },
+  "ALN-1695": {
+   "descripcion": "Clip para Tapa Exterior",
+   "kg_m": 0.575,
+   "perimetro_mm": 204.81,
+   "sistema": "FACHADA"
+  },
+  "ALN-1696": {
+   "descripcion": "Tapa Redonda",
+   "kg_m": 0.31,
+   "perimetro_mm": 161.5,
+   "sistema": "FACHADA"
+  },
+  "S-524": {
+   "descripcion": "Compl. Remate cabezal",
+   "kg_m": 0.103,
+   "perimetro_mm": 70.81,
+   "sistema": "FACHADA"
+  },
+  "ALN-964": {
+   "descripcion": "Viga Estructural 100x160",
+   "kg_m": 4.426,
+   "perimetro_mm": 775.96,
+   "sistema": "FACHADA"
+  },
+  "ALN-965": {
+   "descripcion": "Vertical Fachada Serie 75",
+   "kg_m": 3.816,
+   "perimetro_mm": 468.2,
+   "sistema": "FACHADA"
+  },
+  "ALN-966": {
+   "descripcion": "Pisavidrio Exterior Serie 75",
+   "kg_m": 0.831,
+   "perimetro_mm": 241.01,
+   "sistema": "FACHADA"
+  },
+  "ALN-1923": {
+   "descripcion": "Clip para Tapa Exterior SERIE 75",
+   "kg_m": 1.02,
+   "perimetro_mm": 290.18,
+   "sistema": "FACHADA"
+  },
+  "ALN-1924": {
+   "descripcion": "Tapa de 19,6 SERIE 75",
+   "kg_m": 0.43,
+   "perimetro_mm": 224.98,
+   "sistema": "FACHADA"
+  },
+  "ALN-700": {
+   "descripcion": "Cabezal Marco",
+   "kg_m": 1.063,
+   "perimetro_mm": 432.0,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-701": {
+   "descripcion": "Sillar Plano Marco",
+   "kg_m": 1.258,
+   "perimetro_mm": 415.48,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-702": {
+   "descripcion": "Jamba Marco",
+   "kg_m": 0.95,
+   "perimetro_mm": 416.96,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-703": {
+   "descripcion": "Horizontal naves",
+   "kg_m": 1.206,
+   "perimetro_mm": 550.02,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-704": {
+   "descripcion": "Traslape 7038",
+   "kg_m": 1.323,
+   "perimetro_mm": 309.34,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-705": {
+   "descripcion": "Enganche 7038",
+   "kg_m": 1.479,
+   "perimetro_mm": 373.31,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-775": {
+   "descripcion": "Sillar Inclinado Marco",
+   "kg_m": 1.111,
+   "perimetro_mm": 358.66,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-840": {
+   "descripcion": "Recibidor 7038",
+   "kg_m": 0.536,
+   "perimetro_mm": 278.99,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1692": {
+   "descripcion": "Divisor 7038",
+   "kg_m": 1.002,
+   "perimetro_mm": 369.21,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1697": {
+   "descripcion": "Enganche Linea 90",
+   "kg_m": 1.404,
+   "perimetro_mm": 358.77,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1698": {
+   "descripcion": "Traslape Linea 90",
+   "kg_m": 1.145,
+   "perimetro_mm": 293.59,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1729": {
+   "descripcion": "Sillar Inclinado Marco tres rieles 7038",
+   "kg_m": 1.481,
+   "perimetro_mm": 492.38,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1730": {
+   "descripcion": "Cabezal Marco tres rieles 7038",
+   "kg_m": 1.307,
+   "perimetro_mm": 584.74,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1731": {
+   "descripcion": "Jamba tres rieles",
+   "kg_m": 1.131,
+   "perimetro_mm": 519.68,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-1746": {
+   "descripcion": "Horiz. naves Linea 90",
+   "kg_m": 1.088,
+   "perimetro_mm": 494.24,
+   "sistema": "PUERTA CORREDIZA SERIE 7038"
+  },
+  "ALN-711": {
+   "descripcion": "Jamba Marco C. Fijo",
+   "kg_m": 0.226,
+   "perimetro_mm": 162.0,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-713": {
+   "descripcion": "Enganche Nave",
+   "kg_m": 0.256,
+   "perimetro_mm": 124.37,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-715": {
+   "descripcion": "Cabezal y Sillar nave",
+   "kg_m": 0.238,
+   "perimetro_mm": 172.25,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "HORIZO716": {
+   "descripcion": "Cabezal y Sillar C. Fijo",
+   "kg_m": 0.142,
+   "perimetro_mm": 102.16,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1630": {
+   "descripcion": "Sillar Marco",
+   "kg_m": 0.246,
+   "perimetro_mm": 156.46,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1631": {
+   "descripcion": "Cabezal Marco",
+   "kg_m": 0.229,
+   "perimetro_mm": 155.11,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1643": {
+   "descripcion": "Enganche Reforzado C. Fijo",
+   "kg_m": 0.351,
+   "perimetro_mm": 150.55,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1647": {
+   "descripcion": "Camara",
+   "kg_m": 0.248,
+   "perimetro_mm": 158.6,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1649": {
+   "descripcion": "Traslape Especial",
+   "kg_m": 0.298,
+   "perimetro_mm": 137.73,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1650": {
+   "descripcion": "Jamba Marco Nave",
+   "kg_m": 0.223,
+   "perimetro_mm": 159.61,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1651": {
+   "descripcion": "Sillar Alfajia Marco",
+   "kg_m": 0.454,
+   "perimetro_mm": 285.22,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1672": {
+   "descripcion": "Enganche Reforzado C. Fijo",
+   "kg_m": 0.467,
+   "perimetro_mm": 195.53,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "ALN-1693": {
+   "descripcion": "Adaptador OXXO",
+   "kg_m": 0.18,
+   "perimetro_mm": 116.7,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "PERSI1735": {
+   "descripcion": "Aleta Rejilla Antigas",
+   "kg_m": 0.141,
+   "perimetro_mm": 96.5,
+   "sistema": "VENTANA CORREDIZA SERIE 3825"
+  },
+  "CABEZ1957": {
+   "descripcion": "Cabezal SERIE 33",
+   "kg_m": 0.1867,
+   "perimetro_mm": 137.76,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "SILL1959": {
+   "descripcion": "Sillar C. Isobarica SERIE 33",
+   "kg_m": 0.3866,
+   "perimetro_mm": 164.73,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "SILL1960": {
+   "descripcion": "Sillar Estandar SERIE 33",
+   "kg_m": 0.2122,
+   "perimetro_mm": 151.95,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "SILL2296": {
+   "descripcion": "Sillar Alfajia Integrada SERIE 33",
+   "kg_m": 0.4382,
+   "perimetro_mm": 318.5,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "JAMBA1962": {
+   "descripcion": "Jamba C. Fijo SERIE 33",
+   "kg_m": 0.1783,
+   "perimetro_mm": 128.46,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "JAMBA1963": {
+   "descripcion": "Jamba Nave SERIE 33",
+   "kg_m": 0.1912,
+   "perimetro_mm": 135.7,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ENGAN1964": {
+   "descripcion": "Paral Central SERIE 33",
+   "kg_m": 0.2311,
+   "perimetro_mm": 114.48,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ENGAN1965": {
+   "descripcion": "Paral Central Reforz. (35.9mm) SERIE 33",
+   "kg_m": 0.3804,
+   "perimetro_mm": 156.99,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ENGAN1966": {
+   "descripcion": "Paral Central Reforz. (45.9mm) SERIE 33",
+   "kg_m": 0.4345,
+   "perimetro_mm": 176.98,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ADAPT1958": {
+   "descripcion": "Inserto Cabezal SERIE 33",
+   "kg_m": 0.124,
+   "perimetro_mm": 93.2,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ADAPT1961": {
+   "descripcion": "Inserto Sillar SERIE 33",
+   "kg_m": 0.1204,
+   "perimetro_mm": 91.05,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "HORIZ1972": {
+   "descripcion": "Cabezal Nave SERIE 33",
+   "kg_m": 0.1762,
+   "perimetro_mm": 122.58,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "HORIZ1973": {
+   "descripcion": "Sillar Nave SERIE 33",
+   "kg_m": 0.2434,
+   "perimetro_mm": 174.62,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ENGAN1968": {
+   "descripcion": "Enganche Nave SERIE 33",
+   "kg_m": 0.1805,
+   "perimetro_mm": 135.8,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "TRASL1967": {
+   "descripcion": "Traslape Nave SERIE 33",
+   "kg_m": 0.2699,
+   "perimetro_mm": 136.52,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "ADAPT2279": {
+   "descripcion": "Adaptador OXXO SERIE 33.",
+   "kg_m": 0.4353,
+   "perimetro_mm": 197.82,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "MARCO1969": {
+   "descripcion": "Horizontal Marco C. F. SERIE 33",
+   "kg_m": 0.26,
+   "perimetro_mm": 160.12,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "MARCO1970": {
+   "descripcion": "Vertical Marco C. F. SERIE 33",
+   "kg_m": 0.258,
+   "perimetro_mm": 160.75,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "DIVIS1971": {
+   "descripcion": "Divisor Vertical C. F. SERIE 33",
+   "kg_m": 0.4635,
+   "perimetro_mm": 181.22,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "DIVIS2302": {
+   "descripcion": "Divisor Horizontal C. F. SERIE 34",
+   "kg_m": 0.6312,
+   "perimetro_mm": 231.38,
+   "sistema": "VENTANA CORREDIZA SERIE 33"
+  },
+  "CABEZ2206": {
+   "descripcion": "Cabezal SERIE 50",
+   "kg_m": 0.353,
+   "perimetro_mm": 237.86,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "CABEZ2207": {
+   "descripcion": "Cabezal 3 Rieles SERIE 50",
+   "kg_m": 0.4979,
+   "perimetro_mm": 334.88,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "SILL2208": {
+   "descripcion": "Sillar C. Isobarica SERIE 50",
+   "kg_m": 0.6268,
+   "perimetro_mm": 294.79,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "SILL2209": {
+   "descripcion": "Sillar Estandar SERIE 50",
+   "kg_m": 0.4056,
+   "perimetro_mm": 270.59,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "SILL2210": {
+   "descripcion": "Sillar 3 Rieles SERIE 50",
+   "kg_m": 0.5879,
+   "perimetro_mm": 390.99,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "JAMBA2211": {
+   "descripcion": "Jamba 3 Rieles SERIE 50",
+   "kg_m": 0.4166,
+   "perimetro_mm": 273.32,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "JAMBA2212": {
+   "descripcion": "Jamba Estandar SERIE 50",
+   "kg_m": 0.3109,
+   "perimetro_mm": 205.34,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "HORIZ2217": {
+   "descripcion": "Horizontal Superior SERIE 50",
+   "kg_m": 0.2251,
+   "perimetro_mm": 154.58,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "HORIZ2218": {
+   "descripcion": "Horizontal Inferior Ventana SERIE 50",
+   "kg_m": 0.3829,
+   "perimetro_mm": 259.13,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "DIVIS2219": {
+   "descripcion": "Divisor Horizontal SERIE 50",
+   "kg_m": 0.314,
+   "perimetro_mm": 208.2,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "ENGAN2220": {
+   "descripcion": "Enganche Estandar SERIE 50",
+   "kg_m": 0.3721,
+   "perimetro_mm": 176.94,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "ENGAN2221": {
+   "descripcion": "Enganche Reforzado I SERIE 50",
+   "kg_m": 0.6228,
+   "perimetro_mm": 286.29,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "ENGAN2222": {
+   "descripcion": "Enganche Reforzado II SERIE 50",
+   "kg_m": 0.9091,
+   "perimetro_mm": 331.05,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "ADAPT2223": {
+   "descripcion": "Adaptador Reforzado II SERIE 50",
+   "kg_m": 1.0919,
+   "perimetro_mm": 407.33,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "ADAPT2224": {
+   "descripcion": "Adaptador Reforzado I SERIE 50",
+   "kg_m": 0.8364,
+   "perimetro_mm": 324.09,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "TRASL2225": {
+   "descripcion": "Traslape Nave SERIE 50",
+   "kg_m": 0.4315,
+   "perimetro_mm": 213.35,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "TRASL2226": {
+   "descripcion": "Traslape C. Fijo SERIE 50",
+   "kg_m": 0.2466,
+   "perimetro_mm": 169.55,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "HORIZ2306": {
+   "descripcion": "Horizontal Inferior Puerta SERIE 50",
+   "kg_m": 0.4461,
+   "perimetro_mm": 301.53,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "CABEZ2229": {
+   "descripcion": "Horizontal Superior Tub. C.F. SERIE 50",
+   "kg_m": 0.6747,
+   "perimetro_mm": 236.79,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "SILL2230": {
+   "descripcion": "Sillar C.F. SERIE 50",
+   "kg_m": 0.449,
+   "perimetro_mm": 243.56,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "JAMBA2236": {
+   "descripcion": "Jamba C.F. SERIE 50",
+   "kg_m": 0.3044,
+   "perimetro_mm": 200.98,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "DIVIS2239": {
+   "descripcion": "Divisor C.F. SERIE 50",
+   "kg_m": 0.4861,
+   "perimetro_mm": 211.89,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "PISAV2240": {
+   "descripcion": "Pisavidrio C.F. SERIE 50",
+   "kg_m": 0.0727,
+   "perimetro_mm": 53.85,
+   "sistema": "PUERTA CORREDIZA SERIE 50"
+  },
+  "CABEZ2241": {
+   "descripcion": "Cabezal 2 Rieles SERIE 80.",
+   "kg_m": 0.6632,
+   "perimetro_mm": 347.65,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "SILL2242": {
+   "descripcion": "Sillar Camara 2 Rieles SERIE 80.",
+   "kg_m": 1.1337,
+   "perimetro_mm": 427.26,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "SILL2243": {
+   "descripcion": "Sillar 2 Rieles SERIE 80.",
+   "kg_m": 0.7417,
+   "perimetro_mm": 401.91,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "JAMBA2244": {
+   "descripcion": "Jamba Marco 2 Rieles SERIE 80.",
+   "kg_m": 0.5057,
+   "perimetro_mm": 311.96,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "CABEZ2268": {
+   "descripcion": "Cabezal 3 Rieles SERIE 80.",
+   "kg_m": 0.9503,
+   "perimetro_mm": 492.34,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "SILL2269": {
+   "descripcion": "Sillar 3 Rieles SERIE 80.",
+   "kg_m": 1.043,
+   "perimetro_mm": 559.52,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "JAMBA2270": {
+   "descripcion": "Jamba Marco 3 Rieles SERIE 80.",
+   "kg_m": 0.6406,
+   "perimetro_mm": 394.92,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "HORIZ2245": {
+   "descripcion": "Horizontal Inferior Nave SERIE 80.",
+   "kg_m": 0.6271,
+   "perimetro_mm": 321.03,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "HORIZ2246": {
+   "descripcion": "Horizontal Superior Nave SERIE 80.",
+   "kg_m": 0.3992,
+   "perimetro_mm": 231.33,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "TRASL2247": {
+   "descripcion": "Traslape 54mm SERIE 80.",
+   "kg_m": 0.6243,
+   "perimetro_mm": 269.95,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "TRASL2248": {
+   "descripcion": "Traslape 31.2mm SERIE 80.",
+   "kg_m": 0.3777,
+   "perimetro_mm": 224.35,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "ENGAN2249": {
+   "descripcion": "Enganche Reforzado 68.7mm SERIE 80.",
+   "kg_m": 1.0066,
+   "perimetro_mm": 393.96,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "ENGAN2250": {
+   "descripcion": "Enganche Reforzado 110mm SERIE 80.",
+   "kg_m": 1.5023,
+   "perimetro_mm": 475.88,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "PISAD2251": {
+   "descripcion": "Pisador SERIE 80.",
+   "kg_m": 0.2819,
+   "perimetro_mm": 164.5,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "ADAPT2265": {
+   "descripcion": "Adaptador OXXO Reforzado SERIE 80.",
+   "kg_m": 1.3897,
+   "perimetro_mm": 504.41,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "ADAPT2266": {
+   "descripcion": "Adaptador OXXO SERIE 80.",
+   "kg_m": 0.6012,
+   "perimetro_mm": 242.46,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "DIVIS2267": {
+   "descripcion": "Divisor Horizontal Nave SERIE 80.",
+   "kg_m": 0.5435,
+   "perimetro_mm": 216.62,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "TRASL2271": {
+   "descripcion": "Traslape 62mm SERIE 80.",
+   "kg_m": 0.6807,
+   "perimetro_mm": 285.95,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "ENGAN2282": {
+   "descripcion": "Enganche Estandar SERIE 80.",
+   "kg_m": 0.645,
+   "perimetro_mm": 272.85,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "SILLAR2304": {
+   "descripcion": "Sillar multiriel SERIE 80",
+   "kg_m": 0.6271,
+   "perimetro_mm": 321.03,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "JAMBA2303": {
+   "descripcion": "JAMBA MULTIRIEL SERIE -80",
+   "kg_m": 0.6271,
+   "perimetro_mm": 321.03,
+   "sistema": "PUERTA CORREDIZA SERIE 80"
+  },
+  "11111034": {
+   "descripcion": "Marco Perimetral Nave SERIE 35.",
+   "kg_m": 0.373,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11113036": {
+   "descripcion": "Marco Perimetral C. Fijo SERIE 35.",
+   "kg_m": 0.391,
+   "perimetro_mm": 184.09,
+   "sistema": "SERIE 35"
+  },
+  "11122016": {
+   "descripcion": "Perimetral Ventana Nave SERIE 35.",
+   "kg_m": 0.661,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11123083": {
+   "descripcion": "Perimetral Puerta Nave SERIE 35.",
+   "kg_m": 0.821,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11125063": {
+   "descripcion": "Zocalo Puerta Nave SERIE 35.",
+   "kg_m": 0.69,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11133080": {
+   "descripcion": "Divisor SERIE 35.",
+   "kg_m": 0.702,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11141016": {
+   "descripcion": "Pisavidrio SERIE 35.",
+   "kg_m": 0.176,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "11181048": {
+   "descripcion": "Adaptador XX SERIE 35.",
+   "kg_m": 0.607,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "00181033": {
+   "descripcion": "Mullon SERIE 35.",
+   "kg_m": 0.17,
+   "perimetro_mm": null,
+   "sistema": "SERIE 35"
+  },
+  "ALN-1602": {
+   "descripcion": "Horizontal marco",
+   "kg_m": 0.677,
+   "perimetro_mm": 372.43,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1603": {
+   "descripcion": "Traslape",
+   "kg_m": 0.573,
+   "perimetro_mm": 228.81,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1604": {
+   "descripcion": "Enganche Sencillo",
+   "kg_m": 0.499,
+   "perimetro_mm": 187.9,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1605": {
+   "descripcion": "Horizontal Nave",
+   "kg_m": 0.508,
+   "perimetro_mm": 294.12,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1606": {
+   "descripcion": "Perfil Camara",
+   "kg_m": 0.356,
+   "perimetro_mm": 200.49,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1616": {
+   "descripcion": "Jamba Marco C. Fijo",
+   "kg_m": 0.485,
+   "perimetro_mm": 292.96,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1617": {
+   "descripcion": "Pisavidrio 6mm Marco",
+   "kg_m": 0.1,
+   "perimetro_mm": 63.83,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1618": {
+   "descripcion": "Acople Ventana/ C. Fijo",
+   "kg_m": 0.259,
+   "perimetro_mm": 158.53,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1619": {
+   "descripcion": "Alfajia",
+   "kg_m": 0.302,
+   "perimetro_mm": 168.38,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1623": {
+   "descripcion": "Pisavidrio 8mm Marco",
+   "kg_m": 0.088,
+   "perimetro_mm": 53.29,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1624": {
+   "descripcion": "Soporte C. Fijo",
+   "kg_m": 0.268,
+   "perimetro_mm": 150.44,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1662": {
+   "descripcion": "Enganche Reforzado",
+   "kg_m": 0.729,
+   "perimetro_mm": 216.34,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-1667": {
+   "descripcion": "Jamba Marco Nave",
+   "kg_m": 0.42,
+   "perimetro_mm": 253.0,
+   "sistema": "VENTANA CORREDIZA DIAMANTE"
+  },
+  "ALN-343": {
+   "descripcion": "Jamba duchas",
+   "kg_m": 0.209,
+   "perimetro_mm": 131.22,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "ALN-346": {
+   "descripcion": "Cabezal",
+   "kg_m": 0.578,
+   "perimetro_mm": 330.81,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "S-596": {
+   "descripcion": "Perimetral naves",
+   "kg_m": 0.185,
+   "perimetro_mm": 135.08,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "S-597": {
+   "descripcion": "Carrilera",
+   "kg_m": 0.248,
+   "perimetro_mm": 183.89,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "ALN-234": {
+   "descripcion": "Toallero",
+   "kg_m": 0.128,
+   "perimetro_mm": 74.7,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "ALN-460": {
+   "descripcion": "Soporte Toallero",
+   "kg_m": 0.23,
+   "perimetro_mm": 154.9,
+   "sistema": "CABINA DE BAÑO"
+  },
+  "ALN-1508": {
+   "descripcion": "Vertical Tipico",
+   "kg_m": 1.765,
+   "perimetro_mm": 640.75,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1509": {
+   "descripcion": "Horizontal Remates",
+   "kg_m": 1.507,
+   "perimetro_mm": 548.06,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1510": {
+   "descripcion": "Horizontal Intermedio",
+   "kg_m": 2.346,
+   "perimetro_mm": 461.02,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1511": {
+   "descripcion": "Tapa con Bolsillo",
+   "kg_m": 0.618,
+   "perimetro_mm": 294.08,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1512": {
+   "descripcion": "Tapa Lisa",
+   "kg_m": 0.535,
+   "perimetro_mm": 213.84,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1513": {
+   "descripcion": "Pisavidrio",
+   "kg_m": 0.456,
+   "perimetro_mm": 207.54,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-1514": {
+   "descripcion": "Tapa Luz Puertas",
+   "kg_m": 0.237,
+   "perimetro_mm": 111.59,
+   "sistema": "STORE FRONT 4,5\""
+  },
+  "ALN-167": {
+   "descripcion": "Vertical Tipico",
+   "kg_m": 1.109,
+   "perimetro_mm": 433.84,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-168": {
+   "descripcion": "Horizontal Remates",
+   "kg_m": 0.916,
+   "perimetro_mm": 379.81,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-169": {
+   "descripcion": "Tapa con Bolsillo",
+   "kg_m": 0.565,
+   "perimetro_mm": 234.75,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-170": {
+   "descripcion": "Tapa Lisa",
+   "kg_m": 0.371,
+   "perimetro_mm": 177.0,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-172": {
+   "descripcion": "Pisavidrio",
+   "kg_m": 0.24,
+   "perimetro_mm": 133.01,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "ALN-195": {
+   "descripcion": "Tapa Bolsillo",
+   "kg_m": 0.112,
+   "perimetro_mm": 64.47,
+   "sistema": "VITRINA COMERCIAL SERIE 7638"
+  },
+  "IIN-046": {
+   "descripcion": "Tee Marco Ventanas C. Europea",
+   "kg_m": 0.762,
+   "perimetro_mm": 324.36,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "MARCO0047": {
+   "descripcion": "Marco Perimetral Ventana C. Europea",
+   "kg_m": 0.6134,
+   "perimetro_mm": 240.18,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "IIN-048": {
+   "descripcion": "Adatador XX Ventana C. Europea",
+   "kg_m": 0.746,
+   "perimetro_mm": 337.32,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "NAVE0049": {
+   "descripcion": "Perimetral Nave Ventana C. Europea",
+   "kg_m": 0.8277,
+   "perimetro_mm": 338.31,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "IIN-050": {
+   "descripcion": "Pisavidrio Ventana C. Europea",
+   "kg_m": 0.22,
+   "perimetro_mm": 121.19,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "IIN-051": {
+   "descripcion": "Pisavidrio V. Doble V. C. Europea",
+   "kg_m": 0.179,
+   "perimetro_mm": 95.58,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "IIN-052": {
+   "descripcion": "Pletina Ventana C. Europea",
+   "kg_m": 0.16,
+   "perimetro_mm": 48.02,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "MARCO0058": {
+   "descripcion": "Marco Perimetral Puerta C. Europea",
+   "kg_m": 0.7214,
+   "perimetro_mm": 269.91,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "IIN-059": {
+   "descripcion": "Horizontal Inferior Nave",
+   "kg_m": 1.494,
+   "perimetro_mm": 403.98,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "NAVE1867": {
+   "descripcion": "Perimetral Nave Puerta C. Europea",
+   "kg_m": 1.1101,
+   "perimetro_mm": 390.78,
+   "sistema": "VENTANA Y PUERTAS SISTEMA EUROPEO"
+  },
+  "RIEL1930": {
+   "descripcion": "RIEL SUPERIOR PARA MARCO CORREDERO",
+   "kg_m": 1.0246,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "JAMBA1932": {
+   "descripcion": "JAMBA PARA MARCO",
+   "kg_m": 0.788,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "RIEL1931": {
+   "descripcion": "RIEL INFEIOR SOBRE PUESTO",
+   "kg_m": 0.55,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "RIEL2089": {
+   "descripcion": "RIEL INFEIOR EMPÓTRADO",
+   "kg_m": 0.0332,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "NAVE1999": {
+   "descripcion": "PERFIL PERIMETRAL DE NAVE",
+   "kg_m": 0.8679,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "PISAV1881": {
+   "descripcion": "Pisavidrio 6-10mm",
+   "kg_m": 0.254,
+   "perimetro_mm": 55.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "PISAV1790": {
+   "descripcion": "PISAVIDRIO CURVO 15,4",
+   "kg_m": 0.2454,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "PISAV1938": {
+   "descripcion": "PISAVIDRIO FLECHA 15,4",
+   "kg_m": 0.2008,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "PISAV1882": {
+   "descripcion": "Pisavidrio 12-18mm",
+   "kg_m": 0.231,
+   "perimetro_mm": 64.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "PISAV1791": {
+   "descripcion": "PISAVIDRIO CURVO 25,4",
+   "kg_m": 0.2225,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "PISAV1939": {
+   "descripcion": "PISAVIDRIO FLECHA 25,4",
+   "kg_m": 0.1656,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "PISAV2273": {
+   "descripcion": "Pisavidrio 20-25mm",
+   "kg_m": 0.159,
+   "perimetro_mm": 78.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "PISAV1937": {
+   "descripcion": "PISAVIDRIO RECTO 33MM",
+   "kg_m": 0.1214,
+   "perimetro_mm": null,
+   "sistema": "PUERTA PLEGABLE KONCEPT-55"
+  },
+  "MARCO2133": {
+   "descripcion": "Marco Perimetral KONCEPT 70.",
+   "kg_m": 0.887,
+   "perimetro_mm": 367.5,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "MARCO2134": {
+   "descripcion": "3er Riel KONCEPT 70.",
+   "kg_m": 0.521,
+   "perimetro_mm": 204.19,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "NAVE1754": {
+   "descripcion": "Nave Perimetral KONCEPT 70.",
+   "kg_m": 0.715,
+   "perimetro_mm": 334.37,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "ADAPT1755": {
+   "descripcion": "Adaptador Enganche KONCEPT 70.",
+   "kg_m": 0.258,
+   "perimetro_mm": 159.1,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "NAVE1904": {
+   "descripcion": "Vertical Reforzado KONCEPT 70.",
+   "kg_m": 1.362,
+   "perimetro_mm": 399.61,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "ADAPT1657": {
+   "descripcion": "Adaptador Sencillo OXXO KONCEPT 70.",
+   "kg_m": 0.2223,
+   "perimetro_mm": 135.91,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "ADAPT2135": {
+   "descripcion": "Adaptador OXXO KONCEPT 70.",
+   "kg_m": 1.6511,
+   "perimetro_mm": 298.78,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "ADAPT2154": {
+   "descripcion": "Complemento Adaptador ADAPT2135",
+   "kg_m": 0.1522,
+   "perimetro_mm": 61.15,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "DIVIS2047": {
+   "descripcion": "Divisor Horizontal KONCEPT 70.",
+   "kg_m": 0.685,
+   "perimetro_mm": 246.48,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "MARCO2140": {
+   "descripcion": "Marco Perimetral C. Fijo KONCEPT 70.",
+   "kg_m": 0.8092,
+   "perimetro_mm": 271.72,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "DIVIS2141": {
+   "descripcion": "Divisor C. Fijo KONCEPT 70.",
+   "kg_m": 0.9606,
+   "perimetro_mm": 322.11,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "PISAV2142": {
+   "descripcion": "Pisavidrio 6,8 y 9mm C. Fijo KONCEPT 70.",
+   "kg_m": 0.2261,
+   "perimetro_mm": 138.74,
+   "sistema": "PUERTA CORREDIZA KONCEPT 70"
+  },
+  "GOTEROK9001": {
+   "descripcion": "Perfil gotero",
+   "kg_m": 0.305,
+   "perimetro_mm": 108.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "MARCOK9002": {
+   "descripcion": "Perfil riel 2 pistas",
+   "kg_m": 1.367,
+   "perimetro_mm": 320.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "MARCOK9003": {
+   "descripcion": "Perfil multiriel",
+   "kg_m": 0.816,
+   "perimetro_mm": 410.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "NAVEK9004": {
+   "descripcion": "Perfil de nave",
+   "kg_m": 1.084,
+   "perimetro_mm": 300.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "DIVISK9005": {
+   "descripcion": "Divisor horizontal",
+   "kg_m": 0.708,
+   "perimetro_mm": 150.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "ENGANK9006": {
+   "descripcion": "Perfil de enganche",
+   "kg_m": 0.555,
+   "perimetro_mm": 180.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "ADAPTK9007": {
+   "descripcion": "Adaptador refuerzo",
+   "kg_m": 0.8,
+   "perimetro_mm": 210.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "ADAPTK9008": {
+   "descripcion": "Adaptador cierre central",
+   "kg_m": 2.569,
+   "perimetro_mm": 350.0,
+   "sistema": "PUERTA CORREDIZA KONCEPT 90"
+  },
+  "TAPA2081": {
+   "descripcion": "Tapa Para Refuerzos",
+   "kg_m": 0.138,
+   "perimetro_mm": 77.97,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "MARCO2084": {
+   "descripcion": "Marco Perimetral CORR. KONCEPT 100.",
+   "kg_m": 1.8662,
+   "perimetro_mm": 599.53,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "MARCO2085": {
+   "descripcion": "Marco Perimetral 3er Riel KONCEPT 100.",
+   "kg_m": 2.8173,
+   "perimetro_mm": 870.08,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "MARCO2168": {
+   "descripcion": "Marco Riel ADICIONAL KONCEPT 100.",
+   "kg_m": 1.0032,
+   "perimetro_mm": 387.2,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "ENGAN2086": {
+   "descripcion": "Adaptador Enganche KONCEPT 100.",
+   "kg_m": 0.6271,
+   "perimetro_mm": 340.34,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "NAVE2087": {
+   "descripcion": "Nave Perimetral KONCEPT 100.",
+   "kg_m": 1.3107,
+   "perimetro_mm": 454.62,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "PISAV2083": {
+   "descripcion": "Pisavidrio KONCEPT 100.",
+   "kg_m": 0.2118,
+   "perimetro_mm": 127.38,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "TAPA2080": {
+   "descripcion": "Pista Rodamiento KONCEPT 100.",
+   "kg_m": 0.2678,
+   "perimetro_mm": 101.36,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "PISAV2097": {
+   "descripcion": "Pisavidrio Para 10mm KONCEPT 100.",
+   "kg_m": 0.2585,
+   "perimetro_mm": 159.63,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "ADAPT2082": {
+   "descripcion": "Adaptador OXXO KONCEPT 100.",
+   "kg_m": 0.5154,
+   "perimetro_mm": 226.75,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "DIVIS2272": {
+   "descripcion": "Divisor Horizontal KONCEPT 100",
+   "kg_m": 1.0718,
+   "perimetro_mm": 336.16,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "ADAPT2191": {
+   "descripcion": "Enganche Reforzado KONCEPT 100.",
+   "kg_m": 1.3515,
+   "perimetro_mm": 624.55,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "NAVE2112": {
+   "descripcion": "Nave Perimetral BAT. KONCEPT 100",
+   "kg_m": 1.9737,
+   "perimetro_mm": 452.48,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "MARCO2113": {
+   "descripcion": "Marco Perimetral BAT. KONCEPT 100",
+   "kg_m": 1.1553,
+   "perimetro_mm": 325.75,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "DIVIS2181": {
+   "descripcion": "Dvivisor Marco BAT. KONCEPT 100",
+   "kg_m": 1.3129,
+   "perimetro_mm": 371.39,
+   "sistema": "PUERTA CORREDIZA KONCEPT 100"
+  },
+  "ALN-1120": {
+   "descripcion": "Cabezal Marco",
+   "kg_m": 0.378,
+   "perimetro_mm": 248.5,
+   "sistema": "VENTANA SALOMONICA"
+  },
+  "ALN-1119": {
+   "descripcion": "Sillar Marco",
+   "kg_m": 0.312,
+   "perimetro_mm": 205.9,
+   "sistema": "VENTANA SALOMONICA"
+  },
+  "ALN-1118": {
+   "descripcion": "Jambas Marco",
+   "kg_m": 0.566,
+   "perimetro_mm": 333.3,
+   "sistema": "VENTANA SALOMONICA"
+  },
+  "ALN-1451": {
+   "descripcion": "Lamas Tipicas",
+   "kg_m": 0.361,
+   "perimetro_mm": 242.6,
+   "sistema": "VENTANA SALOMONICA"
+  },
+  "U-026": {
+   "descripcion": "Barra Operadora",
+   "kg_m": 0.095,
+   "perimetro_mm": 45.34,
+   "sistema": "VENTANA SALOMONICA"
+  },
+  "CAR-286": {
+   "descripcion": "Marco Perimetral",
+   "kg_m": 0.574,
+   "perimetro_mm": 221.83,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "CAR-287": {
+   "descripcion": "Nave Perimetral",
+   "kg_m": 0.814,
+   "perimetro_mm": 344.28,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "CAR-288": {
+   "descripcion": "Pisavidrio General",
+   "kg_m": 0.238,
+   "perimetro_mm": 142.66,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "CAR-289": {
+   "descripcion": "Pisavidrio Inferior",
+   "kg_m": 0.186,
+   "perimetro_mm": 111.59,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "CAR-291": {
+   "descripcion": "Tee Marco Ventanas C. Europea",
+   "kg_m": 1.005,
+   "perimetro_mm": 392.27,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "CAR-295": {
+   "descripcion": "Pletina",
+   "kg_m": 0.158,
+   "perimetro_mm": 47.67,
+   "sistema": "VENTANA BATIMAX"
+  },
+  "ALH-195": {
+   "descripcion": "Tapa Remate Cabezal",
+   "kg_m": 0.097,
+   "perimetro_mm": 64.67,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-003M": {
+   "descripcion": "Remate Alero",
+   "kg_m": 2.1639,
+   "perimetro_mm": 666.81,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-006": {
+   "descripcion": "Perfil TEE Cinta Alerones",
+   "kg_m": 1.8386,
+   "perimetro_mm": 346.7,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-020": {
+   "descripcion": "Tubo Rectangular 150x50",
+   "kg_m": 2.124,
+   "perimetro_mm": 399.31,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-043": {
+   "descripcion": "Jamba Multiple Celosia",
+   "kg_m": 0.6826,
+   "perimetro_mm": 371.89,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-045": {
+   "descripcion": "Jamba Celosia",
+   "kg_m": 0.5216,
+   "perimetro_mm": 288.39,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-050": {
+   "descripcion": "Vertical Vitrina Biselada M-500-3",
+   "kg_m": 0.7939,
+   "perimetro_mm": 345.87,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-051": {
+   "descripcion": "Tapa Vertical Vitrina Biselada M-500-3",
+   "kg_m": 0.4053,
+   "perimetro_mm": 189.08,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-052": {
+   "descripcion": "Vertical Vitrina Biselada M-500-4",
+   "kg_m": 1.1254,
+   "perimetro_mm": 421.35,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-053": {
+   "descripcion": "Tapa Vertical Vitrina Biselada M-500-4",
+   "kg_m": 0.5129,
+   "perimetro_mm": 241.64,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-054": {
+   "descripcion": "Horizontal Vitrinas Biseladas M-500-3 y 4",
+   "kg_m": 0.9541,
+   "perimetro_mm": 419.03,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-102": {
+   "descripcion": "Cabezal Celosia",
+   "kg_m": 0.4724,
+   "perimetro_mm": 246.02,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-103": {
+   "descripcion": "Sillar Celosia",
+   "kg_m": 0.4247,
+   "perimetro_mm": 223.37,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-193": {
+   "descripcion": "Anclaje Tipico",
+   "kg_m": 3.211,
+   "perimetro_mm": 725.74,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-211": {
+   "descripcion": "Remate sillar",
+   "kg_m": 0.332,
+   "perimetro_mm": 167.54,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-309": {
+   "descripcion": "Vertical Tipico Fachada",
+   "kg_m": 1.745,
+   "perimetro_mm": 437.2,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-309M": {
+   "descripcion": "Vertical Tipico Fachada",
+   "kg_m": 1.459,
+   "perimetro_mm": 274.31,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-362": {
+   "descripcion": "Tapa SERIE 60",
+   "kg_m": 0.4948,
+   "perimetro_mm": 201.96,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-367": {
+   "descripcion": "Vertical Tipico Fachada 32mm",
+   "kg_m": 1.228,
+   "perimetro_mm": 338.84,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-376": {
+   "descripcion": "Pisavidrio",
+   "kg_m": 0.217,
+   "perimetro_mm": 108.58,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-458": {
+   "descripcion": "Riel para Paneles Colgantes",
+   "kg_m": 3.032,
+   "perimetro_mm": 739.82,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-459": {
+   "descripcion": "Riel para Paneles Colgantes",
+   "kg_m": 1.491,
+   "perimetro_mm": 529.96,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-480": {
+   "descripcion": "Enchape de 10cms",
+   "kg_m": 0.6183,
+   "perimetro_mm": 288.93,
+   "sistema": "PERFILES ALÉ"
+  },
+  "LEH-488": {
+   "descripcion": "Correa y Refuerzo",
+   "kg_m": 0.9551,
+   "perimetro_mm": 206.02,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-492": {
+   "descripcion": "Riel Principal Marquesinas Reforz.",
+   "kg_m": 1.3537,
+   "perimetro_mm": 314.15,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-493": {
+   "descripcion": "Riel Principal Marquesinas",
+   "kg_m": 0.7621,
+   "perimetro_mm": 300.13,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-494": {
+   "descripcion": "Pisavidrio Exteriror Riel Ppal",
+   "kg_m": 0.438,
+   "perimetro_mm": 222.21,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-495": {
+   "descripcion": "Tapa Tornillos Pisavidrio",
+   "kg_m": 0.438,
+   "perimetro_mm": 58.47,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-504": {
+   "descripcion": "Soporte Horizontales",
+   "kg_m": 0.766,
+   "perimetro_mm": 233.9,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-522": {
+   "descripcion": "Horizontal",
+   "kg_m": 0.697,
+   "perimetro_mm": 356.62,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-523": {
+   "descripcion": "Pisavidrio para 522",
+   "kg_m": 0.262,
+   "perimetro_mm": 158.01,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-531": {
+   "descripcion": "Tapa Horizontal Interior",
+   "kg_m": 0.42,
+   "perimetro_mm": 211.68,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-580": {
+   "descripcion": "Vertical Reforzado 3831",
+   "kg_m": 0.8599,
+   "perimetro_mm": 238.05,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-586": {
+   "descripcion": "Horizontal S. E.",
+   "kg_m": 1.15,
+   "perimetro_mm": 444.98,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-587": {
+   "descripcion": "Vertical SERIE 45 S.E.",
+   "kg_m": 1.471,
+   "perimetro_mm": 351.44,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-588": {
+   "descripcion": "Pisamodulo de Vidrio",
+   "kg_m": 0.088,
+   "perimetro_mm": 54.02,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-589": {
+   "descripcion": "Marco Perimetral Vidrio",
+   "kg_m": 0.167,
+   "perimetro_mm": 101.12,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-603": {
+   "descripcion": "Tapa",
+   "kg_m": 0.166,
+   "perimetro_mm": 101.64,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-631": {
+   "descripcion": "Lama para Persiana M-100",
+   "kg_m": 0.479,
+   "perimetro_mm": 235.95,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-641": {
+   "descripcion": "Tapa Horizontal",
+   "kg_m": 0.4143,
+   "perimetro_mm": 210.95,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-642": {
+   "descripcion": "Pisavidrio Interior Horizontal",
+   "kg_m": 0.52,
+   "perimetro_mm": 269.36,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-643": {
+   "descripcion": "Horizontal Sillar",
+   "kg_m": 1.563,
+   "perimetro_mm": 599.41,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-644": {
+   "descripcion": "Horizontal Tipico",
+   "kg_m": 1.357,
+   "perimetro_mm": 515.37,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-667": {
+   "descripcion": "Marco Perimetral 338 Silic. Estruct.",
+   "kg_m": 0.443,
+   "perimetro_mm": 250.71,
+   "sistema": "PERFILES ALÉ"
+  },
+  "00000673": {
+   "descripcion": "Sillar Marco 3831 Pisavidrio Interior",
+   "kg_m": 0.322,
+   "perimetro_mm": 216.98,
+   "sistema": "PERFILES ALÉ"
+  },
+  "00000674": {
+   "descripcion": "Volteador de cavidad de Nave",
+   "kg_m": 0.265,
+   "perimetro_mm": 194.53,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-676": {
+   "descripcion": "Elemento Vertical",
+   "kg_m": 0.836,
+   "perimetro_mm": 251.08,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-677": {
+   "descripcion": "Elemento Horizontal",
+   "kg_m": 0.427,
+   "perimetro_mm": 189.42,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-679": {
+   "descripcion": "Tapa Complementaria",
+   "kg_m": 0.0279,
+   "perimetro_mm": 131.92,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-680": {
+   "descripcion": "Barrote 22 x 22mm",
+   "kg_m": 0.393,
+   "perimetro_mm": 86.28,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-686": {
+   "descripcion": "Correa para Riel Principal",
+   "kg_m": 1.1347,
+   "perimetro_mm": 282.28,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-720": {
+   "descripcion": "Tubo Rectangular 100x60",
+   "kg_m": 2.11,
+   "perimetro_mm": 320.0,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-744": {
+   "descripcion": "Remate Cabezal",
+   "kg_m": 0.45,
+   "perimetro_mm": 226.11,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-781": {
+   "descripcion": "Vertical Tipico Bolsillo 33mm",
+   "kg_m": 3.5248,
+   "perimetro_mm": 590.64,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-783": {
+   "descripcion": "Horizontal Tipico Bolsillo 33MM",
+   "kg_m": 1.9349,
+   "perimetro_mm": 676.21,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-800": {
+   "descripcion": "Marco 3\" Para Puertas de Madera",
+   "kg_m": 0.869,
+   "perimetro_mm": 190.21,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-801": {
+   "descripcion": "Marco 4\" Para Puertas de Madera",
+   "kg_m": 1.086,
+   "perimetro_mm": 227.89,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-808M": {
+   "descripcion": "Horizontal Redondeado Ppal",
+   "kg_m": 0.8807,
+   "perimetro_mm": 236.05,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-810": {
+   "descripcion": "Pisavidrio 13mm",
+   "kg_m": 0.0825,
+   "perimetro_mm": 49.63,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-822": {
+   "descripcion": "Nave de Ventilacion",
+   "kg_m": 0.466,
+   "perimetro_mm": 205.7,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-823": {
+   "descripcion": "Complemento Horizontal",
+   "kg_m": 0.3559,
+   "perimetro_mm": 165.81,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-829": {
+   "descripcion": "Pisavidrio 15mm",
+   "kg_m": 0.113,
+   "perimetro_mm": 53.63,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-842": {
+   "descripcion": "Tapa 60mm",
+   "kg_m": 0.248,
+   "perimetro_mm": 143.99,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-851": {
+   "descripcion": "Platina 40x9,5",
+   "kg_m": 0.6732,
+   "perimetro_mm": 96.29,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-862": {
+   "descripcion": "Horizontal Tipico",
+   "kg_m": 1.409,
+   "perimetro_mm": 587.45,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-974": {
+   "descripcion": "Suplemento Cavidad 33mm",
+   "kg_m": 0.176,
+   "perimetro_mm": 92.69,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-987": {
+   "descripcion": "Tapa Exterior con Gotero",
+   "kg_m": 0.347,
+   "perimetro_mm": 189.49,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-990": {
+   "descripcion": "Horizontal Principal",
+   "kg_m": 2.125,
+   "perimetro_mm": 513.97,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-991": {
+   "descripcion": "Perfil Flecha",
+   "kg_m": 1.878,
+   "perimetro_mm": 423.82,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1000-R": {
+   "descripcion": "Vertical",
+   "kg_m": 0.6548,
+   "perimetro_mm": 338.49,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1001-R": {
+   "descripcion": "Vertical Acople",
+   "kg_m": 0.6943,
+   "perimetro_mm": 359.86,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1016": {
+   "descripcion": "Persiana 100mm",
+   "kg_m": 0.456,
+   "perimetro_mm": 239.5,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1017": {
+   "descripcion": "Soporte Persiana 1016",
+   "kg_m": 0.323,
+   "perimetro_mm": 150.53,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1027": {
+   "descripcion": "Tapa de 31mm",
+   "kg_m": 0.1446,
+   "perimetro_mm": 85.59,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1079": {
+   "descripcion": "Tapa Frontal Microperforada",
+   "kg_m": 0.3556,
+   "perimetro_mm": 239.81,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1098": {
+   "descripcion": "Contramarco Perimetral",
+   "kg_m": 0.703,
+   "perimetro_mm": 341.87,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1100": {
+   "descripcion": "Contramarco Tubular",
+   "kg_m": 1.724,
+   "perimetro_mm": 535.69,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1120": {
+   "descripcion": "Vertical Macho Pisav. Interior",
+   "kg_m": 0.708,
+   "perimetro_mm": 369.22,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1121": {
+   "descripcion": "Vertical Hembra Pisav. Interior",
+   "kg_m": 0.747,
+   "perimetro_mm": 390.64,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1122": {
+   "descripcion": "Horizontal Pisav. Interior",
+   "kg_m": 0.783,
+   "perimetro_mm": 405.25,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1142": {
+   "descripcion": "Cortasol Tipo Flecha 40mm",
+   "kg_m": 0.711,
+   "perimetro_mm": 375.12,
+   "sistema": "PERFILES ALÉ"
+  },
+  "ALÉ-E-1143": {
+   "descripcion": "Soporte Cortasol Tipo Flecha 40mm",
+   "kg_m": 0.479,
+   "perimetro_mm": 139.07,
+   "sistema": "PERFILES ALÉ"
+  },
+  "PEL-004M": {
+   "descripcion": "Peldaño 14 cms",
+   "kg_m": 1.895,
+   "perimetro_mm": 600.54,
+   "sistema": "PERFILES ALÉ"
+  },
+  "PEL-007": {
+   "descripcion": "Grapa de Fijacion",
+   "kg_m": 1.122,
+   "perimetro_mm": 194.1,
+   "sistema": "PERFILES ALÉ"
+  },
+  "TVCAR-144": {
+   "descripcion": "Lama CELOSIA SEG-67",
+   "kg_m": 1.2638,
+   "perimetro_mm": 403.89,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-145": {
+   "descripcion": "Portalama Cristal CELOSIA SEG-67",
+   "kg_m": 0.6059,
+   "perimetro_mm": 175.78,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-253": {
+   "descripcion": "Tapa Jambas CELOSIA SEG-67.",
+   "kg_m": 0.2515,
+   "perimetro_mm": 144.02,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-255": {
+   "descripcion": "Barra Operadora CELOSIA SEG-67",
+   "kg_m": 0.1498,
+   "perimetro_mm": 38.62,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-256": {
+   "descripcion": "Jambas CELOSIA SEG-67.",
+   "kg_m": 0.8458,
+   "perimetro_mm": 365.89,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-259": {
+   "descripcion": "Sillar CELOSIA SEG-67.",
+   "kg_m": 0.6887,
+   "perimetro_mm": 351.89,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-261": {
+   "descripcion": "Cabezal CELOSIA SEG-67.",
+   "kg_m": 0.7983,
+   "perimetro_mm": 270.51,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-273": {
+   "descripcion": "Camara Isobarica CELOSIA SEG-67.",
+   "kg_m": 0.6978,
+   "perimetro_mm": 343.04,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "TVCAR-274": {
+   "descripcion": "Recibidor Cristal Ajuste CELOSIA SEG-67",
+   "kg_m": 0.2328,
+   "perimetro_mm": 73.6,
+   "sistema": "CELOSIA DE SEGURIDAD"
+  },
+  "ALU3001": {
+   "descripcion": "Horizontal Marco Proyectante BELLI",
+   "kg_m": 0.2158,
+   "perimetro_mm": 175.86,
+   "sistema": "BELLINI"
+  },
+  "ALU3002": {
+   "descripcion": "Nave Proyectante BELLI",
+   "kg_m": 0.3434,
+   "perimetro_mm": 197.44,
+   "sistema": "BELLINI"
+  },
+  "ALU3003": {
+   "descripcion": "Tee Proyectante BELLI",
+   "kg_m": 0.3807,
+   "perimetro_mm": 197.74,
+   "sistema": "BELLINI"
+  },
+  "ALU3004": {
+   "descripcion": "Pisavidrio Proyectante BELLI",
+   "kg_m": 0.1179,
+   "perimetro_mm": 95.12,
+   "sistema": "BELLINI"
+  },
+  "ALU3005": {
+   "descripcion": "Vertical Marco Proyectante BELLI",
+   "kg_m": 0.2539,
+   "perimetro_mm": 202.08,
+   "sistema": "BELLINI"
+  },
+  "ALU3006": {
+   "descripcion": "Marco Perimetral Proyectante BELLI",
+   "kg_m": 0.2795,
+   "perimetro_mm": 145.34,
+   "sistema": "BELLINI"
+  },
+  "ALU3007": {
+   "descripcion": "Adaptador Marco Proyectante BELLI",
+   "kg_m": 0.1622,
+   "perimetro_mm": 131.23,
+   "sistema": "BELLINI"
+  },
+  "ALU3008": {
+   "descripcion": "Sillar Alfajia 80mm Proyectante BELLI",
+   "kg_m": 0.3424,
+   "perimetro_mm": 278.71,
+   "sistema": "BELLINI"
+  },
+  "ALU3009": {
+   "descripcion": "Sillar Alfajia 100mm Proyectante BELLI",
+   "kg_m": 0.3925,
+   "perimetro_mm": 319.1,
+   "sistema": "BELLINI"
+  },
+  "TUV-001": {
+   "descripcion": "Pisavidrio Pincipal SERIE 75",
+   "kg_m": 1.2565,
+   "perimetro_mm": 335.54,
+   "sistema": "TU VENTANA"
+  },
+  "TUV-002": {
+   "descripcion": "Tapa Pisavidrio SERIE 75",
+   "kg_m": 0.4817,
+   "perimetro_mm": 251.43,
+   "sistema": "TU VENTANA"
+  }
+ }
+}
