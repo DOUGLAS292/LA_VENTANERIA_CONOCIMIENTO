@@ -12,7 +12,7 @@ from cotizador_agente.viento import presion_diseno, region_de_ciudad
 
 SERIES = [
     "alumina_serie_33", "alumina_serie_50", "alumina_serie_80",
-    "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100",
+    "koncept_40", "koncept_50", "koncept_70", "koncept_90", "koncept_100", "alumina_vc8025",
 ]
 
 
@@ -115,3 +115,10 @@ def test_koncept_70_horizontal_puerta_fijo_superior():
     assert r["resiste_kgm2"] == 75
     # Celda irregular de la ficha (A 2.40, H 0.60 = 108) se toma del lado seguro (102)
     assert s.seleccionar_variante("union_puerta_fijo_superior", 2.40, 0.60, 0)["resiste_kgm2"] == 102
+
+
+def test_vc8025_ventana_en_edificio_de_barranquilla_pide_adaptador():
+    # Ventana 2.00 x 1.50 con naves de 1.00 m a 30 m de altura en Barranquilla
+    p = _presion("Barranquilla", 30, 1.00, 1.50)
+    r = Sistema("alumina_vc8025").seleccionar_variante("enganches", 1.00, 1.50, p)
+    assert r["seleccion"]["codigo"] == "engana0191_adapt1818" and r["resiste_kgm2"] == 179
