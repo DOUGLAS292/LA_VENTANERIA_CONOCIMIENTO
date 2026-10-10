@@ -191,6 +191,17 @@ def _paso_superior(valor: float, pasos: list[float]) -> float | None:
     return None
 
 
+def _leer_tabla(tabla: dict, ancho_m: float, alto_m: float) -> int | None:
+    """Presión resistente de una tabla de ficha, redondeando las medidas hacia arriba."""
+    columnas = tabla["columnas_m"]
+    filas = sorted(float(h) for h in tabla["filas"])
+    col = _paso_superior(ancho_m, columnas)
+    fila = _paso_superior(alto_m, filas)
+    if col is None or fila is None:
+        return None
+    return tabla["filas"][f"{fila:.2f}"][columnas.index(col)]
+
+
 class Sistema:
     def __init__(self, codigo: str):
         ruta = DATOS / "sistemas" / f"{codigo}.json"
@@ -207,15 +218,22 @@ class Sistema:
 
     def presion_resistente(self, config: str, ancho_m: float, alto_m: float) -> int | None:
         tabla = self.configuracion(config).get("tabla_presion")
-        if tabla is None:
-            return None
-        columnas = tabla["columnas_m"]
-        filas = sorted(float(h) for h in tabla["filas"])
-        col = _paso_superior(ancho_m, columnas)
-        fila = _paso_superior(alto_m, filas)
-        if col is None or fila is None:
-            return None
-        return tabla["filas"][f"{fila:.2f}"][columnas.index(col)]
+        return None if tabla is None else _leer_tabla(tabla, ancho_m, alto_m)
+
+    def seleccionar_variante(
+        self, grupo: str, ancho_nave_m: float, alto_m: float, presion_kgm2: float
+    ) -> dict:
+        """Escoge la variante más liviana del grupo (p. ej. enganches) que resiste la presión.
+
+        Las variantes vienen ordenadas en la ficha de más liviana a más resistente.
+        """
+        evaluadas = []
+        for variante in self.datos[grupo]["orden"]:
+            resiste = _leer_tabla(variante["tabla"], ancho_nave_m, alto_m)
+            evaluadas.append({"codigo": variante["codigo"], "resiste_kgm2": resiste})
+            if resiste is not None and resiste >= presion_kgm2:
+                return {"seleccion": variante, "resiste_kgm2": resiste, "evaluadas": evaluadas}
+        return {"seleccion": None, "resiste_kgm2": None, "evaluadas": evaluadas}
 
     def verificar_presion(
         self, config: str, ancho_m: float, alto_m: float, presion_kgm2: float

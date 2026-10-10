@@ -1,0 +1,831 @@
+{
+ "codigo": "alumina_serie_50",
+ "nombre": "Sistema corredizo Serie 50 (Alúmina)",
+ "_fuente": "Ficha técnica 'FICHA-TECNICA-SERIE-50-R05-220513.pdf', revisión 05 - 220513 (Google Drive, Fichas Técnicas, id 1zvLnFxOGXX7AMfmpH49e5RuEUdyA6ovt)",
+ "_estado": "Tablas extraídas del texto del PDF el 2026-10-10; algunas filas venían desordenadas y se reconstruyeron por monotonía. PENDIENTE verificación visual por Ingeniería.",
+ "_convenciones": "A = ancho de NAVE (m) en las tablas de enganche; H = altura del sistema (m). Presiones en kg/m2. Celda vacía = combinación no admisible.",
+ "caracteristicas": {
+  "vidrios_admisibles_mm": [
+   4,
+   5,
+   6,
+   8,
+   10
+  ],
+  "tipos_vidrio": [
+   "monolitico",
+   "laminado"
+  ],
+  "profundidad_marco_mm": 53,
+  "corte_perfiles": "90 grados, ensamble con tornillos",
+  "aleacion": "AA6063 T5",
+  "carga_rodamiento_kg": {
+   "ventana": 40,
+   "puerta": 80
+  },
+  "nsr10": "El fabricante declara el sistema calculado para NSR-10 según sus tablas de restricciones."
+ },
+ "enganches": {
+  "_descripcion": "Combinaciones de enganche para corredizas XX, XO, XOX, OXXO y XXX, ordenadas de más liviana a más resistente. El agente escoge la PRIMERA que resiste la presión de diseño.",
+  "perfiles": {
+   "ENGAN2220": "Enganche (sencillo)",
+   "ENGAN2221": "Enganche reforzado (semirreforzado)",
+   "ENGAN2222": "Enganche reforzado grande (reforzado)"
+  },
+  "orden": [
+   {
+    "codigo": "sencillo",
+    "perfiles": [
+     "ENGAN2220",
+     "ENGAN2220"
+    ],
+    "descripcion": "Enganches sencillos (solo ventana)",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "1.30": [
+       46,
+       43,
+       41,
+       39,
+       38
+      ],
+      "1.20": [
+       61,
+       57,
+       54,
+       53,
+       52
+      ],
+      "1.10": [
+       82,
+       77,
+       75,
+       74,
+       74
+      ],
+      "1.00": [
+       114,
+       110,
+       108,
+       108,
+       108
+      ],
+      "0.90": [
+       168,
+       165,
+       165,
+       165,
+       165
+      ],
+      "0.80": [
+       265,
+       265,
+       265,
+       265,
+       265
+      ],
+      "0.70": [
+       451,
+       451,
+       451,
+       451,
+       451
+      ],
+      "0.60": [
+       817,
+       817,
+       817,
+       817,
+       817
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "sencillo_semirreforzado",
+    "perfiles": [
+     "ENGAN2220",
+     "ENGAN2221"
+    ],
+    "descripcion": "Enganche sencillo + semirreforzado",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.20": [
+       40,
+       null,
+       null,
+       null,
+       null
+      ],
+      "2.10": [
+       46,
+       42,
+       38,
+       null,
+       null
+      ],
+      "2.00": [
+       53,
+       48,
+       45,
+       41,
+       39
+      ],
+      "1.90": [
+       63,
+       57,
+       53,
+       49,
+       46
+      ],
+      "1.80": [
+       75,
+       68,
+       63,
+       58,
+       55
+      ],
+      "1.70": [
+       90,
+       82,
+       75,
+       71,
+       67
+      ],
+      "1.60": [
+       109,
+       99,
+       92,
+       87,
+       83
+      ],
+      "1.50": [
+       134,
+       122,
+       115,
+       109,
+       104
+      ],
+      "1.40": [
+       167,
+       154,
+       145,
+       138,
+       134
+      ],
+      "1.30": [
+       213,
+       199,
+       188,
+       181,
+       177
+      ],
+      "1.20": [
+       280,
+       262,
+       250,
+       244,
+       241
+      ],
+      "1.10": [
+       364,
+       342,
+       331,
+       326,
+       326
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "semirreforzados",
+    "perfiles": [
+     "ENGAN2221",
+     "ENGAN2221"
+    ],
+    "descripcion": "Enganches semirreforzados",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       42,
+       38,
+       null,
+       null,
+       null
+      ],
+      "2.50": [
+       48,
+       43,
+       39,
+       null,
+       null
+      ],
+      "2.40": [
+       54,
+       49,
+       44,
+       41,
+       38
+      ],
+      "2.30": [
+       62,
+       56,
+       51,
+       47,
+       44
+      ],
+      "2.20": [
+       71,
+       64,
+       59,
+       54,
+       51
+      ],
+      "2.10": [
+       82,
+       74,
+       68,
+       63,
+       59
+      ],
+      "2.00": [
+       95,
+       86,
+       79,
+       74,
+       69
+      ],
+      "1.90": [
+       112,
+       102,
+       94,
+       87,
+       82
+      ],
+      "1.80": [
+       133,
+       121,
+       111,
+       104,
+       99
+      ],
+      "1.70": [
+       160,
+       145,
+       134,
+       126,
+       120
+      ],
+      "1.60": [
+       194,
+       177,
+       164,
+       155,
+       148
+      ],
+      "1.50": [
+       238,
+       218,
+       204,
+       194,
+       185
+      ],
+      "1.40": [
+       298,
+       275,
+       259,
+       246,
+       239
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "sencillo_reforzado",
+    "perfiles": [
+     "ENGAN2220",
+     "ENGAN2222"
+    ],
+    "descripcion": "Enganche sencillo + reforzado",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       65,
+       59,
+       53,
+       49,
+       46
+      ],
+      "2.50": [
+       74,
+       66,
+       60,
+       56,
+       52
+      ],
+      "2.40": [
+       84,
+       75,
+       69,
+       63,
+       59
+      ],
+      "2.30": [
+       95,
+       86,
+       78,
+       73,
+       68
+      ],
+      "2.20": [
+       109,
+       99,
+       90,
+       84,
+       78
+      ],
+      "2.10": [
+       126,
+       114,
+       105,
+       97,
+       91
+      ],
+      "2.00": [
+       147,
+       133,
+       122,
+       114,
+       107
+      ],
+      "1.90": [
+       173,
+       157,
+       144,
+       134,
+       127
+      ],
+      "1.80": [
+       205,
+       187,
+       172,
+       161,
+       152
+      ],
+      "1.70": [
+       246,
+       224,
+       207,
+       195,
+       185
+      ],
+      "1.60": [
+       289,
+       263,
+       243,
+       229,
+       217
+      ],
+      "1.50": [
+       333,
+       304,
+       283,
+       267,
+       255
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "semirreforzado_reforzado",
+    "perfiles": [
+     "ENGAN2221",
+     "ENGAN2222"
+    ],
+    "descripcion": "Enganche semirreforzado + reforzado",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       84,
+       75,
+       69,
+       63,
+       59
+      ],
+      "2.50": [
+       95,
+       85,
+       77,
+       71,
+       67
+      ],
+      "2.40": [
+       107,
+       97,
+       88,
+       81,
+       76
+      ],
+      "2.30": [
+       123,
+       110,
+       101,
+       93,
+       87
+      ],
+      "2.20": [
+       141,
+       127,
+       116,
+       107,
+       100
+      ],
+      "2.10": [
+       162,
+       147,
+       135,
+       125,
+       117
+      ],
+      "2.00": [
+       189,
+       171,
+       157,
+       146,
+       137
+      ],
+      "1.90": [
+       222,
+       202,
+       185,
+       173,
+       163
+      ],
+      "1.80": [
+       264,
+       240,
+       221,
+       206,
+       195
+      ],
+      "1.70": [
+       316,
+       288,
+       266,
+       250,
+       237
+      ],
+      "1.60": [
+       381,
+       346,
+       320,
+       301,
+       286
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "reforzados",
+    "perfiles": [
+     "ENGAN2222",
+     "ENGAN2222"
+    ],
+    "descripcion": "Enganches reforzados",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       126,
+       113,
+       102,
+       94,
+       88
+      ],
+      "2.50": [
+       142,
+       127,
+       116,
+       107,
+       100
+      ],
+      "2.40": [
+       161,
+       144,
+       132,
+       122,
+       113
+      ],
+      "2.30": [
+       183,
+       165,
+       151,
+       139,
+       130
+      ],
+      "2.20": [
+       210,
+       189,
+       173,
+       161,
+       150
+      ],
+      "2.10": [
+       243,
+       219,
+       201,
+       187,
+       175
+      ],
+      "2.00": [
+       282,
+       256,
+       235,
+       218,
+       205
+      ],
+      "1.90": [
+       332,
+       301,
+       277,
+       258,
+       243
+      ],
+      "1.80": [
+       394,
+       358,
+       330,
+       308,
+       292
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "cierre_medio_OXXO": {
+  "_descripcion": "Cierre central de OXXO (dos naves que cierran entre sí).",
+  "orden": [
+   {
+    "codigo": "cierre_medio_semirreforzado",
+    "perfiles": [
+     "TRASL2225",
+     "ADAPT2224"
+    ],
+    "descripcion": "Ventana cierre medio semirreforzado",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       39,
+       null,
+       null,
+       null,
+       null
+      ],
+      "2.50": [
+       44,
+       40,
+       null,
+       null,
+       null
+      ],
+      "2.40": [
+       50,
+       45,
+       41,
+       null,
+       null
+      ],
+      "2.30": [
+       57,
+       51,
+       47,
+       43,
+       40
+      ],
+      "2.20": [
+       65,
+       59,
+       54,
+       50,
+       47
+      ],
+      "2.10": [
+       75,
+       68,
+       62,
+       58,
+       54
+      ],
+      "2.00": [
+       88,
+       80,
+       73,
+       68,
+       64
+      ],
+      "1.90": [
+       103,
+       94,
+       86,
+       80,
+       76
+      ],
+      "1.80": [
+       122,
+       111,
+       103,
+       96,
+       91
+      ],
+      "1.70": [
+       147,
+       134,
+       124,
+       116,
+       110
+      ],
+      "1.60": [
+       178,
+       163,
+       151,
+       143,
+       136
+      ],
+      "1.50": [
+       219,
+       201,
+       188,
+       178,
+       171
+      ],
+      "1.40": [
+       274,
+       253,
+       238,
+       227,
+       220
+      ],
+      "1.30": [
+       350,
+       326,
+       308,
+       297,
+       290
+      ]
+     }
+    }
+   },
+   {
+    "codigo": "cierre_medio_reforzado",
+    "perfiles": [
+     "TRASL2225",
+     "ADAPT2223"
+    ],
+    "descripcion": "Puerta cierre medio reforzado",
+    "tabla": {
+     "columnas_m": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+     ],
+     "filas": {
+      "2.60": [
+       94,
+       84,
+       76,
+       70,
+       66
+      ],
+      "2.50": [
+       106,
+       95,
+       86,
+       80,
+       74
+      ],
+      "2.40": [
+       120,
+       108,
+       98,
+       91,
+       85
+      ],
+      "2.30": [
+       137,
+       123,
+       112,
+       104,
+       97
+      ],
+      "2.20": [
+       157,
+       141,
+       129,
+       120,
+       112
+      ],
+      "2.10": [
+       181,
+       164,
+       150,
+       139,
+       130
+      ],
+      "2.00": [
+       211,
+       191,
+       175,
+       163,
+       153
+      ],
+      "1.90": [
+       248,
+       225,
+       207,
+       192,
+       181
+      ],
+      "1.80": [
+       294,
+       267,
+       246,
+       230,
+       218
+      ],
+      "1.70": [
+       339,
+       308,
+       284,
+       265,
+       251
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "vidrio_XX_ventana": {
+  "_verificar": "Descuento leído sin rótulo de configuración; se asume XX (2 naves). Confirmar.",
+  "ancho": "A/2 - 55",
+  "alto": "H - 79",
+  "cant": 2
+ },
+ "configuraciones": {},
+ "pendientes": [
+  "Fórmulas de corte de perfiles (cabezal, sillar, jambas, horizontales, traslapes): en la ficha están como imagen. Cargar desde el cotizador Excel o con verificación visual.",
+  "Asignar con rótulo los descuentos de vidrio de XO, XOX, OXXO y XXX.",
+  "Tablas de presión por el horizontal de cuerpo fijo (dos tablas en la ficha).",
+  "Verificación visual de las tablas de enganche reconstruidas."
+ ]
+}
