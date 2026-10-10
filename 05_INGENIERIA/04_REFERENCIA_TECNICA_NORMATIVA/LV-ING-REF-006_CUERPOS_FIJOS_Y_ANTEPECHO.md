@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-006  
-**Versión:** 1.0  
+**Versión:** 1.1  
 **Fecha:** 2026-10-10  
 **Estado:** APROBADO — Dirección General, 2026-10-10  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -69,7 +69,8 @@ Vidrio del fijo inferior en vivienda:
 
 | # | Pendiente | Responsable |
 |---|---|---|
-| 1 | Verificar el travesaño (divisor u horizontal de unión) con la tabla de cada serie. Cargadas: Koncept 40, Koncept 50 y Serie 35. Faltan Koncept 70 (unión puerta con fijo superior), Koncept 100 (fijos) y Serie 50 (horizontales) | Agente |
+| 1 | Verificar el travesaño (divisor u horizontal de unión) con la tabla de cada serie. Cargadas: Koncept 40, Koncept 50, Serie 35 y Koncept 70 (unión puerta con fijo superior). Faltan Koncept 100 (fijos) y Serie 50 (horizontales) | Agente |
+| 1b | Koncept 70, unión puerta con fijo superior: la ficha trae 9 celdas donde un horizontal más largo resiste más que uno más corto (largos de 2.20, 2.40 y 2.70 m con alturas de 0.60 a 1.00 m). El agente toma ahí el valor menor vecino. Confirmar | Ingeniería |
 | 2 | Zonas exactas de riesgo de impacto de la Figura K.4.3-0 | Ingeniería |
 
 ---
@@ -79,3 +80,4 @@ Vidrio del fijo inferior en vivienda:
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 1.0 | 2026-10-10 | Creación con los criterios de Dirección General: travesaño a 1.10 m y vidrio recocido de 5 mm cuando la norma lo permite |
+| 1.1 | 2026-10-10 | Koncept 70: tabla del horizontal de unión entre puerta y fijo superior |

@@ -106,3 +106,12 @@ def test_koncept_70_puerta_en_edificio_de_medellin_no_alcanza():
     r = Sistema("koncept_70").seleccionar_variante("enganches", 1.00, 2.40, p)
     assert r["seleccion"] is None
     assert [e["resiste_kgm2"] for e in r["evaluadas"]] == [None, 71, 121]
+
+
+def test_koncept_70_horizontal_puerta_fijo_superior():
+    s = Sistema("koncept_70")
+    # Horizontal de 2.00 m, altura promedio de módulos 1.30 m -> 75 kg/m2
+    r = s.seleccionar_variante("union_puerta_fijo_superior", 2.00, 1.30, 70)
+    assert r["resiste_kgm2"] == 75
+    # Celda irregular de la ficha (A 2.40, H 0.60 = 108) se toma del lado seguro (102)
+    assert s.seleccionar_variante("union_puerta_fijo_superior", 2.40, 0.60, 0)["resiste_kgm2"] == 102
