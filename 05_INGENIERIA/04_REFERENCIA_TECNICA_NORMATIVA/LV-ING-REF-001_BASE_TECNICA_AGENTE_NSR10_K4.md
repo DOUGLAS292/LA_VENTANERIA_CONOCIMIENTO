@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-001  
-**Versión:** 0.1  
+**Versión:** 0.2  
 **Fecha:** 2026-10-10  
 **Estado:** BORRADOR — POR VALIDAR  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -25,7 +25,7 @@ El agente **no calcula ni inventa valores técnicos**. Consulta tablas cargadas 
 | NSR-10 Título K (PDF oficial, copia IDRD) | Google Drive › Documentos de Ingeniería › `11titulo-k-nsr-100.pdf` | Leído completo el capítulo K.4 |
 | NSR-10 Capítulo K.4 (copia ampliada) | Google Drive › `CAPITULO K - REQUISITOS ESPECIALES PARA VIDRIOS...pdf` | No leído (13 MB) |
 | Resumen interno NSR-10 para vidrio | Google Drive › 02. INGENIERÍA › 01. Normativa › `NSR-10 - Requisitos aplicables a vidrios y sistemas vidriados` | Leído |
-| NSR-10 Título B, capítulo B.6 (viento) | **No está en Drive.** El acceso a la copia pública del IDRD está bloqueado desde el entorno del agente | **FALTA** |
+| NSR-10 Título B, capítulo B.6 (viento) | Google Drive › 02. INGENIERÍA › 01. Normativa › `2titulo-b-nsr-100 (1).pdf` | Cargado el 2026-10-10. Ver LV-ING-REF-003 |
 | `requisitos mapa eolico.pdf` | Google Drive | Solo contiene el título; parece un documento escaneado |
 
 ---
@@ -33,7 +33,7 @@ El agente **no calcula ni inventa valores técnicos**. Consulta tablas cargadas 
 # 3. CADENA DE VERIFICACIÓN QUE SIGUE EL AGENTE
 
 ```
-Ciudad + altura + exposición ──► Presión de diseño (Título B, B.6)      [PENDIENTE: falta Título B]
+Ciudad + altura + exposición ──► Presión de diseño (Título B, B.6)      [LV-ING-REF-003]
                                         │
           ┌─────────────────────────────┼──────────────────────────────┐
           ▼                             ▼                              ▼
@@ -45,7 +45,7 @@ Ciudad + altura + exposición ──► Presión de diseño (Título B, B.6)    
                     Dictamen: CUMPLE / NO CUMPLE / REQUIERE INGENIERÍA
 ```
 
-Mientras no esté cargado el Título B, la **presión de diseño entra como dato** (en kg/m²), igual que hoy en el cotizador Excel (`Presión requerida (kg/m2)` y `REGIÓN`).
+La presión de diseño la calcula el agente con el capítulo B.6 (ver LV-ING-REF-003). También puede recibirla como dato de Ingeniería.
 
 ---
 
@@ -102,13 +102,13 @@ Ejemplo de la tabla K.4.2-2 (recocido, áreas máximas en m²):
 
 | # | Pendiente | Responsable |
 |---|---|---|
-| 1 | Subir a Drive (02. INGENIERÍA › 01. Normativa y Reglamentos) el **Título B de la NSR-10** completo, con la figura B.6.4-1 (mapa de amenaza eólica) y el capítulo B.6 | Dirección General |
-| 2 | Definir la tabla **ciudad → región eólica** para las ciudades donde trabaja La Ventanería | Ingeniería |
-| 3 | Definir el método de presión por altura que usa la empresa (método simplificado o analítico de B.6) y las categorías de exposición | Ingeniería |
+| 1 | ~~Subir a Drive el Título B de la NSR-10~~ Cumplido el 2026-10-10 | Dirección General |
+| 2 | Confirmar la tabla **ciudad → región eólica** preliminar de LV-ING-REF-003 | Ingeniería |
+| 3 | Aprobar los criterios conservadores de cálculo de viento de LV-ING-REF-003 | Ingeniería |
 | 4 | Verificar visualmente contra el PDF todas las tablas extraídas automáticamente (archivo `nsr10_k4.json`) | Ingeniería |
 | 5 | Confirmar los valores dudosos marcados en `nsr10_k4.json` (tabla K.4.3-1, templado 10 mm; tabla K.4.3-2, fila de 3 mm) | Ingeniería |
 
-**Nota sobre el mapa eólico:** las fuentes secundarias consultadas en internet dan valores contradictorios para las velocidades de las regiones 1 a 5. **No se cargó ningún valor de velocidad de viento** hasta tener el Título B oficial.
+**Nota sobre el mapa eólico:** las velocidades por región se tomaron del Título B oficial, no de fuentes secundarias, que en internet dan valores contradictorios.
 
 ---
 
@@ -117,3 +117,4 @@ Ejemplo de la tabla K.4.2-2 (recocido, áreas máximas en m²):
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 0.1 | 2026-10-10 | Creación: extracción del capítulo K.4 para el agente cotizador |
+| 0.2 | 2026-10-10 | Título B cargado; cálculo de viento documentado en LV-ING-REF-003 |
