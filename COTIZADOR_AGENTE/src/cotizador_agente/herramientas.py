@@ -9,11 +9,13 @@ cotización integrado (motor), por decisión de Dirección General (2026-10-13).
 """
 
 import json
-from dataclasses import asdict
+from dataclasses import asdict, dataclass
+from pathlib import Path
 
 from .criterio_tecnico import DATOS, NormaK4, Sistema, _paso_superior, kgm2_a_knm2
-from .modelos import ErrorCotizacion, FallaMotor, SolicitudCotizacion
+from .modelos import ErrorCotizacion, FallaMotor, RespuestaCotizacion, SolicitudCotizacion
 from .motor.base import MotorCotizacion
+from .pdf_cotizacion import Empresa, FichaTecnicaItem, generar_pdf
 from .vano import distribuir_vano
 from .viento import _normalizar, presion_diseno, region_de_ciudad
 
@@ -26,6 +28,16 @@ FUERA_DE_ALCANCE = {
 FACTOR_ESQUINA_ALUMINA = 1.35  # nota de los planos TR de Alúmina: zona 5 = zona 4 × 1.35
 
 _NORMA = NormaK4()
+
+
+@dataclass
+class Sesion:
+    """Estado de una conversación: motor conectado y última cotización recibida."""
+    motor: MotorCotizacion | None = None
+    carpeta_pdf: Path = Path("cotizaciones")
+    empresa: Empresa | None = None
+    ultima_solicitud: SolicitudCotizacion | None = None
+    ultima_respuesta: RespuestaCotizacion | None = None
 
 
 def _codigos_sistemas() -> list[str]:
@@ -164,21 +176,40 @@ def distribuir_vano_tool(ancho_mm: float, alto_vano_mm: float, altura_muro_mm: f
     }
 
 
-def enviar_a_cotizar(motor: MotorCotizacion | None, solicitud: dict) -> dict:
+def enviar_a_cotizar(sesion: Sesion, solicitud: dict) -> dict:
     """Valida la solicitud y la envía al software de cotización (despiece y precios)."""
     try:
         s = SolicitudCotizacion.model_validate(solicitud)
     except ValueError as e:
         return {"error": f"Solicitud inválida: {e}"}
-    if motor is None:
+    if sesion.motor is None:
         return {"estado": "pendiente_motor", "solicitud": s.model_dump(),
                 "nota": "No hay software de cotización conectado: la solicitud quedó lista para enviarse."}
     try:
-        return {"estado": "cotizada", "respuesta": motor.cotizar(s).model_dump()}
+        respuesta = sesion.motor.cotizar(s)
     except ErrorCotizacion as e:
         return {"error": e.mensaje, "codigo": e.codigo, "indice_item": e.indice_item}
     except FallaMotor as e:
         return {"error": f"El software de cotización no respondió: {e}. Reintentar más tarde."}
+    sesion.ultima_solicitud, sesion.ultima_respuesta = s, respuesta
+    return {"estado": "cotizada", "respuesta": respuesta.model_dump()}
+
+
+def generar_pdf_cotizacion(sesion: Sesion, cliente: str, fichas_tecnicas: list[dict]) -> dict:
+    """PDF de la última cotización: precios del software y especificación técnica del agente."""
+    if sesion.ultima_respuesta is None:
+        return {"error": "Primero hay que cotizar con enviar_a_cotizar: el PDF usa los precios del software."}
+    fichas = [FichaTecnicaItem.model_validate(f) for f in fichas_tecnicas]
+    indices = {it.indice for it in sesion.ultima_respuesta.items}
+    sobrantes = [f.indice for f in fichas if f.indice not in indices]
+    if sobrantes:
+        return {"error": f"Fichas con índices que no están en la cotización: {sobrantes}. Índices válidos: "
+                         f"{sorted(indices)}"}
+    r = sesion.ultima_respuesta
+    nombre = "".join(c if c.isalnum() or c in "-_" else "_" for c in f"cotizacion_{r.cotizacion_id}")
+    ruta = generar_pdf(r, fichas, sesion.carpeta_pdf / f"{nombre}.pdf", cliente,
+                       sesion.ultima_solicitud.ciudad, sesion.empresa)
+    return {"estado": "pdf_generado", "archivo": str(ruta), "cotizacion_id": r.cotizacion_id, "total": r.total}
 
 
 # --- Definiciones para la API de Claude --------------------------------------------
@@ -309,11 +340,44 @@ DEFINICIONES = [
             "required": ["solicitud"],
         },
     },
+    {
+        "name": "generar_pdf_cotizacion",
+        "description": "Genera el PDF para el cliente con la última cotización del software (precios, IVA, total y "
+                       "vigencia) y la especificación técnica que usted verificó. Úsela después de enviar_a_cotizar "
+                       "cuando el cliente quiera el documento. Usted no escribe precios: salen del software.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "cliente": {"type": "string", "description": "Nombre del cliente como debe aparecer en el PDF."},
+                "fichas_tecnicas": {"type": "array", "items": {
+                    "type": "object",
+                    "properties": {
+                        "indice": {"type": "integer", "description": "Índice del ítem en la cotización (desde 0)."},
+                        "sistema": {"type": "string", "description": "Nombre de la serie, p. ej. 'Koncept 70 (Alúmina)'."},
+                        "configuracion": {"type": "string"},
+                        "presion_diseno_kgm2": {"type": "number"},
+                        "perfiles": {"type": "array", "items": {"type": "string"},
+                                     "description": "Opciones verificadas: enganche, cierre, verticales..."},
+                        "franjas": {"type": "array", "items": {
+                            "type": "object",
+                            "properties": {"tipo": {"type": "string", "enum": ["fijo_inferior", "ventana", "fijo_superior"]},
+                                           "alto_mm": {"type": "number"}, "vidrio": {"type": "string"}},
+                            "required": ["tipo", "alto_mm"]}},
+                        "vidrio": {"type": "string"},
+                        "normas": {"type": "array", "items": {"type": "string"}},
+                        "observaciones": {"type": "array", "items": {"type": "string"}},
+                    },
+                    "required": ["indice", "sistema"]}},
+            },
+            "required": ["cliente", "fichas_tecnicas"],
+        },
+    },
 ]
 
 
-def ejecutar(nombre: str, entrada: dict, motor: MotorCotizacion | None = None) -> dict:
+def ejecutar(nombre: str, entrada: dict, sesion: Sesion | None = None) -> dict:
     """Despacha una llamada de herramienta del modelo. Lanza excepción si los datos no sirven."""
+    sesion = sesion or Sesion()
     funciones = {
         "presion_viento": presion_viento,
         "listar_sistemas": listar_sistemas,
@@ -324,7 +388,9 @@ def ejecutar(nombre: str, entrada: dict, motor: MotorCotizacion | None = None) -
         "distribuir_vano": distribuir_vano_tool,
     }
     if nombre == "enviar_a_cotizar":
-        return enviar_a_cotizar(motor, entrada["solicitud"])
+        return enviar_a_cotizar(sesion, entrada["solicitud"])
+    if nombre == "generar_pdf_cotizacion":
+        return generar_pdf_cotizacion(sesion, **entrada)
     if nombre not in funciones:
         raise ValueError(f"Herramienta desconocida: {nombre}")
     return funciones[nombre](**entrada)

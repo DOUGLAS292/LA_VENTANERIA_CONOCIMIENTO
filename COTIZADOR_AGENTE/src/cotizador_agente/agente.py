@@ -3,7 +3,8 @@
 Conversa con el cliente, le hace las preguntas de levantamiento y usa las
 herramientas técnicas (viento, vidrio, perfiles, vano) para proponer la serie y la
 configuración. El despiece, los cortes y los precios los hace el software de
-cotización integrado (motor), no este agente.
+cotización integrado (motor), no este agente. El PDF para el cliente sale de
+pdf_cotizacion.py con los precios del software y la ficha técnica del agente.
 
 Uso:
     agente = AgenteCotizador()          # lee ANTHROPIC_API_KEY o el perfil de `ant auth login`
@@ -11,11 +12,13 @@ Uso:
 """
 
 import json
+from pathlib import Path
 
 import anthropic
 
 from . import herramientas
 from .motor.base import MotorCotizacion
+from .pdf_cotizacion import Empresa
 from .vano import PREGUNTAS_VANO
 
 MODELO = "claude-opus-5-5"
@@ -64,6 +67,8 @@ menos de 500 mm del piso, baños, barandas o colegios.
 inferior, ventana, fijo superior) y vidrio de cada paño, con la norma citada. Muestre las alternativas si \
 las hay y los avisos que requieren Ingeniería.
 6. Solo con la confirmación del cliente, llame `enviar_a_cotizar`.
+7. Con la cotización del software, ofrezca el PDF y llame `generar_pdf_cotizacion` con la ficha técnica de \
+cada ítem (los índices de la respuesta del software). Los precios del PDF salen del software, nunca de usted.
 
 Sea breve: respuestas cortas, una idea por párrafo, tablas solo cuando comparan opciones."""
 
@@ -74,9 +79,10 @@ def _a_texto(contenido) -> str:
 
 class AgenteCotizador:
     def __init__(self, cliente: anthropic.Anthropic | None = None, motor: MotorCotizacion | None = None,
-                 modelo: str = MODELO, esfuerzo: str = "high"):
+                 modelo: str = MODELO, esfuerzo: str = "high", carpeta_pdf: Path = Path("cotizaciones"),
+                 empresa: Empresa | None = None):
         self.cliente = cliente or anthropic.Anthropic()
-        self.motor = motor
+        self.sesion = herramientas.Sesion(motor=motor, carpeta_pdf=Path(carpeta_pdf), empresa=empresa)
         self.modelo = modelo
         self.esfuerzo = esfuerzo
         self.mensajes: list[dict] = []  # solo se agrega al final: nunca se edita el historial
@@ -96,7 +102,7 @@ class AgenteCotizador:
 
     def _resultado(self, bloque) -> dict:
         try:
-            salida = herramientas.ejecutar(bloque.name, dict(bloque.input), self.motor)
+            salida = herramientas.ejecutar(bloque.name, dict(bloque.input), self.sesion)
             return {"type": "tool_result", "tool_use_id": bloque.id,
                     "content": json.dumps(salida, ensure_ascii=False)}
         except Exception as e:  # dato inválido del modelo: se le devuelve para que corrija

@@ -13,6 +13,7 @@
 2. Verifica cada decisión técnica con las herramientas. La IA no calcula: llama al cálculo determinístico y explica el resultado citando la norma.
 3. Propone la serie, la configuración, el enganche o la unión, la distribución del vano y el vidrio de cada paño.
 4. Cuando el cliente confirma, envía la solicitud al software de cotización.
+5. Con la respuesta del software, genera el PDF de la cotización para el cliente.
 
 **Lo que NO hace:** despiece, cortes y precios. Los hace el software de cotización integrado (decisión de Dirección General, 2026-10-13).
 
@@ -28,8 +29,25 @@
 | `vidrio_seguridad` | Exigencia de vidrio de seguridad por uso y altura | NSR-10 K.4.3.9 |
 | `distribuir_vano` | Fijo inferior, ventana y fijo superior. Travesaño a 1.10 m y recocido ≥ 5 mm bajo el travesaño | NSR-10 K.4.3.9.7, LV-ING-REF-006 |
 | `enviar_a_cotizar` | Valida la solicitud y la pasa al motor (API de Sergio, alianza Alúmina u otro) | CONTRATO_API.md |
+| `generar_pdf_cotizacion` | PDF para el cliente con los precios del software y la ficha técnica verificada | `pdf_cotizacion.py`, LV-MKT-001 |
 
 Si no hay motor conectado, `enviar_a_cotizar` deja la solicitud validada y lista para enviarse.
+
+## PDF de la cotización
+
+Cada fuente aporta su parte:
+
+- **Del software de cotización:** precios, IVA, total, vigencia y alertas. El agente nunca escribe ni recalcula valores.
+- **Del agente:** por cada ítem, la serie, la configuración, la presión de diseño, los perfiles verificados, la distribución del vano (fijo inferior, ventana y fijo superior con su vidrio) y las normas.
+- **Colores:** los de la identidad corporativa (LV-MKT-001).
+- **Marca de agua:** las cotizaciones preliminares llevan "PRELIMINAR".
+
+Algunos datos no están en GitHub y se pasan al crear el agente con `Empresa(...)`:
+
+- el logo, la tipografía Gilroy, el NIT, la dirección y las condiciones comerciales;
+- sin Gilroy, el PDF usa Helvetica y lo marca como "POR VALIDAR CON MARKETING/DIRECCIÓN".
+
+Los PDF se guardan en `cotizaciones/`. Esa carpeta está fuera de GitHub porque lleva precios.
 
 ## Cómo probarlo
 
