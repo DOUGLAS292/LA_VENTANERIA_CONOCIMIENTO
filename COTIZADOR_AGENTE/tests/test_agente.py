@@ -64,19 +64,19 @@ class MotorDePrueba:
 
 
 def test_enviar_a_cotizar_sin_motor_deja_la_solicitud_lista():
-    r = herramientas.enviar_a_cotizar(None, SOLICITUD)
+    r = herramientas.enviar_a_cotizar(herramientas.Sesion(), SOLICITUD)
     assert r["estado"] == "pendiente_motor" and r["solicitud"]["items"][0]["cantidad"] == 2
 
 
 def test_enviar_a_cotizar_pasa_la_solicitud_al_motor():
     motor = MotorDePrueba()
-    r = herramientas.ejecutar("enviar_a_cotizar", {"solicitud": SOLICITUD}, motor)
+    r = herramientas.ejecutar("enviar_a_cotizar", {"solicitud": SOLICITUD}, herramientas.Sesion(motor=motor))
     assert r["estado"] == "cotizada" and motor.recibido.ciudad == "Cali"
 
 
 def test_enviar_a_cotizar_rechaza_datos_invalidos():
     malo = {**SOLICITUD, "items": []}
-    assert "error" in herramientas.enviar_a_cotizar(None, malo)
+    assert "error" in herramientas.enviar_a_cotizar(herramientas.Sesion(), malo)
 
 
 # --- Ciclo del agente con la API simulada ----------------------------------------------
