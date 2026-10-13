@@ -2,7 +2,7 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-005  
-**Versión:** 1.4  
+**Versión:** 1.5  
 **Fecha:** 2026-10-10  
 **Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
@@ -31,6 +31,7 @@ El método es el mismo de la Serie 50 (LV-ING-REF-004): las combinaciones van de
 | Koncept 50 | `koncept_50.json` | Un solo enganche: ADAPT1927 | ADAPT2018; además divisor fijo DIVIS1702 |
 | Koncept 70 | `koncept_70.json` | Lisos (NAVE1754 + NAVE1754) → liso + reforzado (NAVE1754 + NAVE1904) → reforzados (NAVE1904 + NAVE1904), todos con ADAPT1755 | Naves reforzadas + ADAPT1657 → naves lisas + ADAPT2135 |
 | VC8025 (Alúmina, Maestro) | `alumina_vc8025.json` | ENGANA0191 → ENGAN0631 → ENGANA0191 + ADAPT1818 → ENGAN1745 | TRASL0190 + ADAPT0158 → TRASL0633 + ADAPR0827 |
+| VC744 (Alúmina) | `alumina_vc744.json` | ENGANP1821 (solo está el plano TR-02; falta el TR-01) | — |
 | PC7038 (Alúmina, Maestro) | `alumina_pc7038.json` | ENGAN0705 → ENGAN1697 | TRASL1698 + ADAPT0840 → TRASL0704 + ADAPT0840 |
 | Koncept 90 (puerta) | `koncept_90.json` | Sencillo (ENGANK9006) → semirreforzado (+1 ADAPTK9007) → reforzado (+2 ADAPTK9007) | ADAPTK9008 |
 | Koncept 100 (puerta) | `koncept_100.json` | Sencillo (ENGAN2086) → sencillo + reforzado (ADAPT2191) → reforzados | ADAPT2172 |
@@ -108,3 +109,4 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 1.2 | 2026-10-10 | Koncept 70: 3 enganches y 2 cierres medios, transcritos de las capturas de la ficha enviadas por Dirección General |
 | 1.3 | 2026-10-10 | Serie 35 corrediza retirada del alcance: La Ventanería no la maneja |
 | 1.4 | 2026-10-10 | Línea Maestro de Alúmina: VC8025 y PC7038 (tablas TR) |
+| 1.5 | 2026-10-10 | VC744 (plano TR-02) |
