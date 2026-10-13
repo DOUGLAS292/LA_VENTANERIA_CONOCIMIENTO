@@ -2,8 +2,8 @@
 
 **Área:** 05_INGENIERIA  
 **Código:** LV-ING-REF-005  
-**Versión:** 1.5  
-**Fecha:** 2026-10-10  
+**Versión:** 1.6  
+**Fecha:** 2026-10-13  
 **Estado:** APROBADO — Dirección General, 2026-10-10. Fichas y normas fuente validadas por Ingeniería  
 **Responsable:** Dirección General (Douglas Castillo)  
 **Aprobador:** Dirección General  
@@ -95,7 +95,7 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 5 | Koncept 100: tablas de puerta batiente y de cuerpo fijo (texto mezclado) | Agente |
 | 5b | Koncept 40: confirmar con el plano qué medida es A en las tablas de unión horizontal | Ingeniería |
 | 6 | Fichas TR de Alúmina (8025, 7038, S3831, 744): cargar sus tablas de restricción | Agente |
-| 7 | Fórmulas de corte y descuentos de vidrio por serie | Agente |
+| 7 | ~~Fórmulas de corte y descuentos de vidrio por serie~~: no se cargan. Las hace el software de cotización integrado (Dirección General, 2026-10-13) | — |
 
 ---
 
@@ -110,3 +110,4 @@ Presión de diseño NSR-10 con exposición C y zona de esquina (valores por defe
 | 1.3 | 2026-10-10 | Serie 35 corrediza retirada del alcance: La Ventanería no la maneja |
 | 1.4 | 2026-10-10 | Línea Maestro de Alúmina: VC8025 y PC7038 (tablas TR) |
 | 1.5 | 2026-10-10 | VC744 (plano TR-02) |
+| 1.6 | 2026-10-13 | Despiece y fórmulas de corte quedan a cargo del software de cotización. El agente conversacional usa estas tablas con la herramienta `comparar_series` |
