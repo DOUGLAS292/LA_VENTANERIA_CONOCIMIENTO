@@ -13,7 +13,12 @@
    "OXXO",
    "XXX"
   ],
-  "uso": "Puerta-ventana corrediza pesada, hasta 3.60 m de alto y naves de 2.40 m"
+  "uso": "Puerta-ventana corrediza pesada, hasta 3.60 m de alto y naves de 2.40 m",
+  "vidrio_mm": [
+   6,
+   12
+  ],
+  "carga_rodamiento_kg": 120
  },
  "enganches": {
   "_descripcion": "Combinaciones ordenadas de menor a mayor resistencia. El agente escoge la PRIMERA que resiste la presión de diseño. Una tabla con un solo perfil significa los dos enganches iguales.",
