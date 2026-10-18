@@ -27,11 +27,25 @@
 | `verificar_perfil` | Opción más liviana que resiste en una serie: enganche, cierre central, vertical, horizontal o unión | LV-ING-REF-004, 005 y 006 |
 | `vidrio_por_viento` | Espesor mínimo de vidrio recocido, templado y laminado | NSR-10 K.4.2 |
 | `vidrio_seguridad` | Exigencia de vidrio de seguridad por uso y altura | NSR-10 K.4.3.9 |
+| `opciones_vidrio` | Vidrios del catálogo maestro que cumplen la NSR-10 y caben en la serie, filtrados por la preferencia del cliente. Sin precios | `catalogo_vidrios.py`, catálogo en Drive |
 | `distribuir_vano` | Fijo inferior, ventana y fijo superior. Travesaño a 1.10 m y recocido ≥ 5 mm bajo el travesaño | NSR-10 K.4.3.9.7, LV-ING-REF-006 |
 | `enviar_a_cotizar` | Valida la solicitud y la pasa al motor (API de Sergio, alianza Alúmina u otro) | CONTRATO_API.md |
 | `generar_pdf_cotizacion` | PDF para el cliente con los precios del software y la ficha técnica verificada | `pdf_cotizacion.py`, LV-MKT-001 |
 
 Si no hay motor conectado, `enviar_a_cotizar` deja la solicitud validada y lista para enviarse.
+
+## Catálogo de vidrios
+
+El catálogo maestro de vidrios es un Excel en Drive. Lleva precios y proveedores, así que nunca va a GitHub.
+
+- **Ubicación:** se indica con `AgenteCotizador(catalogo_vidrios=ruta)` o con la variable de entorno `LV_CATALOGO_VIDRIOS`.
+- **Qué lee el agente:** solo las columnas técnicas (familia, tipo NSR-10, láminas, PVB, cámara, color, prestación y estado). No lee la columna de precio: los precios los pone el motor de cotización.
+- **Cómo filtra:**
+  1. Parte del espesor mínimo por tipo que da `vidrio_por_viento` y de si `vidrio_seguridad` exige vidrio de seguridad.
+  2. Descarta lo que no cabe en el rango de vidrio de la serie (ficha técnica): por ejemplo, Serie 50 de 4 a 10 mm y Serie 80 de 6 a 12 mm.
+  3. Aplica la preferencia del cliente: color, acústico o control solar.
+- **Excluidos:** los insulados y los blindados van a Ingeniería. Los espejos, los rellenos y los vidrios inactivos no se ofrecen.
+- **Sin catálogo:** el agente describe el vidrio por tipo y espesor, y el software lo asigna.
 
 ## PDF de la cotización
 

@@ -3,7 +3,7 @@ name = "cotizador-agente"
 version = "0.1.0"
 description = "Agente cotizador de sistemas vidriados de La Ventanería"
 requires-python = ">=3.10"
-dependencies = ["anthropic>=1.0", "pydantic>=2"]
+dependencies = ["anthropic>=1.0", "pydantic>=2", "reportlab>=4", "openpyxl>=3.1"]
 
 [project.optional-dependencies]
 dev = ["pytest", "httpx2>=2.0"]

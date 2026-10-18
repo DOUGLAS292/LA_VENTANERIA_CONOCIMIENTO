@@ -12,6 +12,7 @@ import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from . import catalogo_vidrios
 from .criterio_tecnico import DATOS, NormaK4, Sistema, _paso_superior, kgm2_a_knm2
 from .modelos import ErrorCotizacion, FallaMotor, RespuestaCotizacion, SolicitudCotizacion
 from .motor.base import MotorCotizacion
@@ -38,6 +39,17 @@ class Sesion:
     empresa: Empresa | None = None
     ultima_solicitud: SolicitudCotizacion | None = None
     ultima_respuesta: RespuestaCotizacion | None = None
+    ruta_catalogo_vidrios: Path | None = None
+    _vidrios: list | None = None
+
+    def vidrios(self) -> list:
+        """Catálogo maestro de vidrios (desde Drive). Se carga una vez por conversación."""
+        if self._vidrios is None:
+            ruta = self.ruta_catalogo_vidrios or catalogo_vidrios.ruta_por_defecto()
+            if ruta is None or not Path(ruta).exists():
+                raise FileNotFoundError("No hay catálogo de vidrios cargado")
+            self._vidrios = catalogo_vidrios.cargar(ruta)
+        return self._vidrios
 
 
 def _codigos_sistemas() -> list[str]:
@@ -176,6 +188,17 @@ def distribuir_vano_tool(ancho_mm: float, alto_vano_mm: float, altura_muro_mm: f
     }
 
 
+def opciones_vidrio(sesion: Sesion, sistema: str, minimos_mm: dict, exige_seguridad: bool = False,
+                    color: str | None = None, prestacion: str | None = None) -> dict:
+    """Vidrios del catálogo maestro que cumplen la NSR-10 y caben en la serie (sin precios)."""
+    try:
+        vidrios = sesion.vidrios()
+    except FileNotFoundError as e:
+        return {"error": f"{e}. Describa el vidrio por tipo y espesor (p. ej. 'laminado 4+4') y "
+                         "el software lo asigna."}
+    return catalogo_vidrios.opciones(vidrios, sistema, minimos_mm, exige_seguridad, color, prestacion)
+
+
 def enviar_a_cotizar(sesion: Sesion, solicitud: dict) -> dict:
     """Valida la solicitud y la envía al software de cotización (despiece y precios)."""
     try:
@@ -292,6 +315,28 @@ DEFINICIONES = [
         },
     },
     {
+        "name": "opciones_vidrio",
+        "description": "Busca en el catálogo de vidrios de La Ventanería los que cumplen la NSR-10 y caben en la serie. "
+                       "Úsela después de vidrio_por_viento (y de vidrio_seguridad si aplica). Devuelve códigos y "
+                       "datos técnicos, sin precios. Use el código del vidrio elegido en enviar_a_cotizar.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "sistema": {"type": "string", "description": "Código de la serie, p. ej. 'alumina_serie_50'."},
+                "minimos_mm": {
+                    "type": "object",
+                    "description": "Espesor mínimo por tipo, de vidrio_por_viento: {'recocido': 6, 'templado': 4, "
+                                   "'laminado_pvb': 5}. Omita un tipo que no sirva.",
+                    "properties": {"recocido": _NUM, "templado": _NUM, "laminado_pvb": _NUM, "termoendurecido": _NUM},
+                },
+                "exige_seguridad": {"type": "boolean", "description": "True si vidrio_seguridad exige vidrio de seguridad."},
+                "color": {"type": "string", "description": "Opcional: incoloro, gris, bronce, azul, verde, reflectivo, Low-E..."},
+                "prestacion": {"type": "string", "description": "Opcional: acústico, control solar, privacidad..."},
+            },
+            "required": ["sistema", "minimos_mm"],
+        },
+    },
+    {
         "name": "distribuir_vano",
         "description": "Reparte el alto del vano en fijo inferior, ventana y fijo superior según la NSR-10 "
                        "(travesaño de protección por defecto a 1100 mm) y propone el vidrio bajo el travesaño.",
@@ -389,6 +434,8 @@ def ejecutar(nombre: str, entrada: dict, sesion: Sesion | None = None) -> dict:
     }
     if nombre == "enviar_a_cotizar":
         return enviar_a_cotizar(sesion, entrada["solicitud"])
+    if nombre == "opciones_vidrio":
+        return opciones_vidrio(sesion, **entrada)
     if nombre == "generar_pdf_cotizacion":
         return generar_pdf_cotizacion(sesion, **entrada)
     if nombre not in funciones:

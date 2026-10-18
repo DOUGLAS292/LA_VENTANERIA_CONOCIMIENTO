@@ -62,7 +62,9 @@ la altura, use unos 3 m por piso hasta el último piso del edificio, y dígalo.
 enganches, cierre central (OXXO) y, en fijos, verticales y horizontales del S3831. Prefiera la serie más \
 liviana que cumple con margen, salvo que el cliente pida otra cosa.
 4. `vidrio_por_viento` para cada paño (nave y fijos) y `vidrio_seguridad` cuando hay puertas, vidrio a \
-menos de 500 mm del piso, baños, barandas o colegios.
+menos de 500 mm del piso, baños, barandas o colegios. Luego `opciones_vidrio` con los mínimos de \
+`vidrio_por_viento` (espesor_minimo_mm por tipo) y la preferencia del cliente (color, acústico, control \
+solar): ofrezca solo vidrios de esa lista y use su código. Nunca dé ni compare precios de vidrio.
 5. Presente la propuesta: serie, configuración, opción de enganche o unión, distribución del vano (fijo \
 inferior, ventana, fijo superior) y vidrio de cada paño, con la norma citada. Muestre las alternativas si \
 las hay y los avisos que requieren Ingeniería.
@@ -80,9 +82,10 @@ def _a_texto(contenido) -> str:
 class AgenteCotizador:
     def __init__(self, cliente: anthropic.Anthropic | None = None, motor: MotorCotizacion | None = None,
                  modelo: str = MODELO, esfuerzo: str = "high", carpeta_pdf: Path = Path("cotizaciones"),
-                 empresa: Empresa | None = None):
+                 empresa: Empresa | None = None, catalogo_vidrios: Path | None = None):
         self.cliente = cliente or anthropic.Anthropic()
-        self.sesion = herramientas.Sesion(motor=motor, carpeta_pdf=Path(carpeta_pdf), empresa=empresa)
+        self.sesion = herramientas.Sesion(motor=motor, carpeta_pdf=Path(carpeta_pdf), empresa=empresa,
+                                          ruta_catalogo_vidrios=catalogo_vidrios)
         self.modelo = modelo
         self.esfuerzo = esfuerzo
         self.mensajes: list[dict] = []  # solo se agrega al final: nunca se edita el historial
