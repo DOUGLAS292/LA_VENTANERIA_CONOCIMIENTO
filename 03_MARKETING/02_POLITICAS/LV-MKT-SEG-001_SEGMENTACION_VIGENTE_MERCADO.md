@@ -2,8 +2,8 @@
 
 **Área:** Marketing
 **Código:** LV-MKT-SEG-001
-**Versión:** 1.0
-**Estado:** VIGENTE (pendiente de aprobación formal de Dirección General)
+**Versión:** 1.1
+**Estado:** VIGENTE (aprobada)
 **Fecha:** 2026-11-08
 
 ---
@@ -78,3 +78,4 @@ Esta segmentación se revisa al cierre de cada campaña o cuando Dirección Gene
 | Versión | Fecha | Cambio | Responsable |
 |---|---|---|---|
 | 1.0 | 2026-11-08 | Creación de la segmentación vigente de mercado | Marketing |
+| 1.1 | 2026-11-20 | Segmentación aprobada | Dirección General |
