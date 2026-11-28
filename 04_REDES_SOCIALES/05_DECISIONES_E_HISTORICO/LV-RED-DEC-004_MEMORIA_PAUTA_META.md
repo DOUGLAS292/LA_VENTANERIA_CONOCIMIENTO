@@ -2,7 +2,7 @@
 
 **Área:** 04_REDES_SOCIALES
 **Código:** LV-RED-DEC-004
-**Versión:** 1.0
+**Versión:** 1.1
 **Fecha:** 2026-11-28
 **Estado:** VIGENTE
 
@@ -49,8 +49,8 @@ La cuenta publicitaria 287774072 es personal y no se usa para La Ventanería.
 |---|---|---|---|---|
 | Obras y Proyectos - Valle/Cauca/Quindío (120252588553200530) | 29 oct – 13 nov 2026 | 350.000 COP total | 349.899 COP; 144 conversaciones; 2.430 COP c/u | Pausada |
 | WhatsApp - Eje Cafetero y Valle - 15 días (120253127412820530) | 5 – 20 nov 2026 | 20.000 COP/día | 266.839 COP; 117 conversaciones; 2.281 COP c/u | Terminada |
-| Proyectos Premium, Constructoras e Instituciones (120253322262740530) | 17 nov – 1 dic 2026 | 350.000 COP total | No creada en estas sesiones; grupo "Instituciones" pausado por estar fuera de la segmentación | Activa |
-| WhatsApp - Casas premium - 21 nov al 5 dic (120253419301250530) | 20 nov – 5 dic 2026, 06:00 | 20.000 COP/día | En curso | Activa |
+| Proyectos Premium, Constructoras e Instituciones (120253322262740530) | 17 nov – 1 dic 2026 | 350.000 COP total | Al 28 nov: 229.266 COP; 88 conversaciones; 2.605 COP c/u. Tres grupos activos (Casas premium zonas de alto valor, Constructoras/arquitectos/ingenieros, Instituciones) | Activa |
+| WhatsApp - Casas premium - 21 nov al 5 dic (120253419301250530) | 20 nov – 5 dic 2026, 06:00 | 20.000 COP/día | Al 28 nov: 120.999 COP; 29 conversaciones; 4.172 COP c/u | Activa |
 
 Detalle de la campaña de WhatsApp Eje Cafetero, por anuncio:
 
@@ -77,6 +77,7 @@ Campaña activa de Casas premium:
 6. **Fecha de inicio:** al publicar, Meta toma como inicio el momento real. Ajustar la fecha de fin para no pasar de 15 días.
 7. **Borradores:** el botón "Revisar y publicar" puede incluir borradores viejos con presupuesto. No publicar sin revisar uno por uno.
 8. **Límite de la cuenta:** si se alcanza el límite de gasto, ningún anuncio entrega aunque esté activo.
+9. **Las ubicaciones se pierden:** el 28 nov los cuatro grupos activos estaban otra vez en todas las ubicaciones (Audience Network, Marketplace, estados de WhatsApp, Threads) y los de "Proyectos Premium" tenían la expansión geográfica encendida. Se corrigieron: solo Facebook e Instagram (feed, historias y reels) y expansión geográfica apagada. Revisar esto en cada revisión de pauta.
 
 ---
 
@@ -94,3 +95,4 @@ Campaña activa de Casas premium:
 | Versión | Fecha | Cambio | Responsable |
 |---|---|---|---|
 | 1.0 | 2026-11-28 | Creación de la memoria de pauta en Meta | Marketing |
+| 1.1 | 2026-11-28 | Resultados al 28 nov; corrección de ubicaciones y expansión geográfica | Marketing |
