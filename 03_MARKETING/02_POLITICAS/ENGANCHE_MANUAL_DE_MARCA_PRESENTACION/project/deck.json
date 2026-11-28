@@ -1,0 +1,19 @@
+{
+  "v": 5,
+  "createdOnFiles": { "v": 1, "at": "2026-11-28T03:59:02Z" },
+  "lists": "css",
+  "format": { "v": 1, "shared": ["project/deck.css"] },
+  "title": "Manual de Marca Enganche",
+  "order": ["cover", "esencia", "postura", "paleta", "tipografia", "voz", "mensajes", "usos", "nombre", "ruta"],
+  "sections": {
+    "s1": { "description": "Quiénes somos y qué defendemos.", "start": "cover" },
+    "s2": { "description": "Cómo se ve y cómo habla la marca.", "start": "paleta" },
+    "s3": { "description": "Uso correcto y decisión del nombre para Latinoamérica.", "start": "usos" }
+  },
+  "faces": {
+    "unbounded": { "family": "Unbounded", "href": "https://fonts.googleapis.com/css2?family=Unbounded:wght@400..700&display=swap" },
+    "manrope": { "family": "Manrope", "href": "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" },
+    "ibm-plex-mono": { "family": "IBM Plex Mono", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" }
+  },
+  "designSystems": []
+}
